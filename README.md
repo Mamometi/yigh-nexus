@@ -2,7 +2,7 @@
 
 **A funding and collaboration hub for the Yale Institute for Global Health (YIGH).**
 
-YIGH Nexus helps Yale researchers go from a funding call to a team and a plan:
+YIGH Nexus helps Yale researchers go from a funding call to a team and a draft:
 
 - **Opportunity Radar**: global health funding opportunities collected every week from official sources
   (Grants.gov, the NIH Guide, IDRC, MacArthur/Lever for Change and about 20 funder pages), checked against the funder's own record,
