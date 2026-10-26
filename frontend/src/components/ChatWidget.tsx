@@ -9,7 +9,7 @@ const KEY = 'yigh-chat'
 /** Small markdown subset: paragraphs, "- " lists, **bold**, [links](url). Internal links use the router. */
 function inline(text: string): ReactNode[] {
   const out: ReactNode[] = []
-  const re = /\[([^\]]+)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g
+  const re = /\[([^\]]+)\]\(\s*([^)\s]+)\s*\)|\*\*([^*]+)\*\*/g  // models sometimes write ]( /path)
   let last = 0, m: RegExpExecArray | null, k = 0
   while ((m = re.exec(text))) {
     if (m.index > last) out.push(text.slice(last, m.index))
