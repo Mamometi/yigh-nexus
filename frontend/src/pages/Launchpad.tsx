@@ -17,7 +17,7 @@ export function Launchpad() {
       <header className="osf-head">
         <div className="osf-head__inner">
           <p className="eyebrow eyebrow--light">Team Launchpad</p>
-          <h1>From a funding call to a team and a plan</h1>
+          <h1>From a funding call to a team and a draft</h1>
           <p className="lede">Pick a funding opportunity, see which Yale faculty and partner organizations could work on it with you,
             then turn your ideas into a one-page concept to share.</p>
           <ol className="launch__steps" aria-label="Steps">

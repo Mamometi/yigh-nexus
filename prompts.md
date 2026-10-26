@@ -401,3 +401,7 @@ Yes, draft slides.html next following the course instructions.
 ## Prompt 78 — 2026-10-26
 
 (reply to "If you would rather cite only primary sources, I can drop those two") drop these two as well
+
+## Prompt 79 — 2026-10-26
+
+dont make any reference to "the plan"

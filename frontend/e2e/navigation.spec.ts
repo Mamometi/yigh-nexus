@@ -5,7 +5,7 @@ test('top menu reaches every page and marks the current one', async ({ page }) =
   const errors = watchErrors(page)
   await page.goto('/')
   for (const [name, url, heading] of [['Opportunity Radar', '/radar', 'Funding opportunities'], ['Faculty Directory', '/directory', 'Yale faculty working in global health'],
-                                      ['Team Launchpad', '/launchpad', 'From a funding call to a team and a plan'], ['Home', '/', 'Hub for Global Health at Yale']]) {
+                                      ['Team Launchpad', '/launchpad', 'From a funding call to a team and a draft'], ['Home', '/', 'Hub for Global Health at Yale']]) {
     await page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name, exact: true }).click()
     await expect(page).toHaveURL(new RegExp(`${url.replace('/', '\\/')}$`))
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(heading)

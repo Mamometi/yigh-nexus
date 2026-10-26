@@ -115,7 +115,7 @@ backend/
   assistant/  Nexi, the chat agent (tools = the site's own API)
   auth/       sign-in (PBKDF2-hashed passwords, HttpOnly session cookie)
   llm.py      picks the AI model (Portkey/gpt-6-luna by default) and loads .env
-config/       funder watchlist, YIGH strategic-plan content, matching weights
+config/       funder watchlist, YIGH home-page content, matching weights
 docs/         design notes, classification audit, agent evaluation
 tests/        backend tests; frontend/e2e/ has the Playwright click-through
 prompts.md    every prompt used to build the project

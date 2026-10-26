@@ -133,7 +133,7 @@ export function Home() {
           </div>
         </section>
 
-        <p className="muted small home__source">Institutional text: {p.plan_source}. Figures: <a href="https://medicine.yale.edu/yigh/" target="_blank" rel="noreferrer">YIGH website</a>.</p>
+        <p className="muted small home__source">Figures: <a href="https://medicine.yale.edu/yigh/" target="_blank" rel="noreferrer">YIGH website</a>.</p>
       </div>
 
       <section className="home-news">
