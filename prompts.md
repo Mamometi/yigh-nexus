@@ -405,3 +405,15 @@ Yes, draft slides.html next following the course instructions.
 ## Prompt 79 — 2026-10-26
 
 dont make any reference to "the plan"
+
+## Prompt 80 — 2026-10-26
+
+Make me a slide deck called slides.html using reveal.js, loaded from a CDN. 10 slides max, following the outline in my report. Put my screenshots and diagram right inside the file so it still works when emailed to someone. Use a clean design with big text and the same colors as my app.
+
+## Prompt 81 — 2026-10-26
+
+localhost not working
+
+## Prompt 82 — 2026-10-26
+
+have you pushed everything to github? are the report and slide imaged embedded in the files?
