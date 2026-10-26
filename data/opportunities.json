@@ -1,0 +1,833 @@
+{
+  "compiled_on": "2026-10-25",
+  "note": "Curated list of major global health funders. Details compiled from knowledge, not scraped; verify current calls on each funder's site.",
+  "count": 34,
+  "funders": [
+    {
+      "id": "gates",
+      "name": "Gates Foundation",
+      "type": "Private foundation",
+      "headquarters": "Seattle, USA",
+      "website": "https://www.gatesfoundation.org",
+      "funding_opportunities_url": "https://gcgh.grandchallenges.org/",
+      "focus_areas": [
+        "Infectious disease",
+        "Maternal, newborn & child health",
+        "Vaccines",
+        "Nutrition",
+        "Family planning",
+        "Global health data",
+        "AI for health"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "South Asia",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Research grants",
+        "Grand Challenges RFPs",
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "Mostly by invitation; open calls via Grand Challenges",
+      "notes": "Largest private funder of global health; Grand Challenges is the main open entry point for academics."
+    },
+    {
+      "id": "wellcome",
+      "name": "Wellcome Trust",
+      "type": "Charitable trust",
+      "headquarters": "London, UK",
+      "website": "https://wellcome.org",
+      "funding_opportunities_url": "https://wellcome.org/research-funding/schemes",
+      "focus_areas": [
+        "Infectious disease",
+        "Mental health",
+        "Climate & health",
+        "Discovery research",
+        "Drug-resistant infections"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Africa",
+        "Asia"
+      ],
+      "funding_mechanisms": [
+        "Career fellowships",
+        "Discovery awards",
+        "Team awards",
+        "Calls for proposals"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via open schemes",
+      "notes": "Many schemes are open to researchers outside the UK and LMICs; check host-institution eligibility per scheme."
+    },
+    {
+      "id": "rockefeller",
+      "name": "The Rockefeller Foundation",
+      "type": "Private foundation",
+      "headquarters": "New York, USA",
+      "website": "https://www.rockefellerfoundation.org",
+      "funding_opportunities_url": "https://www.rockefellerfoundation.org/grants/",
+      "focus_areas": [
+        "Health systems",
+        "Pandemic preparedness",
+        "Climate & health",
+        "Food & nutrition",
+        "Data science for health"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Africa",
+        "South Asia",
+        "Latin America"
+      ],
+      "funding_mechanisms": [
+        "Program grants",
+        "Requests for proposals"
+      ],
+      "accepts_unsolicited_proposals": "Generally by invitation; occasional RFPs",
+      "notes": "Also runs the Bellagio Center residency program, which accepts applications from academics."
+    },
+    {
+      "id": "coefficient-giving",
+      "name": "Coefficient Giving (formerly Open Philanthropy)",
+      "type": "Philanthropic funder",
+      "headquarters": "San Francisco, USA",
+      "website": "https://coefficientgiving.org",
+      "funding_opportunities_url": "https://coefficientgiving.org/funds/",
+      "focus_areas": [
+        "Global health & development",
+        "Malaria",
+        "Lead exposure",
+        "Air quality",
+        "Scientific research for global health",
+        "Biosecurity & pandemic preparedness"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Sub-Saharan Africa",
+        "South Asia"
+      ],
+      "funding_mechanisms": [
+        "Program grants",
+        "Open RFPs",
+        "Research grants"
+      ],
+      "accepts_unsolicited_proposals": "Some open RFPs; mostly proactive grantmaking",
+      "notes": "Rebranded from Open Philanthropy in 2025; strong interest in cost-effective interventions and neglected problems."
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard Foundation",
+      "type": "Private foundation",
+      "headquarters": "Toronto, Canada",
+      "website": "https://mastercardfdn.org",
+      "funding_opportunities_url": "https://mastercardfdn.org/en/what-we-do/",
+      "focus_areas": [
+        "Youth employment",
+        "Education",
+        "Public health workforce",
+        "Vaccine access (Saving Lives & Livelihoods)",
+        "Financial inclusion"
+      ],
+      "geographic_focus": [
+        "Africa"
+      ],
+      "funding_mechanisms": [
+        "Partnerships",
+        "Scholars Program",
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "Partnership-based; no open unsolicited grants",
+      "notes": "Africa-focused; health work runs largely through the Africa CDC partnership. The Scholars Program partners with universities."
+    },
+    {
+      "id": "macarthur",
+      "name": "John D. and Catherine T. MacArthur Foundation",
+      "type": "Private foundation",
+      "headquarters": "Chicago, USA",
+      "website": "https://www.macfound.org",
+      "funding_opportunities_url": "https://www.macfound.org/info-grantseekers/",
+      "focus_areas": [
+        "Climate",
+        "Nigeria (accountability)",
+        "India (climate & health)",
+        "Big Bets / 100&Change"
+      ],
+      "geographic_focus": [
+        "Nigeria",
+        "India",
+        "USA",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Program grants",
+        "100&Change competition",
+        "MacArthur Fellows"
+      ],
+      "accepts_unsolicited_proposals": "Mostly by invitation; 100&Change is an open competition",
+      "notes": "100&Change is a $100M open competition for a single bold proposal."
+    },
+    {
+      "id": "ciff",
+      "name": "Children's Investment Fund Foundation (CIFF)",
+      "type": "Private foundation",
+      "headquarters": "London, UK",
+      "website": "https://ciff.org",
+      "funding_opportunities_url": "https://ciff.org/grant-portfolio/",
+      "focus_areas": [
+        "Child health",
+        "Nutrition",
+        "Adolescent sexual & reproductive health",
+        "Climate"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "India",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Large child-health and nutrition funder; engages through proactive partnerships."
+    },
+    {
+      "id": "skoll",
+      "name": "Skoll Foundation",
+      "type": "Private foundation",
+      "headquarters": "Palo Alto, USA",
+      "website": "https://skoll.org",
+      "funding_opportunities_url": "https://skoll.org/about/skoll-awards/",
+      "focus_areas": [
+        "Social entrepreneurship",
+        "Pandemic preparedness",
+        "Health equity",
+        "Climate"
+      ],
+      "geographic_focus": [
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Skoll Award for Social Innovation"
+      ],
+      "accepts_unsolicited_proposals": "By nomination",
+      "notes": "Supports late-stage social entrepreneurs, including health ventures."
+    },
+    {
+      "id": "cdc-foundation",
+      "name": "CDC Foundation",
+      "type": "Nonprofit",
+      "headquarters": "Atlanta, USA",
+      "website": "https://www.cdcfoundation.org",
+      "funding_opportunities_url": "https://www.cdcfoundation.org/request-for-proposals",
+      "focus_areas": [
+        "Public health programs",
+        "Global health security",
+        "Emergency response"
+      ],
+      "geographic_focus": [
+        "USA",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Requests for proposals",
+        "Contracts"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via RFPs",
+      "notes": "Publishes RFPs that academic partners can respond to."
+    },
+    {
+      "id": "nih-fic",
+      "name": "NIH Fogarty International Center",
+      "type": "Government agency",
+      "headquarters": "Bethesda, USA",
+      "website": "https://www.fic.nih.gov",
+      "funding_opportunities_url": "https://www.fic.nih.gov/Funding/Pages/default.aspx",
+      "focus_areas": [
+        "Research training",
+        "Global health research capacity",
+        "HIV",
+        "NCDs",
+        "Implementation science"
+      ],
+      "geographic_focus": [
+        "LMICs",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "D43 training grants",
+        "K01/K43 career awards",
+        "R21/R01 research grants",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Yes, open funding announcements",
+      "notes": "Core federal funder for US–LMIC research partnerships; highly relevant for Yale faculty and trainees."
+    },
+    {
+      "id": "usaid",
+      "name": "USAID / US Department of State Global Health",
+      "type": "Government agency",
+      "headquarters": "Washington DC, USA",
+      "website": "https://www.state.gov/bureau-of-global-health-security-and-diplomacy/",
+      "funding_opportunities_url": "https://www.grants.gov",
+      "focus_areas": [
+        "HIV (PEPFAR)",
+        "Malaria",
+        "TB",
+        "Maternal & child health",
+        "Global health security"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "Asia",
+        "Latin America"
+      ],
+      "funding_mechanisms": [
+        "Cooperative agreements",
+        "Contracts"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via Grants.gov / SAM.gov",
+      "notes": "Many USAID global health functions moved to the State Department in 2025; check current status before applying."
+    },
+    {
+      "id": "global-fund",
+      "name": "The Global Fund to Fight AIDS, Tuberculosis and Malaria",
+      "type": "Multilateral financing partnership",
+      "headquarters": "Geneva, Switzerland",
+      "website": "https://www.theglobalfund.org",
+      "funding_opportunities_url": "https://www.theglobalfund.org/en/business-opportunities/",
+      "focus_areas": [
+        "HIV",
+        "Tuberculosis",
+        "Malaria",
+        "Resilient health systems"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Sub-Saharan Africa",
+        "Asia"
+      ],
+      "funding_mechanisms": [
+        "Country grants",
+        "Procurement / technical assistance"
+      ],
+      "accepts_unsolicited_proposals": "Country-level; academics typically engage as technical partners",
+      "notes": "Funds countries rather than individual researchers."
+    },
+    {
+      "id": "gavi",
+      "name": "Gavi, the Vaccine Alliance",
+      "type": "Public-private partnership",
+      "headquarters": "Geneva, Switzerland",
+      "website": "https://www.gavi.org",
+      "funding_opportunities_url": "https://www.gavi.org/our-alliance/work-with-us",
+      "focus_areas": [
+        "Immunization",
+        "Vaccine equity",
+        "Health systems strengthening"
+      ],
+      "geographic_focus": [
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Country support",
+        "Requests for proposals"
+      ],
+      "accepts_unsolicited_proposals": "RFPs for evaluations and technical work",
+      "notes": "Commissions evaluations and studies relevant to vaccine researchers."
+    },
+    {
+      "id": "cepi",
+      "name": "CEPI (Coalition for Epidemic Preparedness Innovations)",
+      "type": "Public-private partnership",
+      "headquarters": "Oslo, Norway",
+      "website": "https://cepi.net",
+      "funding_opportunities_url": "https://cepi.net/",
+      "focus_areas": [
+        "Vaccine R&D",
+        "Epidemic preparedness",
+        "100 Days Mission"
+      ],
+      "geographic_focus": [
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via open calls",
+      "notes": "Open calls for vaccine and platform technology research."
+    },
+    {
+      "id": "unitaid",
+      "name": "Unitaid",
+      "type": "Global health agency",
+      "headquarters": "Geneva, Switzerland",
+      "website": "https://unitaid.org",
+      "funding_opportunities_url": "https://unitaid.org/calls-for-proposals/",
+      "focus_areas": [
+        "HIV",
+        "TB",
+        "Malaria",
+        "Women's & children's health",
+        "Diagnostics & treatments access"
+      ],
+      "geographic_focus": [
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "Funds innovations that make health products cheaper and more accessible."
+    },
+    {
+      "id": "bloomberg",
+      "name": "Bloomberg Philanthropies",
+      "type": "Private foundation",
+      "headquarters": "New York, USA",
+      "website": "https://www.bloomberg.org",
+      "funding_opportunities_url": "https://www.bloomberg.org/public-health/",
+      "focus_areas": [
+        "Tobacco control",
+        "Road safety",
+        "Drowning prevention",
+        "Data for Health",
+        "Noncommunicable diseases"
+      ],
+      "geographic_focus": [
+        "Global",
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Program grants",
+        "Partnerships"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Works with academic partners such as Johns Hopkins and Vital Strategies."
+    },
+    {
+      "id": "hhmi",
+      "name": "Howard Hughes Medical Institute",
+      "type": "Medical research organization",
+      "headquarters": "Chevy Chase, USA",
+      "website": "https://www.hhmi.org",
+      "funding_opportunities_url": "https://www.hhmi.org/programs",
+      "focus_areas": [
+        "Biomedical research",
+        "Science education",
+        "Emerging pathogens"
+      ],
+      "geographic_focus": [
+        "Global",
+        "USA",
+        "South Africa"
+      ],
+      "funding_mechanisms": [
+        "Investigator programs",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Through competitions",
+      "notes": "Programs include Hanna H. Gray Fellows and international research scholars."
+    },
+    {
+      "id": "chan-zuckerberg",
+      "name": "Chan Zuckerberg Initiative",
+      "type": "LLC philanthropy",
+      "headquarters": "Redwood City, USA",
+      "website": "https://chanzuckerberg.com",
+      "funding_opportunities_url": "https://chanzuckerberg.com/science/",
+      "focus_areas": [
+        "Biomedical science",
+        "Infectious disease",
+        "Rare disease",
+        "AI for biology"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Africa"
+      ],
+      "funding_mechanisms": [
+        "Requests for applications"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via RFAs",
+      "notes": "RFAs include the Global Health initiatives and the African-based Science funding streams."
+    },
+    {
+      "id": "doris-duke",
+      "name": "Doris Duke Foundation",
+      "type": "Private foundation",
+      "headquarters": "New York, USA",
+      "website": "https://www.dorisduke.org",
+      "funding_opportunities_url": "https://www.dorisduke.org/funding-areas/medical-research/",
+      "focus_areas": [
+        "Medical research",
+        "Physician-scientist training",
+        "Global health (historic)"
+      ],
+      "geographic_focus": [
+        "USA",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Clinical scientist awards",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Through competitions",
+      "notes": "Clinical Scientist Development Awards support early-career physician-scientists."
+    },
+    {
+      "id": "novo-nordisk",
+      "name": "Novo Nordisk Foundation",
+      "type": "Enterprise foundation",
+      "headquarters": "Copenhagen, Denmark",
+      "website": "https://novonordiskfonden.dk/en",
+      "funding_opportunities_url": "https://novonordiskfonden.dk/en/grants/",
+      "focus_areas": [
+        "Cardiometabolic disease",
+        "Global health",
+        "Infectious disease",
+        "Planetary health"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Denmark",
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Open calls",
+        "Research grants"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via open calls",
+      "notes": "Growing global health portfolio including the Global Health Challenges calls."
+    },
+    {
+      "id": "rwjf",
+      "name": "Robert Wood Johnson Foundation",
+      "type": "Private foundation",
+      "headquarters": "Princeton, USA",
+      "website": "https://www.rwjf.org",
+      "funding_opportunities_url": "https://www.rwjf.org/en/grants/active-funding-opportunities.html",
+      "focus_areas": [
+        "Health equity",
+        "Health policy",
+        "Community health"
+      ],
+      "geographic_focus": [
+        "USA"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals",
+        "Research grants"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "US-focused but relevant for bidirectional learning and equity research."
+    },
+    {
+      "id": "conrad-hilton",
+      "name": "Conrad N. Hilton Foundation",
+      "type": "Private foundation",
+      "headquarters": "Los Angeles, USA",
+      "website": "https://www.hiltonfoundation.org",
+      "funding_opportunities_url": "https://www.hiltonfoundation.org/grants",
+      "focus_areas": [
+        "Safe water",
+        "Early childhood development",
+        "Catholic sisters' health work",
+        "Refugees"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "USA",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Strong water, sanitation and early childhood focus in Africa."
+    },
+    {
+      "id": "packard",
+      "name": "David and Lucile Packard Foundation",
+      "type": "Private foundation",
+      "headquarters": "Los Altos, USA",
+      "website": "https://www.packard.org",
+      "funding_opportunities_url": "https://www.packard.org/grants-and-investments/",
+      "focus_areas": [
+        "Reproductive health",
+        "Climate",
+        "Children & families"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Sub-Saharan Africa",
+        "South Asia"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "Mostly by invitation",
+      "notes": "Long-standing family planning and reproductive health funder."
+    },
+    {
+      "id": "hewlett",
+      "name": "William and Flora Hewlett Foundation",
+      "type": "Private foundation",
+      "headquarters": "Menlo Park, USA",
+      "website": "https://hewlett.org",
+      "funding_opportunities_url": "https://hewlett.org/grants/",
+      "focus_areas": [
+        "Gender equity & governance",
+        "Reproductive health",
+        "Evidence-informed policymaking"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Funds evidence and policy research in East and West Africa."
+    },
+    {
+      "id": "ford",
+      "name": "Ford Foundation",
+      "type": "Private foundation",
+      "headquarters": "New York, USA",
+      "website": "https://www.fordfoundation.org",
+      "funding_opportunities_url": "https://www.fordfoundation.org/work/our-grants/",
+      "focus_areas": [
+        "Social justice",
+        "Gender & health rights",
+        "Civic engagement"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Africa",
+        "Latin America",
+        "Asia"
+      ],
+      "funding_mechanisms": [
+        "Program grants",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Accepts grant inquiries",
+      "notes": "Takes inquiries through its online grant inquiry form."
+    },
+    {
+      "id": "aga-khan",
+      "name": "Aga Khan Foundation / Aga Khan Development Network",
+      "type": "Development network",
+      "headquarters": "Geneva, Switzerland",
+      "website": "https://www.akdn.org",
+      "funding_opportunities_url": "https://www.akdn.org/our-agencies/aga-khan-foundation",
+      "focus_areas": [
+        "Health systems",
+        "Maternal & child health",
+        "Early childhood development",
+        "Education"
+      ],
+      "geographic_focus": [
+        "South Asia",
+        "Central Asia",
+        "East Africa",
+        "Middle East"
+      ],
+      "funding_mechanisms": [
+        "Partnerships",
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "Partnership-based",
+      "notes": "Operates the Aga Khan University and hospitals; a strong partner for research collaborations."
+    },
+    {
+      "id": "nihr",
+      "name": "NIHR Global Health Research (UK)",
+      "type": "Government agency",
+      "headquarters": "London, UK",
+      "website": "https://www.nihr.ac.uk",
+      "funding_opportunities_url": "https://www.nihr.ac.uk/explore-nihr/funding-programmes/global-health.htm",
+      "focus_areas": [
+        "Applied global health research",
+        "NCDs",
+        "Health systems",
+        "Research capacity"
+      ],
+      "geographic_focus": [
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Research programmes",
+        "Research units & groups",
+        "Professorships"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "Usually requires a UK lead institution, so US faculty usually join as collaborators."
+    },
+    {
+      "id": "idrc",
+      "name": "International Development Research Centre (IDRC)",
+      "type": "Government agency",
+      "headquarters": "Ottawa, Canada",
+      "website": "https://idrc-crdi.ca",
+      "funding_opportunities_url": "https://idrc-crdi.ca/en/funding",
+      "focus_areas": [
+        "Global health",
+        "Climate & health",
+        "Food systems",
+        "Gender"
+      ],
+      "geographic_focus": [
+        "Africa",
+        "Asia",
+        "Latin America",
+        "Middle East"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals",
+        "Research awards"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "Prioritizes researchers based in the Global South."
+    },
+    {
+      "id": "edctp",
+      "name": "EDCTP3 Global Health Partnership",
+      "type": "Public-public partnership",
+      "headquarters": "The Hague, Netherlands",
+      "website": "https://www.global-health-edctp3.europa.eu",
+      "funding_opportunities_url": "https://www.global-health-edctp3.europa.eu/funding",
+      "focus_areas": [
+        "Clinical trials",
+        "Infectious disease",
+        "Poverty-related diseases",
+        "Capacity development"
+      ],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "Europe"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "Partnership of the EU and African countries; consortia usually need European and African partners."
+    },
+    {
+      "id": "google-org",
+      "name": "Google.org",
+      "type": "Corporate philanthropy",
+      "headquarters": "Mountain View, USA",
+      "website": "https://www.google.org",
+      "funding_opportunities_url": "https://www.google.org/opportunities/",
+      "focus_areas": [
+        "AI for health",
+        "Crisis response",
+        "Climate & health"
+      ],
+      "geographic_focus": [
+        "Global"
+      ],
+      "funding_mechanisms": [
+        "Accelerators",
+        "Impact Challenges",
+        "Grants"
+      ],
+      "accepts_unsolicited_proposals": "Through open challenges",
+      "notes": "AI-for-social-good challenges have funded health and data projects."
+    },
+    {
+      "id": "pfizer-foundation",
+      "name": "Pfizer Foundation",
+      "type": "Corporate foundation",
+      "headquarters": "New York, USA",
+      "website": "https://www.pfizer.com/about/responsibility/pfizer-foundation",
+      "funding_opportunities_url": "https://www.pfizer.com/about/responsibility/pfizer-foundation",
+      "focus_areas": [
+        "Health equity",
+        "Infectious disease",
+        "Primary health care",
+        "Health systems"
+      ],
+      "geographic_focus": [
+        "Global",
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Funds community health innovation in LMICs."
+    },
+    {
+      "id": "jnj-foundation",
+      "name": "Johnson & Johnson Foundation",
+      "type": "Corporate foundation",
+      "headquarters": "New Brunswick, USA",
+      "website": "https://www.jnj.com/johnson-johnson-foundation",
+      "funding_opportunities_url": "https://www.jnj.com/johnson-johnson-foundation",
+      "focus_areas": [
+        "Health workforce",
+        "Nursing & midwifery",
+        "Community health workers"
+      ],
+      "geographic_focus": [
+        "Global",
+        "Sub-Saharan Africa",
+        "South Asia"
+      ],
+      "funding_mechanisms": [
+        "Program grants"
+      ],
+      "accepts_unsolicited_proposals": "By invitation",
+      "notes": "Health workforce focus aligns with the Yale School of Nursing."
+    },
+    {
+      "id": "who-tdr",
+      "name": "WHO / TDR (Special Programme for Research and Training in Tropical Diseases)",
+      "type": "UN agency program",
+      "headquarters": "Geneva, Switzerland",
+      "website": "https://tdr.who.int",
+      "funding_opportunities_url": "https://tdr.who.int/grants",
+      "focus_areas": [
+        "Neglected tropical diseases",
+        "Implementation research",
+        "Research training"
+      ],
+      "geographic_focus": [
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Calls for proposals",
+        "Fellowships"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via calls",
+      "notes": "Implementation research grants and research training for LMIC researchers."
+    },
+    {
+      "id": "grand-challenges-canada",
+      "name": "Grand Challenges Canada",
+      "type": "Government-funded nonprofit",
+      "headquarters": "Toronto, Canada",
+      "website": "https://www.grandchallenges.ca",
+      "funding_opportunities_url": "https://www.grandchallenges.ca/funding-opportunities/",
+      "focus_areas": [
+        "Maternal & child health",
+        "Global mental health",
+        "Humanitarian innovation"
+      ],
+      "geographic_focus": [
+        "LMICs"
+      ],
+      "funding_mechanisms": [
+        "Seed grants",
+        "Transition-to-scale"
+      ],
+      "accepts_unsolicited_proposals": "Yes, via open calls",
+      "notes": "Seed grants open to innovators worldwide, including LMIC-based teams."
+    }
+  ]
+}

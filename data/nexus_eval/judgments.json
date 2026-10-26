@@ -1,0 +1,536 @@
+[
+ {
+  "opportunity_id": 2,
+  "faculty_id": 126,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 233,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 153,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 23,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 156,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 106,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 253,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 6,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 2,
+  "faculty_id": 281,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 13,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 37,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 278,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 106,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 78,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 68,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 6,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 128,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 4,
+  "faculty_id": 111,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 67,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 200,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 168,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 148,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 6,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 241,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 34,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 233,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 10,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 12,
+  "faculty_id": 23,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 52,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 4,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 44,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 43,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 23,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 126,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 6,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 95,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 13,
+  "faculty_id": 67,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 237,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 52,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 274,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 22,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 23,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 67,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 205,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 162,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 72,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 15,
+  "faculty_id": 16,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 23,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 77,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 4,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 168,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 6,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 153,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 106,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 253,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 156,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 16,
+  "faculty_id": 233,
+  "relevance": 1,
+  "reason": "Adjacent expertise that could contribute a component."
+ },
+ {
+  "opportunity_id": 26,
+  "faculty_id": 170,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 26,
+  "faculty_id": 156,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 26,
+  "faculty_id": 162,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 26,
+  "faculty_id": 137,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 26,
+  "faculty_id": 34,
+  "relevance": 2,
+  "reason": "Core subject/method expertise matches the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 14,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 80,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 199,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 266,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 254,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 139,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 108,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 45,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 40,
+  "faculty_id": 30,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 270,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 204,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 28,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 5,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 30,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 23,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 40,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 45,
+  "faculty_id": 47,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 86,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 67,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 241,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 23,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 269,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 200,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 253,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 233,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 210,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ },
+ {
+  "opportunity_id": 48,
+  "faculty_id": 256,
+  "relevance": 0,
+  "reason": "No documented expertise matching the opportunity aims."
+ }
+]

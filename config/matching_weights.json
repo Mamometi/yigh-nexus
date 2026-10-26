@@ -1,0 +1,8 @@
+{
+  "_comment": "Relative weights for collaboration matching. They are normalized to sum to 1. Edit and restart the API, or override per request with ?w_<criterion>=<value>.",
+  "shared_interests": 0.25,
+  "complementary_expertise": 0.30,
+  "geography": 0.15,
+  "strategic_priorities": 0.20,
+  "cross_school": 0.10
+}

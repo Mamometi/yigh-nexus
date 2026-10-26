@@ -1,0 +1,22 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# local accounts (sign-in) are never published
+data/auth.db
+
+# internal draft document (content used by the site lives in config/yigh_profile.json)
+*.pdf
+
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+frontend/test-results/
+frontend/playwright-report/
+.DS_Store
+*.log

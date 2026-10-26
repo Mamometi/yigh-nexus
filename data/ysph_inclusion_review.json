@@ -1,0 +1,362 @@
+{
+ "_comment": "Manual review of YSPH faculty inclusion (audit of 2026-10-25). 'exclude' removes a person even if rules include them; 'include' keeps them with this reason if rules don't.",
+ "decisions": [
+  {
+   "slug": "jasmine-abrams",
+   "name": "Jasmine Abrams",
+   "decision": "include",
+   "reason": "'promote sexual and maternal health among Black women ... in the US, Haiti, Dominican Republic, and Brazil'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "nedghie-adrien",
+   "name": "Nedghie Adrien, MPH, PhD",
+   "decision": "include",
+   "reason": "'introducing human papilloma virus (HPV) vaccine in routine immunization schedules in Senegal' and Ebola infection control in West Africa.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "habibalrahman-alnedari",
+   "name": "Habib Alrahman Alnedari",
+   "decision": "include",
+   "reason": "Postgraduate role but describes WASH/climate work 'in fragile and conflict-affected settings' and 'humanitarian experience in Yemen'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "ibrahim-bani",
+   "name": "Ibrahim Bani, MBBS, PhD, DTM&H",
+   "decision": "include",
+   "reason": "'national training programs sponsored by WHO, USAID, and national governments of Saudi Arabia and Sudan and Iraq' (career-level, weak but genuine).",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "andrea-benin",
+   "name": "Andrea Benin, MD",
+   "decision": "exclude",
+   "reason": "Only signal is the surname 'Benin'; work is CDC 'National Healthcare Safety Network' US surveillance.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "michael-bracken",
+   "name": "Michael B. Bracken, PhD, MPH, FACE",
+   "decision": "exclude",
+   "reason": "Activities are with Oxford/McMaster/Norway (high-income partners); NIH-funded US epidemiology.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "brigid-cakouros",
+   "name": "Brigid Cakouros, DrPH, MPH",
+   "decision": "include",
+   "reason": "'research on donor-recipient power dynamics, conducted through the University of Liberia-Yale BRIDGE-U partnership'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "marguerite-callaway",
+   "name": "Marguerite Callaway, MBA, MS",
+   "decision": "include",
+   "reason": "Leadership/management training with 'YSPH Global Health Leadership Institute's programs in both China and South Africa'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "kei-cheung",
+   "name": "Kei-Hoi Cheung, PhD",
+   "decision": "exclude",
+   "reason": "Foreign mentions are visiting scholars 'from Zhejiang University' and Vienna/Korea interns, not research sites.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "elizabeth-claus",
+   "name": "Elizabeth Claus, PhD, MD",
+   "decision": "exclude",
+   "reason": "GLIOGENE screens patients 'within the United States, Europe, and Israel' - high-income only.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "frederico-costa",
+   "name": "Federico Costa, PhD",
+   "decision": "include",
+   "reason": "'transmission of leptospirosis ... in Brazil' and Zika studies 'in Salvador, Brazil'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "julio-croda",
+   "name": "Julio Croda, MD, PhD",
+   "decision": "include",
+   "reason": "Vaccine trials and 'Director of the Department of Immunizations ... at the Ministry of Health of Brazil'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "faihaa-dafalla",
+   "name": "Faihaa Dafalla",
+   "decision": "include",
+   "reason": "'led the development of the National Health Sector Recovery and Reform Strategic Plan' in Sudan.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "martha-dale",
+   "name": "Martha Dale",
+   "decision": "include",
+   "reason": "Director of China programs at GHLI; 'Ethiopian Hospital Management Initiative and the Liberian Healthcare Management Program'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "chelsea-evankow",
+   "name": "Chelsea Evankow, MPH",
+   "decision": "exclude",
+   "reason": "Staff role ('serves as the Program Manager') with generic 'Global Health' interest; no project or location described.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "howard-forman",
+   "name": "Howard Forman, MD, MBA, FACR",
+   "decision": "exclude",
+   "reason": "Only 'Global Health' checkbox; bio is US radiology/'Medicare legislation' policy.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "lauretta-grau",
+   "name": "Lauretta Grau, PhD",
+   "decision": "include",
+   "reason": "HIV/hepatitis prevention with 'syringe services programs ... in the U.S., Russia, Vietnam, and Ecuador'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "dini-harsono",
+   "name": "Dini Harsono, MSc",
+   "decision": "include",
+   "reason": "Coordinates 'international research programs, the Yale Global HIV/AIDS Research Network' and prior HIV/addiction work in Indonesia.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "teresa-hartnett",
+   "name": "Teresa Hartnett, EdD, MPA",
+   "decision": "exclude",
+   "reason": "Finance administrator; 'researching educational issues in Sub-Saharan Africa' at World Bank is past career, not health.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "james-hassell",
+   "name": "James Hassell",
+   "decision": "include",
+   "reason": "'disease transmission between wildlife, livestock and humans in natural and urban settings in Africa'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "caitlin-howarth",
+   "name": "Caitlin Howarth",
+   "decision": "include",
+   "reason": "'remote support for civilian protection and accountability in Sudan and Ukraine' (humanitarian conflict research).",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "edward-kaplan",
+   "name": "Edward Kaplan, PhD",
+   "decision": "exclude",
+   "reason": "Only foreign signal is counterterror modeling of 'suicide bombings in Israel' (high-income); HIV work is 'New Haven's needle exchange'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "chandra-kelsey",
+   "name": "Chandra Kelsey, MPH, CHES",
+   "decision": "exclude",
+   "reason": "Thailand mentioned only as 'traveling to Thailand to visit her family'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "harlan-krumholz",
+   "name": "Harlan Krumholz, MD, SM",
+   "decision": "include",
+   "reason": "'collaborative efforts to develop a national cardiovascular research network' in China.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "qing-lan",
+   "name": "Qing Lan, MD, PhD",
+   "decision": "include",
+   "reason": "'indoor air pollution and gene polymorphisms for lung cancer risk in Xuanwei, China'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "maryalice-lee",
+   "name": "Mary Alice Lee, MSN, PhD",
+   "decision": "include",
+   "reason": "'worked with colleagues in Bhutan ... to strengthen health research capacity'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "zeyan-liew",
+   "name": "Zeyan Liew, PhD, MPH",
+   "decision": "exclude",
+   "reason": "Only 'Global Health' checkbox; bio describes NIH-funded fetal exposure studies with no LMIC setting.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "claire-masters",
+   "name": "Claire Masters, MS, PMP",
+   "decision": "exclude",
+   "reason": "Staff role with interest checkboxes only; no bio or project described.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "zahirah-mcnatt",
+   "name": "Zahirah McNatt",
+   "decision": "include",
+   "reason": "'impact of host-country healthcare policy on Syrian refugees ... in Jordan'; Ethiopia hospital quality work.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "mehul-mehta",
+   "name": "Mehul Mehta",
+   "decision": "include",
+   "reason": "'establishing critical genomic sequencing capacity in Mumbai' during Delta outbreak; work in 33 countries.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "catherine-mwai",
+   "name": "Catherine Mwai",
+   "decision": "include",
+   "reason": "Postgraduate role but 'led an inaugural cancer care assessment in Somaliland (Northern Somalia)'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "adrianne-nelson",
+   "name": "A. Katrina Nelson, PhD, MPH, MSc",
+   "decision": "include",
+   "reason": "'two community-based early child interventions in Lima, Peru' and dissertation research in the Dominican Republic.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "ingrid-nembhard",
+   "name": "Ingrid Nembhard, PhD, MS",
+   "decision": "exclude",
+   "reason": "US hospital quality research ('evidence-based practices in U.S. hospitals'); UK locations high-income.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "jeanbosco-ouedraogo",
+   "name": "Jean Bosco Ouedraogo",
+   "decision": "include",
+   "reason": "'PI of many ongoing clinical trials and vaccine trials in the region of Bobo-Dioulasso, Burkina Faso'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "harsh-parikh",
+   "name": "Harsh Parikh",
+   "decision": "exclude",
+   "reason": "Only interest checkboxes ('Global Health', 'India'); bio describes generic ML causal-inference methods with no setting.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "peter-peduzzi",
+   "name": "Peter Peduzzi, PhD",
+   "decision": "exclude",
+   "reason": "Trials were 'tri-national collaboration among the VA, UK Medical Research Council and the Canadian Institutes' - high-income.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "luis-toropolo",
+   "name": "Luis Miguel Toro Polo, MD",
+   "decision": "include",
+   "reason": "'research focuses on ... engagement in antiretroviral therapy among adults newly diagnosed with HIV in Peru'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "nathaniel-raymond",
+   "name": "Nathaniel Raymond",
+   "decision": "include",
+   "reason": "'health implications of forced displacement' and satellite documentation of 'attacks on civilians in Sudan and South Sudan'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "tormod-rogne",
+   "name": "Tormod Rogne, MD, PhD",
+   "decision": "exclude",
+   "reason": "Research collaborations in Norway ('Norwegian Institute of Public Health') - high-income; Global Health checkbox only.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "eman-salih",
+   "name": "Eman Salih",
+   "decision": "include",
+   "reason": "'research on chronic diseases, health system strengthening'; 'Sudan COVID-19 Emergency Response Project'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "peter-salovey",
+   "name": "Peter Salovey, PhD",
+   "decision": "exclude",
+   "reason": "'amplifying Yale's partnerships in Africa, Asia' is a university-president administrative role, not research.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "tyler-sharp",
+   "name": "Tyler Sharp, PhD",
+   "decision": "exclude",
+   "reason": "Work was at 'CDC Dengue Branch in San Juan, Puerto Rico' (US territory); Japan was graduate training.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "xiaoming-shi",
+   "name": "Xiaoming Shi",
+   "decision": "include",
+   "reason": "'assessing the acute health risks of air pollution in China' (China CDC).",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "a-shrestha",
+   "name": "Archana Shrestha, PhD",
+   "decision": "include",
+   "reason": "'Community Health Worker-led Hypertension Prevention and Control in Nepal'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "richard-skolnik",
+   "name": "Richard Skolnik, BA, MPA",
+   "decision": "include",
+   "reason": "World Bank health work 'in low-income countries in sub-Saharan Africa and South Asia'; PEPFAR in Botswana, Nigeria, Tanzania.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "nikolaos-thomaidis",
+   "name": "Nikolaos Thomaidis",
+   "decision": "exclude",
+   "reason": "Research is Greek/European wastewater monitoring; China is a 'Visiting Professor' title.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "shiyi-wang",
+   "name": "Shi-Yi Wang, MD, PhD",
+   "decision": "exclude",
+   "reason": "Only 'Global Health' checkbox; bio is US breast cancer/end-of-life outcomes research.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "joshua-warren",
+   "name": "Joshua Warren, PhD",
+   "decision": "exclude",
+   "reason": "Only 'Global Health' checkbox; bio describes Bayesian spatial methods with no LMIC setting.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "catherine-yeckel",
+   "name": "Catherine Yeckel, PhD",
+   "decision": "exclude",
+   "reason": "Activities in Romania ('arsenic in drinking water', low birth weight) - Romania is a World Bank high-income EU country; borderline.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "kaakpema-yelpaala",
+   "name": "Kaakpema \"KP\" Yelpaala",
+   "decision": "include",
+   "reason": "'access.mobile International ... digital health solutions ... across several African countries'.",
+   "reviewed": "2026-10-25"
+  },
+  {
+   "slug": "dawn-zimmerman",
+   "name": "Dawn Zimmerman",
+   "decision": "include",
+   "reason": "'global lead for the USAID Emerging Pandemic Threats PREDICT program in Kenya'.",
+   "reviewed": "2026-10-25"
+  }
+ ]
+}

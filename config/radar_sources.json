@@ -1,0 +1,451 @@
+{
+  "_comment": "Global Health Radar source registry. access_method: api | rss | html_listing | page_monitor | manual. Official APIs/feeds are preferred; page_monitor only detects that a page changed and queues it for human review (no fields are extracted). manual = no automated access (blocked, login, or invitation-only). Checked 2026-10-25.",
+  "user_agent": "YIGH-Radar/1.0 (Yale Institute for Global Health; research use)",
+  "sources": [
+    {
+      "id": "grants-gov",
+      "name": "Grants.gov",
+      "funder": null,
+      "official_url": "https://www.grants.gov",
+      "access_method": "api",
+      "collector": "grants_gov",
+      "endpoint": "https://api.grants.gov/v1/api/search2",
+      "detail_endpoint": "https://api.grants.gov/v1/api/fetchOpportunity",
+      "enabled": true,
+      "min_interval_seconds": 1.0,
+      "covers": "All US federal opportunities: NIH (incl. Fogarty), CDC, State Dept Bureau of Global Health Security & Diplomacy, USDA, NSF, etc.",
+      "notes": "Official public REST API (no key). Searched with the YIGH priority query sets; details verified with fetchOpportunity. robots.txt not applicable to the API; we still rate-limit to 1 request/second."
+    },
+    {
+      "id": "nih-guide-rss",
+      "name": "NIH Guide for Grants and Contracts",
+      "funder": "nih",
+      "official_url": "https://grants.nih.gov/funding/nih-guide-for-grants-and-contracts",
+      "access_method": "rss",
+      "collector": "nih_rss",
+      "endpoint": "https://grants.nih.gov/grants/guide/newsfeed/fundingopps.xml",
+      "enabled": true,
+      "min_interval_seconds": 1.0,
+      "covers": "Newly published NIH NOFOs (RFA, PAR, PA) and notices.",
+      "notes": "Official RSS feed. NOFO numbers are looked up on Grants.gov for structured deadline/amount/eligibility; RSS-only items are flagged for review."
+    },
+    {
+      "id": "idrc",
+      "name": "IDRC funding calls",
+      "funder": "idrc",
+      "official_url": "https://idrc-crdi.ca/en/funding",
+      "access_method": "html_listing",
+      "collector": "html_listing",
+      "endpoint": "https://idrc-crdi.ca/en/funding",
+      "link_pattern": "^/en/funding/(?!applying-funding|funding-faq)[a-z0-9-]+$",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "No public API or feed found. Server-rendered listing; robots.txt allows /en/funding. Details are extracted from each call's official page and always flagged for review."
+    },
+    {
+      "id": "wellcome",
+      "name": "Wellcome funding schemes",
+      "funder": "wellcome",
+      "official_url": "https://wellcome.org/research-funding/schemes",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://wellcome.org/research-funding/schemes",
+      "enabled": true,
+      "min_interval_seconds": 10.0,
+      "notes": "No public API/feed. Listing is rendered client-side, so fields can't be read reliably; changes to the page are queued for manual review. robots.txt Crawl-delay: 10 is honoured."
+    },
+    {
+      "id": "gates-grand-challenges",
+      "name": "Grand Challenges grant opportunities (Gates Foundation & partners)",
+      "funder": "gates",
+      "official_url": "https://www.grandchallenges.org/grant-opportunities",
+      "access_method": "html_listing",
+      "collector": "grand_challenges",
+      "endpoint": "https://www.grandchallenges.org/grant-opportunities",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Server-rendered listing of Grand Challenges initiatives (Gates Foundation and partners) with status and description per call. Replaces the client-rendered gcgh.grandchallenges.org page. robots.txt allows all."
+    },
+    {
+      "id": "grand-challenges-canada",
+      "name": "Grand Challenges Canada",
+      "funder": "grand-challenges-canada",
+      "official_url": "https://www.grandchallenges.ca/funding-opportunities/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.grandchallenges.ca/funding-opportunities/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Client-rendered listing; monitored for changes."
+    },
+    {
+      "id": "fogarty",
+      "name": "Fogarty International Center funding",
+      "funder": "nih-fic",
+      "official_url": "https://www.fic.nih.gov/Funding/Pages/Fogarty-Funding-Opps.aspx",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.fic.nih.gov/Funding/Pages/Fogarty-Funding-Opps.aspx",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Fogarty NOFOs are collected via Grants.gov; this page is monitored for programme announcements not yet posted there."
+    },
+    {
+      "id": "edctp3",
+      "name": "EDCTP3 Global Health Partnership",
+      "funder": "edctp",
+      "official_url": "https://www.global-health-edctp3.europa.eu/funding",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.global-health-edctp3.europa.eu/funding",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Calls are published on the EU Funding & Tenders portal, which has a search API; not yet enabled until its terms are reviewed."
+    },
+    {
+      "id": "rockefeller",
+      "name": "Rockefeller Foundation grants",
+      "funder": "rockefeller",
+      "official_url": "https://www.rockefellerfoundation.org/rfps/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.rockefellerfoundation.org/rfps/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Requests for proposals are posted on /rfps/ as PDF documents, so the page is monitored and each change queued for review. The site's RSS feed carries articles, not calls, so it is not used for discovery. Most grants are by invitation."
+    },
+    {
+      "id": "gates-foundation",
+      "name": "Gates Foundation",
+      "funder": "gates",
+      "official_url": "https://www.gatesfoundation.org",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "No public open-call listing: gatesfoundation.org's former grant-opportunities page returns 404 and most grants are by invitation. Open calls are collected through Grand Challenges (gates-grand-challenges)."
+    },
+    {
+      "id": "coefficient-giving",
+      "name": "Coefficient Giving (formerly Open Philanthropy)",
+      "funder": "coefficient-giving",
+      "official_url": "https://coefficientgiving.org/funds/",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Every URL (funds page, robots.txt, RSS, sitemap; also openphilanthropy.org) returns HTTP 403 to automated requests and to fetch tools (checked 2026-10-26); not bypassed. Third-party listings (not verified) mention: the Science & Global Health R&D fund (described as rolling), and RFPs on global health in an era of transformative AI (closed 21 Aug 2026), Launchpad Funds (EOIs closed 2 Oct 2026) and global lead poisoning research (closed 2 Aug 2026). Check https://coefficientgiving.org/funds/ manually in a browser before relying on any of these."
+    },
+    {
+      "id": "nihr",
+      "name": "NIHR Global Health Research",
+      "funder": "nihr",
+      "official_url": "https://www.nihr.ac.uk/research-funding/funding-opportunities",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Returns HTTP 403 to automated requests; not bypassed."
+    },
+    {
+      "id": "unitaid",
+      "name": "Unitaid calls for proposals",
+      "funder": "unitaid",
+      "official_url": "https://unitaid.org/calls-for-proposals/",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Returns HTTP 403 to automated requests; not bypassed."
+    },
+    {
+      "id": "cepi",
+      "name": "CEPI calls for proposals",
+      "funder": "cepi",
+      "official_url": "https://cepi.net",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Calls page URL changed (old URL 404); confirm the current page before enabling a monitor."
+    },
+    {
+      "id": "lever-for-change",
+      "name": "Lever for Change open calls (incl. MacArthur 100&Change)",
+      "funder": "macarthur",
+      "official_url": "https://leverforchange.org/open-calls/",
+      "access_method": "html_listing",
+      "collector": "html_listing",
+      "endpoint": "https://leverforchange.org/open-calls/",
+      "link_pattern": "^/open-calls/(?!page/)[a-z0-9-]+/?$",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Lever for Change (a MacArthur Foundation affiliate) runs big-bet competitions for many donors, including MacArthur's 100&Change. Server-rendered listing; robots.txt has no restrictions. Health-related calls are kept."
+    },
+    {
+      "id": "macarthur-100change",
+      "name": "MacArthur 100&Change timeline",
+      "funder": "macarthur",
+      "official_url": "https://www.macfound.org/programs/awards/100change/timeline",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.macfound.org/programs/awards/100change/timeline",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "100&Change runs as a periodic $100M competition; the timeline page is monitored so the next round's opening is flagged. MacArthur Big Bets (AI Opportunity, Climate Solutions, etc.) are invitation-only. robots.txt disallows only /grants/ and search pages."
+    },
+    {
+      "id": "hewlett",
+      "name": "Hewlett Foundation grantmaking",
+      "funder": "hewlett",
+      "official_url": "https://hewlett.org/how-we-work/grantmaking/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://hewlett.org/how-we-work/grantmaking/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Mostly invitation-only. robots.txt disallows /grants/, so the allowed grantmaking page is monitored. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "packard",
+      "name": "Packard Foundation — for grantseekers",
+      "funder": "packard",
+      "official_url": "https://www.packard.org/grantees/funding-opportunties/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.packard.org/grantees/funding-opportunties/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Dedicated RFP page (server-rendered). On 2026-10-26 it stated: no open RFPs. Mostly invitation-only. Checked 2026-10-26."
+    },
+    {
+      "id": "ford",
+      "name": "Ford Foundation grant opportunities",
+      "funder": "ford",
+      "official_url": "https://www.fordfoundation.org/work/our-grants/grant-opportunities/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.fordfoundation.org/work/our-grants/grant-opportunities/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Server-rendered 'Current Opportunities' section; on 2026-10-26 it stated there are currently no public grant opportunities. Most grants are identified by the foundation; no unsolicited proposals."
+    },
+    {
+      "id": "bloomberg",
+      "name": "Bloomberg Philanthropies — public health",
+      "funder": "bloomberg",
+      "official_url": "https://www.bloomberg.org/public-health/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.bloomberg.org/public-health/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Partnership-based; monitored for public announcements. The old grant-opportunities URL returns 404. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "chan-zuckerberg",
+      "name": "Chan Zuckerberg Initiative — science",
+      "funder": "chan-zuckerberg",
+      "official_url": "https://chanzuckerberg.com/science/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://chanzuckerberg.com/science/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "RFAs are announced from the science pages (the old /rfa/ URL returns 404); page is client-rendered, so it is monitored. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "novo-nordisk",
+      "name": "Novo Nordisk Foundation grants",
+      "funder": "novo-nordisk",
+      "official_url": "https://novonordiskfonden.dk/en/grants/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://novonordiskfonden.dk/en/grants/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Open calls (incl. Global Health) are listed here but rendered client-side, so the page is monitored. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "rwjf",
+      "name": "Robert Wood Johnson Foundation — active funding opportunities",
+      "funder": "rwjf",
+      "official_url": "https://www.rwjf.org/en/grants/active-funding-opportunities.html",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.rwjf.org/en/grants/active-funding-opportunities.html",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "US-focused; listing is client-rendered, so it is monitored. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "conrad-hilton",
+      "name": "Conrad N. Hilton Foundation grants",
+      "funder": "conrad-hilton",
+      "official_url": "https://www.hiltonfoundation.org/grants",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.hiltonfoundation.org/grants",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Mostly invitation-only. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "hhmi",
+      "name": "HHMI open competitions",
+      "funder": "hhmi",
+      "official_url": "https://www.hhmi.org/programs/open-competitions",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.hhmi.org/programs/open-competitions",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Investigator and fellowship competitions. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "doris-duke",
+      "name": "Doris Duke Foundation — medical research",
+      "funder": "doris-duke",
+      "official_url": "https://www.dorisduke.org/grants",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.dorisduke.org/grants",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "'Open grant competitions' list with deadlines (server-rendered). Accepts some unsolicited proposals via letter of inquiry. Checked 2026-10-26."
+    },
+    {
+      "id": "google-org",
+      "name": "Google.org opportunities",
+      "funder": "google-org",
+      "official_url": "https://www.google.org/opportunities/",
+      "access_method": "manual",
+      "collector": null,
+      "endpoint": "https://www.google.org/opportunities/",
+      "enabled": false,
+      "min_interval_seconds": 5.0,
+      "notes": "Page renders no content without JavaScript, so a change monitor could never detect anything. Check https://www.google.org/opportunities/ manually. Checked 2026-10-26."
+    },
+    {
+      "id": "who-tdr",
+      "name": "WHO/TDR grants",
+      "funder": "who-tdr",
+      "official_url": "https://tdr.who.int/grants",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://tdr.who.int/grants",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Implementation-research grants and training calls for LMIC researchers; listing is client-rendered. Checked 2026-10-26. robots.txt allows this page."
+    },
+    {
+      "id": "gavi",
+      "name": "Gavi — work with us",
+      "funder": "gavi",
+      "official_url": "https://www.gavi.org/about-us/work-us/rfps-eois-and-consulting-opportunities",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.gavi.org/about-us/work-us/rfps-eois-and-consulting-opportunities",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Gavi's RFPs, expressions of interest and consulting opportunities page. Checked 2026-10-26."
+    },
+    {
+      "id": "global-fund",
+      "name": "Global Fund business opportunities",
+      "funder": "global-fund",
+      "official_url": "https://www.theglobalfund.org/md/en/business-opportunities/",
+      "access_method": "page_monitor",
+      "collector": "page_monitor",
+      "endpoint": "https://www.theglobalfund.org/md/en/business-opportunities/",
+      "enabled": true,
+      "min_interval_seconds": 5.0,
+      "notes": "Official Markdown version of the page. Mostly procurement tenders for the Geneva secretariat; research usually happens through country grants. Checked 2026-10-26."
+    },
+    {
+      "id": "skoll",
+      "name": "Skoll Foundation awards",
+      "funder": "skoll",
+      "official_url": "https://skoll.org/about/skoll-awards/",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "robots.txt disallows automated access to this page; awards are by nomination. Check manually. Checked 2026-10-26."
+    },
+    {
+      "id": "pfizer-foundation",
+      "name": "Pfizer Foundation",
+      "funder": "pfizer-foundation",
+      "official_url": "https://www.pfizer.com/about/responsibility/pfizer-foundation",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Returns HTTP 403 to automated requests; grants are by invitation. Not bypassed. Checked 2026-10-26."
+    },
+    {
+      "id": "jnj-foundation",
+      "name": "Johnson & Johnson Foundation",
+      "funder": "jnj-foundation",
+      "official_url": "https://www.jnj.com/johnson-johnson-foundation",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Page is an empty client-side shell for automated requests; grants are by invitation. Check manually. Checked 2026-10-26."
+    },
+    {
+      "id": "ciff",
+      "name": "Children's Investment Fund Foundation",
+      "funder": "ciff",
+      "official_url": "https://ciff.org/",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "No open-call page; grants are by invitation. Check manually. Checked 2026-10-26."
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard Foundation",
+      "funder": "mastercard",
+      "official_url": "https://mastercardfdn.org/en/what-we-do/",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Partnership-based; no calls-for-proposals page (that URL returns 404). Check manually. Checked 2026-10-26."
+    },
+    {
+      "id": "aga-khan",
+      "name": "Aga Khan Foundation / AKDN",
+      "funder": "aga-khan",
+      "official_url": "https://the.akdn/en/how-we-work/our-agencies/aga-khan-foundation",
+      "access_method": "manual",
+      "collector": null,
+      "enabled": false,
+      "notes": "Partnership-based; no open-call listing. Check manually. Checked 2026-10-26."
+    }
+  ],
+  "priority_queries": {
+    "climate-health": [
+      "climate change health",
+      "planetary health",
+      "climate health research",
+      "extreme heat health"
+    ],
+    "digital-health-ai": [
+      "digital health",
+      "artificial intelligence health",
+      "mobile health",
+      "health informatics"
+    ],
+    "health-diplomacy-security": [
+      "global health security",
+      "pandemic preparedness",
+      "epidemic preparedness",
+      "humanitarian health"
+    ],
+    "health-sovereignty": [
+      "health systems strengthening",
+      "research capacity building",
+      "global health research training",
+      "implementation science low and middle income"
+    ]
+  },
+  "baseline_queries": [
+    "global health",
+    "low- and middle-income countries"
+  ]
+}

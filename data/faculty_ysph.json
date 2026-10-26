@@ -1,0 +1,2152 @@
+{
+  "source": "https://ysph.yale.edu/school-of-public-health-faculty/",
+  "scraped_on": "2026-10-25",
+  "checked": 607,
+  "errors": 0,
+  "count": 30,
+  "faculty": [
+    {
+      "name": "Jasmine Abrams",
+      "title": "Research Scientist in Public Health (Social and Behavioral Sciences)",
+      "school": "Public Health",
+      "department": "Social and Behavioral Sciences",
+      "appointments": [
+        {
+          "academic_unit": "Social and Behavioral Sciences",
+          "title": "Research Scientist",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Brazil",
+        "Haiti"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Jasmine Abrams is an international behavioral research scientist. She is also a Presidential Research Fellow at Yale University School of Public Health. Dr. Abrams has 15 years of experience conducting health equity research with community-based organizations to understand and promote sexual and maternal health among Black women across the African Diaspora, including women in the US, Haiti, Dominican Republic, and Brazil. With a multimillion dollar funding portfolio, Dr. Abrams has secured numerous federal funding awards to support her work, including funding from the National Heart, Lung, and Blood Institute, National Institute of Minority Health Disparities, National Institutes of Mental Health, and Fogarty International Center. An engaging and highly sought-after speaker, Dr. Abrams has delivered presentations about promoting global health equity, intersectionality in public health research, achieving success in academia, and academic entrepreneurship to numerous universities and private organizations around the world. As a serial entrepreneur, Dr. Abrams is co-founder of Research Unlimited and founder of the Thrive Institute for Professional Development, a science-driven company focused on inspiring success and wellness among researchers via transformative training and international retreat experiences. Dr. Abrams earned a PhD in Health Psychology from Virginia Commonwealth University, a Master of Science in Experimental Psychology (Health Concentration) from Virginia Commonwealth University, and a Bachelor of Science in Psychology from Virginia State University, a Historically Black College/University (HBCU).",
+      "focus_areas": [
+        "Global Health",
+        "Health Equity",
+        "Maternal Health Services",
+        "Reproductive Health",
+        "Women's Health"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Global Health",
+          "Health Equity",
+          "Maternal Health Services",
+          "Reproductive Health",
+          "Women's Health"
+        ]
+      },
+      "email": "jasmine.abrams@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Ijeoma Opara, PhD, LMSW, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/ijeoma-opara/"
+        },
+        {
+          "name": "Trace Kershaw, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/trace-kershaw/"
+        },
+        {
+          "name": "Emmanuella Asabor",
+          "profile_url": null
+        },
+        {
+          "name": "Kathleen O'Connor Duffany, PhD, MEd",
+          "profile_url": "https://ysph.yale.edu/profile/kathleen-oconnorduffany/"
+        },
+        {
+          "name": "Sofia I. Morales, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/sofia-morales/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Social and Behavioral Sciences",
+          "url": "https://ysph.yale.edu/research/department-research/social-and-behavioral-sciences/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/jasmine-abrams/",
+      "inclusion_reasons": [
+        "Bio describes research in: Brazil, Dominican Republic, Haiti",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Nedghie Adrien, MPH, PhD",
+      "title": "Assistant Professor of Epidemiology (Chronic Diseases)",
+      "school": "Public Health",
+      "department": "Chronic Disease Epidemiology",
+      "appointments": [
+        {
+          "academic_unit": "Chronic Disease Epidemiology",
+          "title": "Assistant Professor",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "West Africa",
+        "Senegal"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Nedghie Adrien, PhD, MPH (she/her) is an Assistant Professor at the Yale School of Public Health. Dr. Adrien earned her BA in Clinical Psychology from Tufts University and her MPH in Global Epidemiology from the Rollins School of Public Health at Emory University. She received her PhD in epidemiology from the Boston University School of Public Health and completed a postdoctoral fellowship in the CAUSALab at the Harvard T.H. Chan School of Public Health (HSPH) supported by the Training Program in Reproductive, Perinatal, and Pediatric (RPP) Life Course Epidemiology (T32HD104612). Dr. Adrien is an epidemiologist with training in advanced epidemiologic methods and perinatal epidemiology. Her primary research focuses on the impact of dietary and pharmaceutical exposures during the periconceptional period on pregnancy and fetal outcomes. This research aims to address the paucity of information on the teratogenicity and safety of medications during pregnancy, and inform evidence for decisions around pharmacological treatment, which are currently largely based on perceptions of fetal risks. She has also worked on vaccine studies and implementation of public health interventions. This work includes evaluating infection control practices in healthcare facilities during the 2014 - 2016 Ebola outbreak in West Africa, identifying gaps in the strategy to eliminate yellow fever, designing and implementing research studies to assess the effectiveness of introducing human papilloma virus (HPV) vaccine in routine immunization schedules in Senegal, and collaborating on a study using “real world” data from the COVID-19 US State Policy Database and from Institute of Health Metrics and Evaluation to evaluate mask wearing policies, adherence, and subsequent rates of COVID-19. Dr. Adrien's most recent project focuses on leveraging administrative databases of millions of publicly insured pregnant people to identify individuals living with HIV, describe patterns of utilization of antiretroviral therapies during pregnancy, adherence to clinical guidelines and estimate the risk of congenital anomalies.",
+      "focus_areas": [
+        "Epidemiology Methods",
+        "Perinatal/Prenatal Health",
+        "Pharmacoepidemiology"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Epidemiology Methods",
+          "Perinatal/Prenatal Health",
+          "Pharmacoepidemiology"
+        ]
+      },
+      "email": "nedghie.adrien@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Chronic Disease Epidemiology",
+          "url": "https://ysph.yale.edu/research/department-research/chronic-disease-epidemiology/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/nedghie-adrien/",
+      "inclusion_reasons": [
+        "Bio describes research in: Senegal, West Africa"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Habib Alrahman Alnedari",
+      "title": "Postgraduate Associate",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Postgraduate Associate",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Canada",
+        "Yemen"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Habib Alrahman Alnedari is a Postgraduate Associate at the Yale School of Public Health in the Department of Epidemiology of Microbial Diseases. His work focuses on the intersection of water, sanitation, and hygiene (WASH), public health, and climate change in fragile and conflict-affected settings. Habib brings over a decade of humanitarian experience in Yemen, where he led and contributed to large-scale WASH and public health interventions with Save the Children International and other NGOs in collaboration with partners including OCHA, UNICEF, ECHO, USAID, and Global Affairs Canada (GAC). His work has focused on managing multisectoral, gender-sensitive emergency response, leading to strengthening community, including IDPs', resilience in the face of climate shocks and protracted conflict. He was a Fulbright Scholar/Hubert H. Humphrey Fellow at MIT with academic engagement at Harvard University, where he specialized in climate change mitigation and adaptation, with a focus on urban and environmental planning. He has also worked with CARE USA on Climate Justice initiatives and with the World Bank’s Energy Global Practice on green energy and development projects in the MENA region. At Yale, his research and practice center on understanding how climate risks impact public health and displacement and on advancing integrated, evidence-based solutions that strengthen resilience in vulnerable communities.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "habibalrahman.alnedari@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/habibalrahman-alnedari/",
+      "inclusion_reasons": [
+        "Bio describes research in: Yemen"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Ibrahim Bani, MBBS, PhD, DTM&H",
+      "title": "Associate Professor Adjunct",
+      "school": "Public Health",
+      "department": "Chronic Disease Epidemiology",
+      "appointments": [
+        {
+          "academic_unit": "Chronic Disease Epidemiology",
+          "title": "Associate Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Saudi Arabia",
+        "Iraq",
+        "Sudan"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "IBRAHIM AHMED BANI MD DTM&H PhD FRSPH Dr. Bani is a public health physician by training with over 20 years of experience in International Public Health. His teaching experience is extensive, including faculty appointments as an Assistant and Associate Professor (Community Health) at King Saud University Kingdom of Saudi Arabia (KSA), and as a lecturer at Jazeera Medical School Sudan, which is internationally recognized for its innovative community-based training. During his tenure at those academic institutions, he participated in many national training programs sponsored by WHO, USAID, and national governments of Saudi Arabia and Sudan and Iraq. In addition, he also worked as part-time faculty at the International Health Department at George Washington University, adjunct Associate Professor Family Medicine Department, University of Chicago at Illinois (UIC), and visiting Professor /Community Health at the American University Beirut. Currently Dr. Bani is Bani is Associate Professor College of Medicine, Ajman University, UAE and an Associate Professor (adjunct) at Global Health Department, Rollins School of Public Health Emory University, Atlanta, GA, USA, Adjunct Associate Professor Chronic Disease Epidemiology Department, Yale School of Public Health, USA. Dr. Bani International experience is also extensive, including association with the Micronutrient Initiative (MI), World Bank, WHO, UNICEF, USAID, WFP and UN Humanitarian Mission in Iraq.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": null,
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Chronic Disease Epidemiology",
+          "url": "https://ysph.yale.edu/research/department-research/chronic-disease-epidemiology/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/ibrahim-bani/",
+      "inclusion_reasons": [
+        "Bio describes research in: Iraq, Sudan"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Brigid Cakouros, DrPH, MPH",
+      "title": "Lecturer",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Lecturer",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Liberia",
+        "Africa"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Brigid is a global health researcher and practitioner with more than 15 years of experience working in partnership with global health institutions, with a focus on sub-Saharan Africa. Her work sits at the intersection of health systems strengthening and evidence translation, spanning health system resilience, equity in global health partnerships, and strategic foresight. Her research on donor-recipient power dynamics, conducted through the University of Liberia–Yale BRIDGE-U partnership, was published in BMJ Global Health . As a Science for Development Fellow with USAID’s Bureau for Humanitarian Assistance, she worked on the implementation of localization policy, and she has collaborated with Stellenbosch University’s Centre for Sustainability Transitions on IDRC-funded foresight research on the future of research and development in Africa. Through a joint appointment between the University of Cape Town and UC Berkeley as a GHES fellow, she studied health system resilience during COVID-19. Brigid is currently a Lecturer at both the Yale School of Public Health and UC Berkeley School of Public Health, where she teaches Implementation Science and Global Health Foundations.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "brigid.cakouros@yale.edu",
+      "activities": [
+        {
+          "title": "Using Qualitative Thematic Analysis to Explore Financial Donor and Recipient Collaboration in Liberia",
+          "type": "Lecture",
+          "start": "10/20/2023",
+          "end": "10/20/2023",
+          "locations": [
+            "New Haven, CT, United States"
+          ],
+          "synopsis": null
+        },
+        {
+          "title": "Utilizing Systems Mapping to Identify Points of Leverage for Promoting Equitable Collaboration: A Study of Donor and Recipient Relationships in Liberia",
+          "type": "Poster Presentation",
+          "start": "04/13/2023",
+          "end": "10/16/2023",
+          "locations": [
+            "Washington, DC, United States"
+          ],
+          "synopsis": null
+        },
+        {
+          "title": "Utilizing Systems Mapping to Identify Points of Leverage for Promoting Equitable Collaboration: A Study of Donor and Recipient Relationships in Liberia",
+          "type": "Oral Presentation",
+          "start": "05/25/2023",
+          "end": "05/25/2023",
+          "locations": [
+            "New Haven, CT, United States"
+          ],
+          "synopsis": null
+        }
+      ],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/brigid-cakouros/",
+      "inclusion_reasons": [
+        "Bio describes research in: Africa, Liberia"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Marguerite Callaway, MBA, MS",
+      "title": "Lecturer in Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": "Health Policy & Management",
+      "appointments": [
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Lecturer",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "South Africa",
+        "China"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "A faculty member at the Yale School of Public Health and Foundation for Professional Development in South Africa since 2005, Marguerite Callaway has developed and delivered online and face-to-face leadership development and management training globally. She has collaborated with the YSPH Global Health Leadership Institute’s programs in both China and South Africa. Ms. Callaway’s life’s work has been to understand the conditions that foster leadership effectiveness and organizational success. She’s a recognized expert in leadership development, systems thinking and strategic management and human motivation in work settings. She has served on several company boards, and is a frequent speaker in domestic and international settings. She has written three books and is the Founder/President of Callaway Companies, which includes an international leadership development and management training company, an international management consultancy focused on the healthcare segment, and a multimedia communications production company. Her client roster includes companies in forty-six states in the USA, the UK, four African countries and China.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "marguerite.callaway@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Martha Dale",
+          "profile_url": "https://ysph.yale.edu/profile/martha-dale/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/marguerite-callaway/",
+      "inclusion_reasons": [
+        "Bio describes research in: China, South Africa"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Federico Costa, PhD",
+      "title": "Associate Professor Adjunct of Epidemiology (Microbial Diseases)",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Associate Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Brazil"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Professor Federico Costa is interested in eco-epidemiological drivers of zoonotic diseases in urban environments using intensive field and laboratory data. Current areas of interest include mechanisms involved in the transmission of leptospirosis and the ecological and sociological factors that affect the likelihood of human and animal infection in Brazil and the evaluation of effectiveness of basic sanitation and rodent control based intervention to prevent leptospirosis. Recently, Dr. Costa has coordinated field and hospital based studies in Salvador, Brazil to respond to the recent outbreak of Zika virus infection and Congenital Zika Syndrome.",
+      "focus_areas": [
+        "Brazil",
+        "Dengue Virus",
+        "Epidemiology",
+        "Leptospirosis",
+        "Orthohantavirus",
+        "Global Health",
+        "Zoonotic Diseases",
+        "Health Equity, Disparities, Social Determinants and Justice",
+        "Mosquito-borne Diseases"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Brazil",
+          "Dengue Virus",
+          "Epidemiology",
+          "Leptospirosis",
+          "Orthohantavirus"
+        ],
+        "Public Health Interests": [
+          "Global Health",
+          "Zoonotic Diseases",
+          "Health Equity, Disparities, Social Determinants and Justice",
+          "Mosquito-borne Diseases"
+        ]
+      },
+      "email": "frederico.costa@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Albert Icksang Ko, MD",
+          "profile_url": "https://ysph.yale.edu/profile/albert-ko/"
+        },
+        {
+          "name": "Mitermayer Reis, MD",
+          "profile_url": "https://ysph.yale.edu/profile/mitermayer-reis/"
+        },
+        {
+          "name": "Peter Diggle, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/peter-diggle/"
+        },
+        {
+          "name": "Jamie Childs, ScD",
+          "profile_url": "https://ysph.yale.edu/profile/james-childs/"
+        },
+        {
+          "name": "Michael Kane, PhD, MA, MS",
+          "profile_url": "https://ysph.yale.edu/profile/michael-kane/"
+        },
+        {
+          "name": "Adam V Wisnewski, PhD, D(ABMLI)",
+          "profile_url": "https://medicine.yale.edu/profile/adam-wisnewski/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/frederico-costa/",
+      "inclusion_reasons": [
+        "Bio describes research in: Brazil",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Julio Croda, MD, PhD",
+      "title": "Associate Professor Adjunct",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Associate Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Brazil"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "As an accomplished physician-scientist specializing in infectious diseases, I bring extensive expertise in clinical trials, communicable disease surveillance, and public health emergencies. I hold an MD from the Federal University of Bahia and a PhD from São Paulo University. My career is marked by significant contributions to the epidemiology and vaccinology of tuberculosis, arboviruses, and COVID-19. I am an Associate Professor at the Federal University of Mato Grosso do Sul and the Yale School of Public Health. Additionally, I serve as a Researcher at the Oswaldo Cruz Foundation in Mato Grosso do Sul. I have held numerous leadership positions, including President of Rede-TB, President of the Brazilian Society of Tropical Medicine, and Director of the Department of Immunizations and Communicable Diseases at the Ministry of Health of Brazil. With over five years of experience leading vaccine trials, I have been involved in clinical studies for vaccines targeting COVID-19, dengue, tuberculosis, and chikungunya. My research is funded by the National Institutes of Health (NIH) and Brazilian funding agencies such as CNPq and CAPES. I have published extensively in high-impact journals and actively contribute to multiple technical advisory boards, including the Technical Advisory Chamber for Public Health Emergencies, the Technical Advisory Chamber for Surveillance, Prevention, and Control of Respiratory Viruses, and the Technical Advisory Chamber for Immunizations at the Ministry of Health of Brazil. My work is characterized by a comprehensive approach that combines epidemiology, clinical trials, and programmatic data analysis. I am dedicated to fostering innovation, advancing health equity, and providing accurate public health information to both scientific communities and the broader public. Through my initiatives, I strive to develop impactful, evidence-based strategies to address some of the most pressing global health challenges.",
+      "focus_areas": [
+        "Epidemiology",
+        "Global Health",
+        "Infectious Disease Medicine",
+        "Molecular Epidemiology",
+        "Prisons",
+        "Public Health",
+        "South America",
+        "Tuberculosis",
+        "Disease Transmission",
+        "Emerging Infectious Diseases",
+        "Modeling",
+        "Health Equity, Disparities, Social Determinants and Justice",
+        "COVID-19"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Epidemiology",
+          "Global Health",
+          "Infectious Disease Medicine",
+          "Molecular Epidemiology",
+          "Prisons",
+          "Public Health",
+          "South America",
+          "Tuberculosis"
+        ],
+        "Public Health Interests": [
+          "Disease Transmission",
+          "Emerging Infectious Diseases",
+          "Global Health",
+          "Modeling",
+          "Tuberculosis",
+          "Health Equity, Disparities, Social Determinants and Justice",
+          "COVID-19"
+        ]
+      },
+      "email": "juliocroda@gmail.com",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Albert Icksang Ko, MD",
+          "profile_url": "https://ysph.yale.edu/profile/albert-ko/"
+        },
+        {
+          "name": "Yiran Liu, PhD, MS",
+          "profile_url": "https://medicine.yale.edu/profile/yiran-e-liu/"
+        },
+        {
+          "name": "Ted Cohen, DPH, MD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/theodore-cohen/"
+        },
+        {
+          "name": "Akiko Iwasaki, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/akiko-iwasaki/"
+        },
+        {
+          "name": "Frederick (Rick) Lewis Altice, MD, MA",
+          "profile_url": "https://ysph.yale.edu/profile/frederick-altice/"
+        },
+        {
+          "name": "Joshua Warren, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/joshua-warren/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/julio-croda/",
+      "inclusion_reasons": [
+        "Bio describes research in: Brazil",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Faihaa Dafalla",
+      "title": "Postdoctoral Associate",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Postdoctoral Associate",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Sweden",
+        "Sudan"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Faihaa Dafalla is a physician and public health specialist with extensive experience in health systems strengthening, policy development, and international health. She holds a Clinical Doctorate in Community Medicine (2024), a Master of Science in Public and Tropical Health (2014), and a Postgraduate Certificate in Health Management, Planning, and Policy (2015). Until 2022, Dr. Dafalla served as the Director of Health Planning at the Federal Ministry of Health in Sudan, where she led the development of the National Health Sector Recovery and Reform Strategic Plan. In this role, she collaborated closely with international partners including UNICEF, the World Bank, the European Union, AICS, and UNDP. She was also a member of the national team that adapted the Joint Learning Network's (JLN) Universal Health Coverage Primary Health Care Self-Assessment Tool. Her contributions span several national health initiatives, including the development of Sudan's health financing strategy, the strengthening of primary health care through the family health approach, Health in All Policies (HiAP), and the country's global health strategy. She brings over a decade of experience in project management and technical leadership in areas such as health reform, decentralization, policy analysis, partnership development, and community engagement. Her expertise also includes sexual and reproductive health and rights (SRHR), with a strong focus on equity and post-conflict recovery. Dr. Dafalla has worked with the World Health Organization (WHO) as a national consultant to implement a new model of care in Sudan, emphasizing PHC-oriented systems, universal health coverage (UHC), and health system resilience, particularly in conflict-affected regions such as Darfur. She also led the Project Management Unit at Sudan’s Federal Ministry of Health, managing a $33+ million GAVI Health System Strengthening portfolio over three years. She is an alumna of the Advanced International Training Programme on Sexual and Reproductive Health and Rights (ITP13, 2018) at Lund University, Sweden. She was later selected to serve on the Steering Committee of the Global Academy for SRHR, where she was elected Chair for one term—the second chair since the Academy's inception.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "faihaa.dafalla@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Kaveh Khoshnood, PhD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/kaveh-khoshnood/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "PEACE Lab",
+          "url": "https://ysph.yale.edu/peace/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/faihaa-dafalla/",
+      "inclusion_reasons": [
+        "Bio describes research in: Sudan"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Martha Dale",
+      "title": "Lecturer in Health Policy",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "China"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Martha works with the Yale School of Public Health as a lecturer in health management and as a member of the teaching faculty for the Yale-IMD Hospital Management and Leadership Program based in Beijing, China and New Haven, CT. Ms. Dale most recently has worked at Yale as the director for China programs at the Global Health Leadership Institute (GHLI) of Yale University’s School of Public Health. She had primary responsibility for the Yale-Tsinghua University collaborative with the Goldman Sachs 10,000 Women: Yale-Tsinghua Certificate Program in International Healthcare Management Program. Martha also had been a member of the Leadership Saves Lives project, the Ethiopian Hospital Management Initiative and the Liberian Healthcare Management Program of Yale University and the Clinton Foundation. Prior to her work at Yale, she was the executive director of Leeway, an AIDS-dedicated skilled nursing facility and supportive housing provider. Ms. Dale has also worked at several other Connecticut non-profit organizations, including serving as the executive director of Woodlake at Tolland nursing facility, executive director of Duncaster lifecare community and vice president of Hartford Hospital. She currently serves on the board of Grace Cottage Hospital in Townsend, VT.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "martha.dale@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Marguerite Callaway, MBA, MS",
+          "profile_url": "https://ysph.yale.edu/profile/marguerite-callaway/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Global Health Studies",
+          "url": "https://medicine.yale.edu/yigh/"
+        },
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/martha-dale/",
+      "inclusion_reasons": [
+        "Bio describes research in: China"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Lauretta Grau, PhD",
+      "title": "Research Scientist",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Research Scientist",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Ecuador",
+        "Russia",
+        "Vietnam"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Grau is a clinical psychologist with training in health psychology and expertise in identifying the cognitive and emotional correlates of risk and preventive health behaviors. She has been involved in the fields of HIV and hepatitis prevention research for over two decades during which time she has worked with syringe services programs (SSPs) and community-based organizations in the U.S., Russia, Vietnam, and Ecuador. Dr. Grau has been involved in multisite, longitudinal evaluations of SSPs and public health interventions implemented through SSPs and emergency departments. She has experience working with sexually active adolescents, minority and substance-using populations, and people who inject drugs and their families. More recently, her research interests have included qualitative and mixed methods studies of the HIV Care Continuum, technology-based interventions to assist in smoking cessation and substance abuse treatment, and the epidemiology of opioid-involved fatalities. She has also led qualitative studies on such topics as the quality of healthcare delivery, repeat medical hospitalizations, and access to medication-assisted treatment for opioid use disorder.",
+      "focus_areas": [
+        "Attitude",
+        "HIV",
+        "Psychiatry and Psychology",
+        "Behavioral Health",
+        "Hepatitis",
+        "HIV/AIDS",
+        "Infectious Diseases",
+        "Substance Use, Addiction",
+        "Health Equity, Disparities, Social Determinants and Justice"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Attitude",
+          "HIV",
+          "Psychiatry and Psychology"
+        ],
+        "Public Health Interests": [
+          "Behavioral Health",
+          "Hepatitis",
+          "HIV/AIDS",
+          "Infectious Diseases",
+          "Substance Use, Addiction",
+          "Health Equity, Disparities, Social Determinants and Justice"
+        ]
+      },
+      "email": "lauretta.grau@yale.edu",
+      "activities": [
+        {
+          "title": "Developing a Comprehensive Model of the HIV Care Continuum in Nine Small Cities in Connecticut, Massachusetts, and Rhode Island",
+          "type": "Other",
+          "start": "06/03/2015",
+          "end": "06/03/2015",
+          "locations": [
+            "Sturbridge, MA, United States"
+          ],
+          "synopsis": "Presentation of the study design and opportunities for regional collaboration"
+        },
+        {
+          "title": "Opioid-Involved Fatalities among Connecticut Residents: 2009 - 2014",
+          "type": "Oral Presentation",
+          "start": "05/13/2015",
+          "end": "05/13/2015",
+          "locations": [
+            "New Haven, CT, United States"
+          ],
+          "synopsis": "Presentation of preliminary of epidemiologic and geospatial analyses and comparison of heroin- and pharmaceutical opioid-involved deaths over the six-year period."
+        },
+        {
+          "title": "The SHERPA Project: Findings on Injection Drug Use in the Suburbs of Southwestern Connecticut",
+          "type": "Lecture",
+          "start": "03/29/2012",
+          "end": "03/29/2012",
+          "locations": [
+            "El Paso, TX, United States"
+          ],
+          "synopsis": "Injection drug use and opioid abuse is on the rise in suburban areas of the United States. This interdisciplinary, longitudinal study is the first of its kind to systematically examine this population regarding their HIV, hepatitis B and C prevalences, frequency of risk behaviors, and involvement with the criminal justice and healthcare systems. Dr. Grau will present preliminary findings from the quantitative, serological, and qualitative data and discuss the future directions on this project. In addition, the study is affiliated with the NIMH-sponsored AIDS center, the Center for Interdisciplinary Research on AIDS (CIRA) at the Yale School of Public Health, and Dr. Grau will provide a brief history of the center and their process in becoming an AIDS center."
+        },
+        {
+          "title": "Narrative Data Mining Workshop: Applying a Transdisciplinary Framework",
+          "type": "Oral Presentation",
+          "start": "09/29/2010",
+          "end": "10/02/2010",
+          "locations": [
+            "New Orleans, Serbia"
+          ],
+          "synopsis": "In conjunction with Drs. Heimer, Barbour, and Palacios, the group presented an overview of narrative text analysis versus traditional qualitative analytic methods that use NVivo and atlas.ti software programs."
+        },
+        {
+          "title": "Qualitative Interviewing Skills and Public Health Research",
+          "type": "Lecture",
+          "start": "05/14/2009",
+          "end": "05/14/2009",
+          "locations": [
+            "Capitol Hill, Saipan, Northern Mariana Islands"
+          ],
+          "synopsis": "The lecture identified key interviewing skills and techniques as well as a discussion about the common issues and pitfalls that can occur during interviews."
+        }
+      ],
+      "yale_coauthors": [
+        {
+          "name": "Robert Heimer, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/robert-heimer/"
+        },
+        {
+          "name": "Benjamin Howell, MD, MPH, MHS",
+          "profile_url": "https://medicine.yale.edu/profile/benjamin-howell/"
+        },
+        {
+          "name": "David Fiellin, MD",
+          "profile_url": "https://ysph.yale.edu/profile/david-fiellin/"
+        },
+        {
+          "name": "Anne C. Black, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/anne-black/"
+        },
+        {
+          "name": "Gail D'Onofrio, MD, MS",
+          "profile_url": "https://ysph.yale.edu/profile/gail-donofrio/"
+        },
+        {
+          "name": "Frank Buono, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/frank-buono/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/lauretta-grau/",
+      "inclusion_reasons": [
+        "Bio describes research in: Ecuador, Russia, Vietnam"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Dini Harsono, MSc",
+      "title": "Program Director, Health Services and Global Research",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Indonesia"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dini Harsono is a program director at the Center for Interdisciplinary Research on AIDS (CIRA) , Yale School of Public Health, and a researcher in the Partnerships in HIV and Substance Use Research with Community-Informed eXpertise (PHOENIX) Lab , Department of Internal Medicine, Yale School of Medicine. She oversees the coordination of CIRA's programs that support HIV health services and global research, including the Clinical and Health Services Research Core, international research programs, the Yale Global HIV/AIDS Research Network, and the HIV, mobility, and displacement initiatives. As a researcher, she applies mixed methods approaches in support of studies and clinical trials that aim to improve outcomes across the HIV and addiction care cascades. Before coming to Yale, Dini held research and programmatic roles in the UK and Indonesia working in the fields of addiction, mental health, and HIV prevention. She earned her MSc in Psychological Approaches to Health at University of Leeds, and Bachelor in Psychology at Universitas Indonesia.",
+      "focus_areas": [
+        "Community Health Services",
+        "Ethics",
+        "Global Health",
+        "Health Care Quality, Access, and Evaluation",
+        "HIV",
+        "Program Evaluation",
+        "Public Health",
+        "Telemedicine",
+        "Behavioral Health",
+        "HIV/AIDS",
+        "Mental Health",
+        "Substance Use, Addiction",
+        "Conflict and Health",
+        "Qualitative Methods",
+        "COVID-19"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Community Health Services",
+          "Ethics",
+          "Global Health",
+          "Health Care Quality, Access, and Evaluation",
+          "HIV",
+          "Program Evaluation",
+          "Public Health",
+          "Telemedicine"
+        ],
+        "Public Health Interests": [
+          "Behavioral Health",
+          "Ethics",
+          "Global Health",
+          "HIV/AIDS",
+          "Mental Health",
+          "Substance Use, Addiction",
+          "Conflict and Health",
+          "Qualitative Methods",
+          "COVID-19"
+        ]
+      },
+      "email": "dini.harsono@yale.edu",
+      "activities": [
+        {
+          "title": "International AIDS Society",
+          "type": "2019 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        }
+      ],
+      "yale_coauthors": [
+        {
+          "name": "E. Jennifer Edelman, MD, MHS, AAHIVS",
+          "profile_url": "https://ysph.yale.edu/profile/eva-edelman/"
+        },
+        {
+          "name": "Lydia Aoun-Barakat, MD",
+          "profile_url": "https://medicine.yale.edu/profile/lydia-barakat/"
+        },
+        {
+          "name": "June-Marie Weiss",
+          "profile_url": "https://medicine.yale.edu/profile/junemarie-weiss/"
+        },
+        {
+          "name": "Kate Nyhan, MLS",
+          "profile_url": "https://ysph.yale.edu/profile/kate-nyhan/"
+        },
+        {
+          "name": "Kaveh Khoshnood, PhD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/kaveh-khoshnood/"
+        },
+        {
+          "name": "Merceditas Villanueva, MD",
+          "profile_url": "https://medicine.yale.edu/profile/merceditas-villanueva/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Social and Behavioral Sciences",
+          "url": "https://ysph.yale.edu/research/department-research/social-and-behavioral-sciences/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/dini-harsono/",
+      "inclusion_reasons": [
+        "Bio describes research in: Indonesia",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "James Hassell",
+      "title": "Assistant Professor Adjunct of Epidemiology (Microbial Diseases)",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Assistant Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Africa"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "James Hassell BVetMed MSc PhD is an epidemiologist and wildlife veterinarian with the Smithsonian's Global Health Program. His research interests focus on disease transmission between wildlife, livestock and humans in natural and urban settings in Africa, and using technological advances (both geospatial and diagnostic) to determine how transfer of pathogens between species is determined by the ecosystems they inhabit. Such evidence is crucial to securing healthier and more resilient populations of humans and animals. As a conservationist, he also works to improve the health of endangered species (including rhino and Old World vultures) and support African veterinarians through training programs in conservation medicine. He is currently enrolled in a European College of Zoological Medicine residency program in the specialty of Wildlife Population Health.",
+      "focus_areas": [
+        "Zoonotic Diseases"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Zoonotic Diseases"
+        ]
+      },
+      "email": "james.hassell@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Dawn Zimmerman",
+          "profile_url": "https://ysph.yale.edu/profile/dawn-zimmerman/"
+        },
+        {
+          "name": "Colin J. Carlson, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/colin-carlson/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/james-hassell/",
+      "inclusion_reasons": [
+        "Bio describes research in: Africa"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Caitlin Howarth",
+      "title": "Project Director, Conflict Analytics Programs",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Ukraine",
+        "Sudan"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Caitlin Howarth is Director of Conflict Analytics at Yale Humanitarian Research Lab where leads day-to-day operations on remote support for civilian protection and accountability in Sudan and Ukraine. From 2016-2021, Howarth worked with the Signal Program on Human Security and Technology at Harvard Humanitarian Initiative (HHI), where she specialized in atrocity warning and led research in applied IHL and humanitarian ethics, teledemography, and remote sensing. She co-authored The Signal Code: A Human Rights-Based Approach to Information During Crisis. Howarth was formerly Reports Manager for the Satellite Sentinel Project at HHI from 2011-2012. A Washington, DC native, she holds a BA in Political and Social Thought from the University of Virginia and a MPP in International & Global Affairs from the Harvard Kennedy School.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "caitlin.howarth@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Danielle Poole, ScD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/danielle-poole/"
+        },
+        {
+          "name": "Kaveh Khoshnood, PhD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/kaveh-khoshnood/"
+        },
+        {
+          "name": "Nathaniel Raymond",
+          "profile_url": "https://ysph.yale.edu/profile/nathaniel-raymond/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Humanitarian Research Lab",
+          "url": "https://ysph.yale.edu/hrl/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/caitlin-howarth/",
+      "inclusion_reasons": [
+        "Bio describes research in: Sudan, Ukraine"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Harlan Krumholz, MD, SM",
+      "title": null,
+      "school": "Public Health",
+      "department": "Cardiovascular Medicine",
+      "appointments": [
+        {
+          "academic_unit": "Cardiovascular Medicine",
+          "title": "Professor",
+          "type": "Primary"
+        },
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Professor",
+          "type": "Secondary"
+        },
+        {
+          "academic_unit": "School of Management",
+          "title": "Professor",
+          "type": "Secondary"
+        },
+        {
+          "academic_unit": "Statistics",
+          "title": "Professor",
+          "type": "Secondary"
+        }
+      ],
+      "geographic_focus": [
+        "China"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Harlan Krumholz is a cardiologist and scientist at Yale University and Yale New Haven Hospital. He is the Harold H. Hines, Jr. Professor of Medicine. He is a leading expert in the science to improve the quality and efficiency of care, eliminate disparities and promote equity, improve integrity and transparency in medical research, engage patients in their care, and avoid wasteful practices. Recent efforts are focused on harnessing the digital transformation in healthcare to accelerate knowledge generation and facilitate the delivery of care aligned with each patient’s needs and preferences. Dr. Krumholz is director of the Yale New Haven Hospital Center for Outcomes Research and Evaluation (CORE), an organization dedicated to improving health and health care through research, tools, and practices that produce discovery, heighten accountability, and promote better public health and clinical care. He co-founded and co-leads the Yale University Open Data Access (YODA) Project, designed to increase access to clinical research data and promote their use to generate new knowledge. He also co-founded and co-leads medRxiv, a non-profit preprint server for the medical and health sciences. He was a founding faculty co-director of the Yale Center for Research Computing. Dr. Krumholz has been honored by membership in the National Academy of Medicine, the Association of American Physicians, and the American Society for Clinical Investigation. He was named a Distinguished Scientist of the American Heart Association and received their Award of Meritorious Achievement and Clinical Research Prize. He served as a member of the Advisory Committee to the Director of the National Institutes of Health. Dr. Krumholz received the Friendship Award from the People’s Republic of China in recognition of his collaborative efforts to develop a national cardiovascular research network and was named by the Chinese Society of Cardiology as a Top-10 Distinguished International Cardiologist for his contributions to the development of cardiovascular medicine in China. He founded the American Heart Association’s Quality of Care and Outcomes Research Council and co-founded their annual conference. He was the founding editor of Circulation: Cardiovascular Quality and Outcomes; founding editor of CardioExchange , a social media site of the publisher of the New England Journal of Medicine ; and editor of Journal Watch Cardiology of the New England Journal of Medicine. He was a founding Governor of the Patient-Centered Outcomes Research Institute. He is the Editor-in-Chief of JACC, a pre-eminent cardiovascular medical journal. He co-founded HugoHealth, a patient-centric platform that engages people as partners in research and clinical care, facilitates the secure acquisition and movement of digital health data, and promotes learning health communities. He also co-founded Refactor Health, an enterprise healthcare AI-augmented health data management company. Before joining the Yale faculty in 1992, Dr. Krumholz received a BS (Biology) from Yale, an MD from Harvard Medical School, and a Masters in Health Policy and Management (SM) from the Harvard University School of Public Health. At Yale, he directed the Robert Wood Johnson Foundation Clinical Scholars Program from 1996-2017 and serves as Director Emeritus of the Yale National Clinician Scholars Program. Dr. Krumholz has published over 1500 articles and three books with an h-index of more than 240.",
+      "focus_areas": [
+        "Access to Information",
+        "Cardiology",
+        "Decision Making",
+        "Health Care Quality, Access, and Evaluation",
+        "Health Information Systems",
+        "Health Policy",
+        "Heart Failure",
+        "Machine Learning",
+        "Myocardial Infarction",
+        "Cardiovascular Diseases",
+        "Health Care Quality, Efficiency",
+        "COVID-19"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Access to Information",
+          "Cardiology",
+          "Decision Making",
+          "Health Care Quality, Access, and Evaluation",
+          "Health Information Systems",
+          "Health Policy",
+          "Heart Failure",
+          "Machine Learning",
+          "Myocardial Infarction"
+        ],
+        "Public Health Interests": [
+          "Cardiovascular Diseases",
+          "Health Care Quality, Efficiency",
+          "COVID-19"
+        ]
+      },
+      "email": "harlan.krumholz@yale.edu",
+      "activities": [
+        {
+          "title": "American College of Cardiology",
+          "type": "1996 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        },
+        {
+          "title": "American College of Physicians-American Society of Internal Medicine",
+          "type": "1999 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        },
+        {
+          "title": "American Heart Association",
+          "type": "1996 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        },
+        {
+          "title": "American College of Cardiology",
+          "type": "2009 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        },
+        {
+          "title": "Institute of Medicine",
+          "type": "2008 - Present",
+          "start": null,
+          "end": null,
+          "locations": [],
+          "synopsis": null
+        }
+      ],
+      "yale_coauthors": [
+        {
+          "name": "Joseph Ross, MD, MHS",
+          "profile_url": "https://ysph.yale.edu/profile/joseph-ross/"
+        },
+        {
+          "name": "Erica Spatz, MD, MHS",
+          "profile_url": "https://ysph.yale.edu/profile/erica-spatz/"
+        },
+        {
+          "name": "Yuan Lu, ScD",
+          "profile_url": "https://ysph.yale.edu/profile/y-lu/"
+        },
+        {
+          "name": "Rohan Khera, MD, MS",
+          "profile_url": "https://ysph.yale.edu/profile/rohan-khera/"
+        },
+        {
+          "name": "Jeptha Curtis, MD",
+          "profile_url": "https://medicine.yale.edu/profile/jeptha-curtis/"
+        },
+        {
+          "name": "Jeph Herrin, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/jeph-herrin/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Cardiovascular Medicine",
+          "url": "https://medicine.yale.edu/internal-medicine/cardio/"
+        },
+        {
+          "name": "Center for Infection and Immunity",
+          "url": "https://medicine.yale.edu/cii/"
+        },
+        {
+          "name": "Center for Outcomes Research & Evaluation (CORE)",
+          "url": "https://medicine.yale.edu/core/"
+        },
+        {
+          "name": "Computational Biology and Biomedical Informatics",
+          "url": "https://medicine.yale.edu/bbs/tracks/computational-biology-bioinformatics/"
+        },
+        {
+          "name": "Dean's Workshops",
+          "url": "https://medicine.yale.edu/about/deanoffice/workshop/"
+        },
+        {
+          "name": "Diabetes Research Center",
+          "url": "https://medicine.yale.edu/internal-medicine/drc/"
+        },
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Internal Medicine",
+          "url": "https://medicine.yale.edu/internal-medicine/"
+        },
+        {
+          "name": "Public Health Data Science and Data Equity",
+          "url": "https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-data-science-and-data-equity/"
+        },
+        {
+          "name": "School of Management",
+          "url": "https://som.yale.edu/"
+        },
+        {
+          "name": "Statistics",
+          "url": "https://statistics.yale.edu/"
+        },
+        {
+          "name": "Yale Center for Genomic Health",
+          "url": "https://medicine.yale.edu/genetics/research/yale-center-for-genomic-health/"
+        },
+        {
+          "name": "Yale Combined Program in the Biological and Biomedical Sciences (BBS)",
+          "url": "https://medicine.yale.edu/bbs/"
+        },
+        {
+          "name": "Yale Medicine",
+          "url": "https://www.yalemedicine.org/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/harlan-krumholz/",
+      "inclusion_reasons": [
+        "Bio describes research in: China"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Qing Lan, MD, PhD",
+      "title": "Professor Adjunct of Epidemiology (Environmental Health)",
+      "school": "Public Health",
+      "department": "Environmental Health Sciences",
+      "appointments": [
+        {
+          "academic_unit": "Environmental Health Sciences",
+          "title": "Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "China"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Qing Lan a world leader in environmental and occupational exposures, human health studies and gene environment interaction. Her research focuses on molecular epidemiologic studies of populations exposed to several classes of chemical compounds that are known or suspected occupational and environmental carcinogens. She is one of YSPH’s main collaborators at NCI studying environmental exposures, genetic susceptibility for NHL and multiple myeloma, indoor air pollution and gene polymorphisms for lung cancer risk in Xuanwei, China. She has mentored several YSPH PhD candidates. Dr. Lan received her M.D. at Weifang Medical University and her Ph.D. in molecular epidemiology at the Chinese Academy of Preventive Medicine in Beijing, as part of a joint training program with the United States Environmental Protection Agency and University of North Carolina at Chapel Hill, and received her MPH at Johns Hopkins University.",
+      "focus_areas": [
+        "Biomarkers",
+        "Environmental Health"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Biomarkers",
+          "Environmental Health"
+        ]
+      },
+      "email": null,
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Melissa Friesen",
+          "profile_url": "https://ysph.yale.edu/profile/melissa-friesen/"
+        },
+        {
+          "name": "Robert Homer, MD, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/robert-homer/"
+        },
+        {
+          "name": "Bonnie E Gould Rothberg, MD, PhD, MPH, MMM, FACP",
+          "profile_url": "https://ysph.yale.edu/profile/bonnie-gouldrothberg/"
+        },
+        {
+          "name": "Huey Cai",
+          "profile_url": "https://medicine.yale.edu/profile/huey-cai/"
+        },
+        {
+          "name": "Lei Song, MD, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/lei-song/"
+        },
+        {
+          "name": "Wei Zheng",
+          "profile_url": "https://medicine.yale.edu/profile/zheng-z-wei/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Environmental Health Sciences",
+          "url": "https://ysph.yale.edu/research/department-research/environmental-health-sciences/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/qing-lan/",
+      "inclusion_reasons": [
+        "Bio describes research in: China"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Mary Alice Lee, MSN, PhD",
+      "title": "Lecturer in Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": "Health Policy & Management",
+      "appointments": [
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Lecturer",
+          "type": "Primary"
+        },
+        {
+          "academic_unit": "School of Management",
+          "title": "Lecturer",
+          "type": "Secondary"
+        },
+        {
+          "academic_unit": "School of Nursing",
+          "title": "Associate Clinical Professor",
+          "type": "Secondary"
+        }
+      ],
+      "geographic_focus": [
+        "Bhutan"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Mary Alice Lee is a Lecturer at the Yale School of Public Health. Her research and teaching is focused on improving health and health care for children, pregnant women, and families. For over twenty years, Dr. Lee directed state-funded independent monitoring and policy analysis of enrollment trends, maternal health and birth outcomes, and children’s health services in Connecticut’s HUSKY Program (Medicaid and CHIP). Since 2015, Dr. Lee has worked with colleagues in Bhutan and at the Bhutan Foundation to strengthen health research capacity at the Khesar Gyalpo University of Medical Sciences. In 2014, Dr. Lee was a Lecturer at the Yale University Jackson Institute for Global Affairs. Prior to completing a doctoral degree in epidemiology at Yale University, Dr. Lee was a nurse, nurse-midwife and nurse-midwifery educator.",
+      "focus_areas": [
+        "Health Care Management",
+        "Health Policy",
+        "Maternal & Child Health",
+        "Reproduction",
+        "Women's Health",
+        "Child/Adolescent Health",
+        "Health Equity, Disparities, Social Determinants and Justice"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Health Care Management",
+          "Health Policy",
+          "Maternal & Child Health",
+          "Reproduction",
+          "Women's Health",
+          "Child/Adolescent Health",
+          "Health Equity, Disparities, Social Determinants and Justice"
+        ]
+      },
+      "email": "maryalice.lee@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "School of Management",
+          "url": "https://som.yale.edu/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/maryalice-lee/",
+      "inclusion_reasons": [
+        "Bio describes research in: Bhutan"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Zahirah McNatt",
+      "title": "Lecturer in Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": "Health Policy & Management",
+      "appointments": [
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Lecturer",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "East Asia",
+        "Cambodia",
+        "Ethiopia",
+        "Jordan",
+        "Rwanda",
+        "Tanzania",
+        "Togo",
+        "Zambia",
+        "Sudan",
+        "Africa"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Zahirah McNatt, MHSA, is a doctoral candidate (DrPH) at the Mailman School of Public Health and a senior research associate with the Syrian Refugee Initiative. Zahirah is currently wrapping up a study focused on the impact of host-country healthcare policy on Syrian refugees residing in urban settings in Jordan. She is also taking on new work aimed at studying the effectiveness of emergency education programs for children in adversity in central and east Africa. Prior to joining the program, Zahirah spent 10 years managing and implementing projects in health and human rights. Most recently, she served as Director for Leadership Education and Practice at Yale’s Global Health Leadership Institute (GHLI). Her role involved the management of research and intervention activities and the facilitation of leadership development programs for various audiences including senior government officials, policy makers and administrators (Tanzania, Rwanda, Ethiopia, Togo, Cambodia). Zahirah spent 3 years in Ethiopia working to improve hospital quality through the creation of degree programs, national quality improvement initiatives and health systems research. She has also worked to develop chronic disease outreach programs and educational opportunities for ministries, NGOs, physicians and administrators. Zahirah supported the development of strategies for improving access to services for people with disabilities who reside in Ethiopia, Tanzania, Sudan and Zambia and has extended this work to South East Asia. Her current interest is in facilitating the creation of innovative and effective approaches to health and education in crisis-affected contexts. Zahirah has a BA from Cornell University and an MHSA from the University of Michigan, School of Public Health.",
+      "focus_areas": [
+        "Ethiopia",
+        "Global Health",
+        "Health Policy",
+        "Human Rights",
+        "Public Health"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Ethiopia",
+          "Global Health",
+          "Health Policy",
+          "Human Rights",
+          "Public Health"
+        ]
+      },
+      "email": "za2235@cumc.columbia.edu",
+      "activities": [
+        {
+          "title": "Jordan - qualitative research with Syrian refugees about policy impact and refugee experiences",
+          "type": "Research",
+          "start": "06/01/2017",
+          "end": "12/31/2018",
+          "locations": [
+            "Amman, Amman Governorate, Jordan"
+          ],
+          "synopsis": null
+        },
+        {
+          "title": "Tanzania - education in emergencies",
+          "type": "Research",
+          "start": "08/14/2018",
+          "end": "10/31/2018",
+          "locations": [
+            "Kibondo, Kigoma Region, Tanzania"
+          ],
+          "synopsis": null
+        },
+        {
+          "title": "Ethiopia - Hospital Management Initiative",
+          "type": "Research",
+          "start": "09/20/2010",
+          "end": "02/28/2014",
+          "locations": [
+            "Addis Ababa, Ethiopia"
+          ],
+          "synopsis": null
+        }
+      ],
+      "yale_coauthors": [
+        {
+          "name": "Erika Linnander, DrPH, MBA",
+          "profile_url": "https://ysph.yale.edu/profile/erika-linnander/"
+        },
+        {
+          "name": "Nikole Allen, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/nikole-allen/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/zahirah-mcnatt/",
+      "inclusion_reasons": [
+        "Research activity in a low/middle-income setting: Addis Ababa, Ethiopia; Amman, Amman Governorate, Jordan; Kibondo, Kigoma Region, Tanzania",
+        "Bio describes research in: Africa, Jordan",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Mehul Mehta",
+      "title": "Professor Adjunct of Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": "Health Policy & Management",
+      "appointments": [
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Australia",
+        "Canada",
+        "India",
+        "Korea"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Mehul Mehta is a global leader in healthcare innovation, transforming ideas into impactful solutions that advance equitable health outcomes and economic value. His senior executive roles at Albright Stonebridge Group, Partners Healthcare International (now MGB Global Advisory), and Harvard Medical International, along with consulting for McKinsey & Company, academic appointments, and clinical care in multiple countries, showcase his expansive expertise. Dr. Mehta is currently an Adjunct Professor at the Yale School of Public Health, focused on innovation and AI in healthcare delivery. He has co-founded a novel, distributed healthcare entity, MCCM, which is expanding in Canada in a Public-Private Partnership model. He is an Advisor and Board Member for select companies, hospitals, and non-profits, providing strategic guidance that enables these organizations to leverage AI for improved healthcare outcomes. Dr. Mehta sits on the Advisory Board of a new health care district being developed for the Sovereign of Sharjah, UAE. He serves on the Board of Trustees of the American Nurses Foundation, helping ideate and establish new programs to reimagine nursing in the US and globally. He also sits on the International Advisory Board of the American Nurses Credentialing Center, contributing to the global standardization of nursing education and practices. Dr. Mehta is also a Senior Medical Advisor for the Albright Stonebridge Group (ASG), founded by the late Secretary of State Madeleine Albright. He recently served as ASG’s Chief Medical Officer and Chair of Health Solutions. During the COVID pandemic, he led the development and delivery of weekly global guidance to multiple organizations. He galvanized a multi-stakeholder response to the devastation caused by the Delta variant in India, rapidly establishing critical genomic sequencing capacity in Mumbai, thereby significantly improving the speed and accuracy of outbreak detection. As a Clinical Instructor in the Department of Ophthalmology at Harvard Medical School since 1997, he has focused on global vision health. Among his myriad projects and achievements with Partners Healthcare International (now Mass General Brigham Global Advisory) and Harvard Medical International, he has worked in over 33 countries, helping establish transformative hospitals, care delivery systems, and solutions. Dr. Mehta was a key figure in establishing the first internationally accredited, clinically advanced hospital system in Asia. He also played a central role in creating a new Free Zone Healthcare City in Dubai, working directly with the Sovereign’s leadership. He has also helped develop large health care clusters in South Korea and Brisbane, Australia, while serving as Senior Vice President for Strategy at Harvard Medical International. Dr. Mehta served as a Senior Fellow at the Harvard Global Health Institute, where he built a research program on technology in health care, with emphasis on the global impact of AI and machine learning. He helped convene the first Harvard conference on AI in Global Health. He is a frequently invited speaker and panelist at major global conferences, and he regularly publishes and presents on health systems and healthcare innovation. Dr. Mehta holds a Master of Surgery degree in Ophthalmology and a Bachelor of Medicine, Surgery, & ObGyn (MBBS) with high honors from the University of Bombay. He also has a Master of Arts in Cognitive & Neural Systems from Boston University. He has been part of the Executive Certificate programs at Harvard Business School and MIT’s Sloan School of Management.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "mehul.mehta@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Future of Health Innovation Hub",
+          "url": "https://ysph.yale.edu/future-of-health-innovation-hub/"
+        },
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/mehul-mehta/",
+      "inclusion_reasons": [
+        "Bio describes research in: Asia, India"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Catherine Mwai",
+      "title": "Program Administrator",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Somalia"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Catherine Mwai is a Postgraduate Associate at the Yale School of Public Health, dedicated to advancing health equity. At the Substances and Sexual Health (SASH) Lab, she focuses on community-based participatory and strength-based prevention research. She holds a Master of Public Health in Social and Behavioral Science from the Yale School of Public Health. As a graduate student, she received the 2022 Advocacy on Campuses that Impacts Our Nation (ACTION) award from the American Public Health Association. In the same year, Catherine led an inaugural cancer care assessment in Somaliland (Northern Somalia). She also served as a delegate with the Somaliland Ministry of Health to foster healthcare and health workforce collaboration between Rwandan and Somaliland universities. Formerly an educator, she developed a culturally-responsive health education curriculum for Native American youth in the Great Plains region. In the medical technology space, Catherine led clinic and community initiatives aimed at minority recruitment and retention for health research. Catherine’s global and national public health expertise focuses on healthcare access and patient-centered care through research and implementation. At the SASH lab, Catherine addresses health disparities among historically marginalized populations, with an emphasis on urban youth in the United States.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "catherine.mwai@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Social and Behavioral Sciences",
+          "url": "https://ysph.yale.edu/research/department-research/social-and-behavioral-sciences/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/catherine-mwai/",
+      "inclusion_reasons": [
+        "Bio describes research in: Somalia"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "A. Katrina Nelson, PhD, MPH, MSc",
+      "title": "Associate Research Scientist in Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Canada",
+        "Mexico",
+        "Peru"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Katrina Nelson’s research questions how the way we interact with one another impacts our health. A specialist in qualitative and mixed methods, her research is informed by years as a bilingual researcher living in Mexico, Peru, the Dominican Republic, the Navajo Nation, and urban United States. With public health training from Europe and the U.S., she applies her topical expertise in early child development and youth mental health to emerging issues relevant to our time: the use of firearms, caregiver/ child interaction and screen use, and social aspects of anxiety and other behavioral disorders. Katrina's Fulbright-funded dissertation research examined corporal punishment use and intergenerational trauma among adolescent mothers and their young children in the Dominican Republic. Prior to that, she led two community-based early child interventions in Lima, Peru funded by Grand Challenges Canada. She is now building her research program while working on youth community-based firearm injury prevention initiatives at the Yale School of Public Health and caregiver-focused prevention and treatment at the Yale Child Study Center's Anxiety and Mood Disorders Program.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "adrianne.nelson@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Caroline A Raymond-King, MD, PhD",
+          "profile_url": "https://medicine.yale.edu/profile/c-king/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/adrianne-nelson/",
+      "inclusion_reasons": [
+        "Bio describes research in: Dominican Republic, Mexico, Peru"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Jean Bosco Ouedraogo",
+      "title": "Professor Adjunct",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Burkina Faso"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Jean Bosco Ouedraogo is a MD, parasitologist and Researcher with a distinguished scientific career with major contributions to science in Burkina Faso. He is also a Professor of parasitology at the universities of Ouagadougou and Bobo-Dioulasso. Since 1983, He have conducted a series of studies on the resistance to different antimalarial drugs using in vivo, in vitro and molecular techniques. Recently he participated and played an important role in the RTS,S malaria vaccine trial in Burkina. He is currently investigating the potential benefit of adding azithromycin to the antimalarials used for SMC and a comparative study of SMC and seasonal vaccination with RTSS. He is also PI of many ongoing clinical trials and vaccine trials in the region of Bobo-Dioulasso, Burkina Faso. His scientific contributions have been presented in over 185 peer reviewed publications. In addition to the scientific activities he has had substantial administrative responsibilities acting as director of Institut de Recherche en Sciences de la Santé (IRSS) in Bobo-Dioulasso from 1999-2015 and Director General of the Centre Muraz from 2009 -2013. He is currently: Head of Malaria & Neglected Tropical Diseases Unit, IRSS Director General of INSTech, Bobo-Dioulasso Executive secretary of WAHRNET (West African Health Research Network)",
+      "focus_areas": [
+        "Antimicrobial Resistance",
+        "Clinical Trials",
+        "Disease Transmission",
+        "Emerging Infectious Diseases",
+        "Epidemiology Methods",
+        "Ethics",
+        "Genetics, Genomics, Epigenetics",
+        "Health Economics",
+        "Health Policy",
+        "HIV/AIDS",
+        "Immunology",
+        "Infectious Diseases",
+        "Influenza",
+        "Malaria",
+        "Maternal & Child Health",
+        "Parasitology",
+        "Community Engagement",
+        "Vaccines",
+        "Viruses",
+        "Zoonotic Diseases",
+        "Vector Biology",
+        "Microbiome",
+        "Capacity Building",
+        "Neglected Tropical Diseases",
+        "Non-Communicable Diseases",
+        "Enteric Diseases",
+        "Implementation Science",
+        "Mosquito-borne Diseases",
+        "Randomized Trials",
+        "Trypanosomiasis",
+        "Vector-borne Diseases",
+        "Tick-borne Diseases",
+        "COVID-19"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Antimicrobial Resistance",
+          "Clinical Trials",
+          "Disease Transmission",
+          "Emerging Infectious Diseases",
+          "Epidemiology Methods",
+          "Ethics",
+          "Genetics, Genomics, Epigenetics",
+          "Health Economics",
+          "Health Policy",
+          "HIV/AIDS",
+          "Immunology",
+          "Infectious Diseases",
+          "Influenza",
+          "Malaria",
+          "Maternal & Child Health",
+          "Parasitology",
+          "Community Engagement",
+          "Vaccines",
+          "Viruses",
+          "Zoonotic Diseases",
+          "Vector Biology",
+          "Microbiome",
+          "Capacity Building",
+          "Neglected Tropical Diseases",
+          "Non-Communicable Diseases",
+          "Enteric Diseases",
+          "Implementation Science",
+          "Mosquito-borne Diseases",
+          "Randomized Trials",
+          "Trypanosomiasis",
+          "Vector-borne Diseases",
+          "Tick-borne Diseases",
+          "COVID-19"
+        ]
+      },
+      "email": "jbouedraogo@gmail.com",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Sunil Parikh, MD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/sunil-parikh/"
+        },
+        {
+          "name": "Amy Bei, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/amy-bei/"
+        },
+        {
+          "name": "Joseph Vinetz, MD, FACP, FIDSA, FASTMH, BS",
+          "profile_url": "https://ysph.yale.edu/profile/joseph-vinetz/"
+        },
+        {
+          "name": "Justin Goodwin",
+          "profile_url": null
+        },
+        {
+          "name": "Martina Wade",
+          "profile_url": "https://ysph.yale.edu/profile/martina-wade/"
+        },
+        {
+          "name": "Adam V Wisnewski, PhD, D(ABMLI)",
+          "profile_url": "https://medicine.yale.edu/profile/adam-wisnewski/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/jeanbosco-ouedraogo/",
+      "inclusion_reasons": [
+        "Bio describes research in: Burkina Faso"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Luis Miguel Toro Polo, MD",
+      "title": "Postdoctoral Fellow",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Postdoctoral Fellow",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "Peru"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Luis Miguel Toro Polo, MD, is an infectious diseases physician and clinical investigator from Peru whose research interests focus on HIV, tuberculosis, clinical trials, and implementation science. He is affiliated with the Centro de Investigaciones Tecnológicas, Biomédicas y Medioambientales (CITBM) in Lima, Peru. His research experience includes participation in international collaborative clinical trials involving HIV prevention, vaccines, antiretroviral therapies, and tuberculosis treatment. He has contributed to research conducted through international clinical research networks, including the HIV Vaccine Trials Network (HVTN) and the AIDS Clinical Trials Group (ACTG). In addition to his research activities, he practices clinical infectious diseases in Lima, Peru. As a 2026–2027 Global Health Emerging Scholars (GHES) Fellow at the Yale School of Public Health, his current research focuses on improving understanding of Undetectable = Untransmittable (U=U), addressing HIV-related stigma, and supporting engagement in antiretroviral therapy among adults newly diagnosed with HIV in Peru.",
+      "focus_areas": [
+        "HIV/AIDS",
+        "Sexually-Transmitted Infections",
+        "Stigma and Discrimination"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "HIV/AIDS",
+          "Sexually-Transmitted Infections",
+          "Stigma and Discrimination"
+        ]
+      },
+      "email": "luis.toropolo@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/luis-toropolo/",
+      "inclusion_reasons": [
+        "Bio describes research in: Peru"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Nathaniel Raymond",
+      "title": "Executive Director, Humanitarian Research Lab",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Middle East",
+        "South Sudan",
+        "Sri Lanka",
+        "Afghanistan",
+        "Ethiopia"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Nathaniel A. Raymond is Executive Director of the Humanitarian Research Lab at the Yale School of Public Health (YSPH) and a Lecturer in the Department of the Epidemiology of Microbial Diseases (EMD) at YSPH. He was formerly a Lecturer of Global Affairs at the Jackson School for Global Affairs from 2018 - 2022. His research interests focus on the health implications of forced displacement; methodologies for the assessment of large-scale disasters, including pandemics; and the human rights and human security implications of information communication technologies (ICTs) for vulnerable populations, particularly in the context of armed conflict. Previously, he was the founding Director of the Signal Program on Human Security and Technology at the Harvard Humanitarian Initiative (HHI) of the Harvard T.H. Chan School of Public Health from 2012 – 2018. From 2010 to 2012, he was Director of Operations for the George Clooney-founded Satellite Sentinel Project at HHI, which utilized high resolution satellite imagery to detect and document attacks on civilians in Sudan and South Sudan. Raymond was Director of the Campaign Against Torture at Physicians for Human Rights from 2008 – 2010, leading investigations into the role of US health professionals in the Bush Administration’s “enhanced” interrogation program. Raymond served as a humanitarian aid worker with Oxfam America and was deployed to Ethiopia, Afghanistan, Sri Lanka, the Middle East, and the US Gulf Coast in the aftermath of Hurricane Katrina. Raymond has formally advised multiple UN, governmental, and non-governmental agencies, including the UN Department of Peacekeeping Operations in South Sudan, the UN High Commission for Refugees, Save the Children, the International Committee of the Red Cross, Association of South East Asian Nations, the US Naval War College's Humanitarian Assistance and Disaster Response program, and others. His work has appeared in Nature , The Lancet , Annals of Internal Medicine , Annals of General Psychiatry , Disasters , and other peer-reviewed publications.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "nathaniel.raymond@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Danielle Poole, ScD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/danielle-poole/"
+        },
+        {
+          "name": "Kaveh Khoshnood, PhD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/kaveh-khoshnood/"
+        },
+        {
+          "name": "Caitlin Howarth",
+          "profile_url": "https://ysph.yale.edu/profile/caitlin-howarth/"
+        },
+        {
+          "name": "Hani Mowafi, MD, MPH, FACEP",
+          "profile_url": "https://medicine.yale.edu/profile/hani-mowafi/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Humanitarian Research Lab",
+          "url": "https://ysph.yale.edu/hrl/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/nathaniel-raymond/",
+      "inclusion_reasons": [
+        "Bio describes research in: South Sudan, Sudan"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Eman Salih",
+      "title": "Postdoctoral Associate",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Sudan"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Eman Salih is a pharmacist and public health professional recognized for her extensive policy, research, and international collaboration expertise. With over a decade of experience, she has made significant contributions across academia, government, and non-profit sectors, primarily focusing on strengthening health systems and improving global health outcomes. Salih's academic prowess is highlighted by her Fulbright Hubert H. Humphrey Fellowship and a Master of Science in Public and Tropical Health, among other accolades.In her current role as a Postdoctoral Associate at the Yale School of Public Health, Salih is actively involved in research on chronic diseases, health system strengthening, and providing mentorship. Her previous roles include Training Coordinator at the Task Force for Global Health, Guest Researcher at the CDC, and Project Coordinator for the Sudan COVID-19 Emergency Response Project, where she managed a substantial World Bank-funded project. Additionally, as the Director of Bilateral and Multilateral Relations at Sudan's Federal Ministry of Health, she was pivotal in fostering international partnerships. Salih's expertise is not limited to her professional roles; she is a certified Project Management professional, an esteemed researcher, and a dedicated advocate for health equity. Her commitment to public health is evidenced by her active participation in governmental committees and volunteer projects and her dedication to teaching and mentorship. Driven by a strong sense of social responsibility, Salih strives for a healthier and more equitable world for all.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "eman.salih@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "PEACE Lab",
+          "url": "https://ysph.yale.edu/peace/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/eman-salih/",
+      "inclusion_reasons": [
+        "Bio describes research in: Sudan"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Xiaoming Shi",
+      "title": "Professor Adjunct",
+      "school": "Public Health",
+      "department": "Environmental Health Sciences",
+      "appointments": [
+        {
+          "academic_unit": "Environmental Health Sciences",
+          "title": "Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "China"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Xiaoming Shi is the Professor and Director of the National Institute of Environmental Health (NIEH), Chinese Center for Disease Control and Prevention (China CDC). Professor Shi received his MD in 1999 from Anhui Medical University and PhD in Epidemiology and Health Statistics in 2005 from the China CDC. He joined the branch of Infectious Disease Surveillance, China CDC in 2005, and then worked as the head of the Branch of Monitoring and Evaluation, Division of non-communicable Disease (NCDs) Control and Community Health, China CDC. In 2015, he was appointed as the Director of NIEH, China CDC. Dr. Shi has received a number of grants from the Ministry of Science and Technology of China, National Natural Science Foundation of China (NSFC), as well as international agencies and organizations (e.g., United Nations Population Fund) to conduct research on healthy longevity and environmental health, and more. He has also contributed to the establishment the National Human Bio-monitoring (NHBM) of China to assess for the first time the internal exposure levels of environmental chemicals in the Chinese population. Dr. Shi is currently leading a large-scale project systematically assessing the acute health risks of air pollution in China. He and his research group conducted a cohort study on sub-clinical outcomes of polluted air in China (SCOPA-China Cohort) and a well-designed panel study on biomarkers of air pollutants exposure among Chinese aged 60-69 (China BAPE). He has published over 200 peer-reviewed journal articles and authored/co-authored in over 10 book chapters and books.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "xiaoming.shi@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Krystal Pollitt, PhD, P.Eng.",
+          "profile_url": "https://ysph.yale.edu/profile/krystal-pollitt/"
+        },
+        {
+          "name": "Kai Chen, PhD",
+          "profile_url": "https://ysph.yale.edu/profile/kai-chen/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Environmental Health Sciences",
+          "url": "https://ysph.yale.edu/research/department-research/environmental-health-sciences/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/xiaoming-shi/",
+      "inclusion_reasons": [
+        "Bio describes research in: China"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Archana Shrestha, PhD",
+      "title": "Associate Professor Adjunct of Epidemiology (Chronic Diseases)",
+      "school": "Public Health",
+      "department": "Chronic Disease Epidemiology",
+      "appointments": [
+        {
+          "academic_unit": "Chronic Disease Epidemiology",
+          "title": "Associate Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "low- and middle-income countries",
+        "Nepal"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Archana Shrestha, PhD, MPH, is a Professor and Director of the Public Health Program at Kathmandu University School of Medical Sciences (KUSMS) and an Adjunct Associate Professor at the Yale School of Public Health. She directs the Institute for Implementation Science and Health, where she designs and leads capacity-building programs that strengthen translational research and implementation science in Nepal. Dr. Shrestha completed a Postdoctoral Fellowship in Implementation Science at Harvard T.H. Chan School of Public Health (2018), earned a PhD in Epidemiology from the University of Washington (2015). Dr. Shrestha’s research integrates epidemiology and implementation science to strengthen prevention and care for noncommunicable diseases and related maternal and youth health priorities in resource-limited settings. Her work advances community- and health system–based strategies for hypertension and diabetes prevention and control, improves diet and cardiometabolic risk through workplace and community interventions, and develops digital and task-shared models to increase access, quality, and continuity of care. As a multiple principal investigator, she leads several NIH-funded studies, including Community Health Worker–led Hypertension Prevention and Control in Nepal (R01HL169421; 2023–2028, mPI Spiegelman), Mobile-based Obstetric Monitoring for Pregnancies Complicated by Hypertension and/or Diabetes (MOM-HD), a Type II Hybrid Implementation-Effectiveness Trial (R01HL176741; 2025–2030 mPI Rawal ), Innovations for Peer-delivered and Family-engaged Brief Interventions for Youth Suicide in Nepal, a pilot hybrid type II implementation study (R34MH136250; 2024–2027 mPI Hagaman), and a game-based mobile intervention to limit excessive gestational weight gain and postpartum weight retention among pregnant women with overweight and obesity (R21TW012615; 2025–2027 PI Rawal). In addition, she contributes as Co-Investigator to large multi-site hybrid effectiveness-implementation research, including BECOME— a Type II hybrid implementation-effectiveness study integrating a behavioral community-based combined intervention for mental health and NCDs delivered by community health workers (R01MH133231; PI Acharya; 2023–2028), SCALE-NCD—scaling up community-based NCD research into practice in Pokhara Metropolitan City (R01HL172271; PI Neupane; 2024–2029), and an implementation pilot integrating a suicide prevention package into decentralized primary health care systems in rural Nepal (R34MH135122; MPIs Hagaman and Sapkota; 2024–2027). Beyond NIH funding, she serves as PI for AMPATH–Nepal cervical and breast cancer programming (Lily Foundation; 2023–2026) and for AMPATH–Nepal group care model development and testing (Lily Foundation; 2024–2027), is a Co-Investigator in the NIHR Global Health Research Centre for Multiple Long-Term Conditions (NIHR203257; PI Prabhakaran; 2022–2027), and leads a Resolve to Save Lives' grant to develop, implement, and evaluate a healthy food procurement policy in Nepal (2020–2025); and leads WHO Health Alliance grant on \"Implementation Research for integrated management of Diabetes and Hypertension (2024-2027) Dr. Shrestha’s contribution to science lies in generating context-specific epidemiologic evidence and translating it into scalable, implementation-ready interventions for low- and middle-income countries. She has advanced hybrid effectiveness-implementation methodologies in chronic disease and maternal health, strengthened task-shared models of care delivered by community health workers, and integrated behavioral and digital strategies into primary healthcare systems. Through longitudinal cohort studies, cluster randomized trials, systematic reviews, and policy-focused implementation research, she has contributed to understanding cardiometabolic risk, health system gaps, stigma, service utilization, and digital monitoring approaches in Nepal and similar settings. Her work bridges rigorous epidemiologic inquiry with real-world health system application, contributing to the global evidence base on equitable, scalable prevention and management of noncommunicable diseases and mental health conditions.",
+      "focus_areas": [
+        "Cardiovascular Diseases",
+        "Diabetes, Gestational",
+        "Global Health",
+        "Healthy Lifestyle",
+        "Hypertension",
+        "Implementation Science",
+        "Obesity"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Cardiovascular Diseases",
+          "Diabetes, Gestational",
+          "Global Health",
+          "Healthy Lifestyle",
+          "Hypertension",
+          "Implementation Science",
+          "Obesity"
+        ]
+      },
+      "email": "archana@kusms.edu.np",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "Donna Spiegelman, ScD",
+          "profile_url": "https://ysph.yale.edu/profile/donna-spiegelman/"
+        },
+        {
+          "name": "Roman Shrestha, PhD, MPH",
+          "profile_url": "https://medicine.yale.edu/profile/roman-shrestha/"
+        },
+        {
+          "name": "Ashley Hagaman, PhD, MPH",
+          "profile_url": "https://ysph.yale.edu/profile/ashley-hagaman/"
+        },
+        {
+          "name": "Sangini S. Sheth, MD, MPH, FACOG",
+          "profile_url": "https://medicine.yale.edu/profile/sangini-sheth/"
+        },
+        {
+          "name": "Kamal Gautam",
+          "profile_url": "https://medicine.yale.edu/profile/kamal-gautam/"
+        },
+        {
+          "name": "Kiran Paudel",
+          "profile_url": "https://medicine.yale.edu/profile/kiran-paudel/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Center for Methods in Implementation and Prevention Science (CMIPS)",
+          "url": "https://ysph.yale.edu/cmips/"
+        },
+        {
+          "name": "Chronic Disease Epidemiology",
+          "url": "https://ysph.yale.edu/research/department-research/chronic-disease-epidemiology/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/a-shrestha/",
+      "inclusion_reasons": [
+        "Bio describes research in: Nepal",
+        "Lists 'Global Health' as a research interest"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Richard Skolnik, BA, MPA",
+      "title": "Lecturer",
+      "school": "Public Health",
+      "department": "Health Policy & Management",
+      "appointments": [
+        {
+          "academic_unit": "Health Policy & Management",
+          "title": "Lecturer",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "South Asia",
+        "Botswana",
+        "Mexico",
+        "Nigeria",
+        "Tanzania",
+        "Africa"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Richard Skolnik has over 45 years of experience in global health policy, practice, and education. From 1976 until 2001, Richard worked at the World Bank, last serving as the Director for Health and Education for the South Asia Region. While at the World Bank, Richard worked primarily on education, health, nutrition, and population in low-income countries in sub-Saharan Africa and South Asia. His health work focused on health systems development; maternal and child health; and the control of infectious diseases. Richard was also deeply involved in global policy work on TB and polio. Following his retirement from the World Bank, Richard served as an Instructor in Global Health at the George Washington University. He was also the Vice-President for International Programs at PRB and the Executive Director of the Harvard PEPFAR Program for AIDS treatment in Botswana, Nigeria, and Tanzania. From 2011 to 2016, Richard was a Lecturer at Yale, where he taught global health courses in Yale College, The Yale School of Public Health, and the Yale School of Management. Richard also served on a number oftechnical and advisory groups for WHO, led an evaluation for WHO of the global leprosy alliance, headed two evaluations of the International AIDS Vaccine Initiative, and was on the editorial advisory group for DCP3 . Richard now serves on the Health Council for Los Alamos County, New Mexico and on the COVID Task Force of the Los Alamos County Public Schools. He also contributes regular articles on COVID-19 and public health to a Los Alamos County newspaper. Richard is the author of Global Health 101, fourth edition , a widely used introductory textbook. He is also the author of Global Population Health: A Primer and the instructor for the Yale/Coursera course Essentials of Global Health .",
+      "focus_areas": [
+        "Healthcare Disparities",
+        "HIV",
+        "Nutrition Policy",
+        "Health Care Financing",
+        "HIV/AIDS",
+        "Infectious Diseases",
+        "Nutrition",
+        "Health Equity, Disparities, Social Determinants and Justice",
+        "Health Systems Reform"
+      ],
+      "research_interests_by_category": {
+        "Medical Research Interests": [
+          "Healthcare Disparities",
+          "HIV",
+          "Nutrition Policy"
+        ],
+        "Public Health Interests": [
+          "Health Care Financing",
+          "HIV/AIDS",
+          "Infectious Diseases",
+          "Nutrition",
+          "Health Equity, Disparities, Social Determinants and Justice",
+          "Health Systems Reform"
+        ]
+      },
+      "email": "richard.skolnik@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Health Policy & Management",
+          "url": "https://ysph.yale.edu/research/department-research/health-policy-and-management/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/richard-skolnik/",
+      "inclusion_reasons": [
+        "Bio describes research in: Africa, Botswana, Nigeria, South Asia, Tanzania"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Kaakpema \"KP\" Yelpaala",
+      "title": "Lecturer and Senior Fellow in Public Health (Health Policy)",
+      "school": "Public Health",
+      "department": null,
+      "appointments": [],
+      "geographic_focus": [
+        "Sub-Saharan Africa",
+        "Caribbean"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Kaakpema “KP” Yelpaala is a global entrepreneur and public health practitioner with experience working across the public and private sectors in the United States, Sub-Saharan Africa, and the Caribbean. He is the Inaugural Senior Fellow and Lecturer at the Yale School of Public Health and serves as the Inaugural Faculty Director of the Future of Health Innovation Hub. His work focuses on how digital technologies, policy, and entrepreneurship can be combined to expand access to care and strengthen health systems globally. KP has founded two venture-backed digital health companies focused on improving access to care. In 2018, he co-founded InOn Health, which used digital communication channels and consumer insights to better connect multicultural populations in the United States to healthcare services. Prior to InOn Health, he founded access.mobile International, a global digital health company that developed digital health solutions to improve access to health information and services across several African countries. Earlier in his career, KP was among the early employees of the Clinton Health Access Initiative and worked as a management consultant at Dalberg Global Development Advisors. He has also served as a digital health consultant with the World Bank. At Yale, KP teaches Future of Health: Emerging Themes in Health Innovation , a course exploring the intersection of technology, policy, entrepreneurship, and health systems transformation. He mentors students and emerging innovators across Yale and develops case studies and applied learning initiatives examining health innovation, digital transformation, and evolving models of care delivery in the United States and internationally. In addition to his academic work, KP is a Venture Partner at Heuristic Capital and a member of the Expert Network for Fusion Fund, an early-stage venture capital firm based in Silicon Valley. He previously served on the External Equity and Innovation Advisory Board of the American Medical Association and was appointed by Governor Jared Polis to the Colorado eHealth Commission, where he later served as Chair. KP received a Bachelor of Arts with Honors from Brown University and a Master of Public Health from the Yale School of Public Health. He was named a 2023 Rock Health Top 50 in Digital Health Luminary.",
+      "focus_areas": [],
+      "research_interests_by_category": {},
+      "email": "kaakpema.yelpaala@yale.edu",
+      "activities": [],
+      "yale_coauthors": [],
+      "organizations": [
+        {
+          "name": "Future of Health Innovation Hub",
+          "url": "https://ysph.yale.edu/future-of-health-innovation-hub/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/kaakpema-yelpaala/",
+      "inclusion_reasons": [
+        "Bio describes research in: Caribbean, Sub-Saharan Africa"
+      ],
+      "source": "ysph"
+    },
+    {
+      "name": "Dawn Zimmerman",
+      "title": "Assistant Professor Adjunct",
+      "school": "Public Health",
+      "department": "Epidemiology of Microbial Diseases",
+      "appointments": [
+        {
+          "academic_unit": "Epidemiology of Microbial Diseases",
+          "title": "Assistant Professor Adjunct",
+          "type": "Primary"
+        }
+      ],
+      "geographic_focus": [
+        "East Africa",
+        "Sri Lanka",
+        "Kenya"
+      ],
+      "geographic_focus_source": "derived_from_bio",
+      "bio": "Dr. Dawn Zimmerman is the Director of International Programs for the Veterinary Initiative for Endangered Wildlife, a Research Associate with Smithsonian Institution, and affiliate faculty at the University of Nairobi. Her previous positions include the Director of Wildlife Health for Smithsonian’s Global Health Program, Regional Veterinary Manager for UC Davis’ Gorilla Doctors, and Senior Veterinarian at the Memphis Zoo. She completed her DVM at Ross University and MS at San Diego State University focused on the development of techniques for reproductive assistance in exotic canids. Zimmerman’s field experience includes conservation medicine and capacity building in over 15 countries, with a focus on East Africa. She was the global lead for the USAID Emerging Pandemic Threats PREDICT program in Kenya, working to detect pathogens of pandemic potential by investigating the animals most likely to harbor them. Peripherally, she is an associate editor for the Journal of Zoo and Wildlife Medicine, member of the IUCN Wildlife Health Specialist Group, member of the National Science and Technology Council’s Pandemic Prediction and Forecasting Science & Technology working group, scientific advisor for the Gorilla Doctors at the University of California, Davis, and veterinary advisor for the Tapiridae Taxon Advisory Group and Species Survival Programs, the Tapir Specialist Group, and Sri Lanka’s Elephant Transit Home. Her primary research interests include applying a One Health approach to the conservation of critically endangered wildlife species and the mitigation of emerging infectious diseases at the wildlife-human interface.",
+      "focus_areas": [
+        "Zoonotic Diseases"
+      ],
+      "research_interests_by_category": {
+        "Public Health Interests": [
+          "Zoonotic Diseases"
+        ]
+      },
+      "email": "dawn.zimmerman@yale.edu",
+      "activities": [],
+      "yale_coauthors": [
+        {
+          "name": "James Hassell",
+          "profile_url": "https://ysph.yale.edu/profile/james-hassell/"
+        }
+      ],
+      "organizations": [
+        {
+          "name": "Epidemiology of Microbial Diseases",
+          "url": "https://ysph.yale.edu/research/department-research/epidemiology-of-microbial-diseases/"
+        },
+        {
+          "name": "Yale School of Public Health",
+          "url": "https://ysph.yale.edu/"
+        }
+      ],
+      "directory_categories": [
+        "Public Health"
+      ],
+      "profile_url": "https://ysph.yale.edu/profile/dawn-zimmerman/",
+      "inclusion_reasons": [
+        "Bio describes research in: Kenya"
+      ],
+      "source": "ysph"
+    }
+  ],
+  "reevaluated": "2026-10-25"
+}

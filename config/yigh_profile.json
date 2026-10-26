@@ -1,0 +1,150 @@
+{
+  "_comment": "Home page content. Text is taken from the draft YIGH Strategic Plan 2025–2030 (draft_YIGH Strategic Plan_2025-2030.pdf) unless another source is given. Update when the plan is final.",
+  "plan_source": "YIGH Strategic Plan 2025–2030 (draft)",
+  "plan_status": "draft",
+  "name": "Yale Institute for Global Health",
+  "tagline": {
+    "text": "Hub for Global Health at Yale",
+    "source": "YIGH Strategic Plan 2025–2030 (draft)"
+  },
+  "subtagline": "One institute. Many schools. Shared impact.",
+  "intro": "YIGH is Yale’s focal point for global health. Rooted in the Schools of Medicine, Nursing, and Public Health, the Institute connects interdisciplinary expertise across the university to address global health challenges.",
+  "history": "Approved by the Yale Corporation and launched in 2019, YIGH was anchored in Medicine, Nursing, and Public Health with a university-wide mandate to convene faculty, students, and partners and translate Yale’s scholarship into greater global impact.",
+  "mission": {
+    "text": "To serve as the interdisciplinary hub for global health at Yale by cultivating scholarship, leadership, and innovation through research and education with partners to advance health worldwide.",
+    "source": "YIGH Strategic Plan 2025–2030 (draft)"
+  },
+  "vision": "A world where institutions engage in equitable partnerships with shared resolve to address global health challenges.",
+  "values": [
+    {
+      "letter": "O",
+      "name": "One Yale",
+      "text": "We harness the full breadth of Yale by connecting disciplines, schools, and perspectives, breaking down silos and creating opportunities for collaboration that no single part of the university could achieve alone."
+    },
+    {
+      "letter": "R",
+      "name": "Reciprocal Partnerships",
+      "text": "We build equitable partnerships grounded in mutual respect, co-design, shared priorities, and bi-directional exchange, ensuring that collaboration creates meaningful and lasting value for all partners."
+    },
+    {
+      "letter": "C",
+      "name": "Collective Engagement",
+      "text": "We bring together academic, practitioner, community, and policy perspectives to co-create solutions, translate evidence into action, and elevate voices and ideas that can improve health and influence policy and practice."
+    },
+    {
+      "letter": "P",
+      "name": "Principled Excellence",
+      "text": "We pursue excellence in everything we do, upholding high ethical standards and demonstrating transparency, accountability, rigor, and integrity in our work and commitments."
+    },
+    {
+      "letter": "E",
+      "name": "Enduring Impact",
+      "text": "We steward YIGH's resources, relationships, and opportunities responsibly, prioritizing investments that maximize impact while building durable programs, partnerships, and capacity for the future."
+    }
+  ],
+  "approach": {
+    "intro": "YIGH connects Yale’s people, ideas, resources, and partners, turning the university’s breadth of expertise into collective global health impact.",
+    "items": [
+      {
+        "name": "Convene & Catalyze",
+        "text": "We bring faculty, students, practitioners, and partners together across disciplines to spark new ideas, seed collaborations, and catalyze collective action on complex global health challenges."
+      },
+      {
+        "name": "Administer & Operate",
+        "text": "We provide the infrastructure, funding, and operational support that enable global health ideas and programs to thrive, from experiential learning and fellowships to grants and growing university-wide initiatives."
+      },
+      {
+        "name": "Collaborate & Connect",
+        "text": "We serve as a connector within Yale and a point of entry for external partners, linking people, expertise, resources, and opportunities across schools, disciplines, sectors, and geographies to build stronger interdisciplinary collaborations."
+      },
+      {
+        "name": "Recognize & Amplify",
+        "text": "We elevate Yale’s global health expertise, research, and impact, giving greater visibility to faculty, students, partners, and communities while translating knowledge into awareness, policy, and action."
+      }
+    ]
+  },
+  "priorities_intro": "YIGH’s four strategic priorities focus the Institute’s interdisciplinary strengths on areas where global health needs are rapidly evolving and where Yale can bring distinctive expertise to bear.",
+  "priorities": [
+    {
+      "slug": "climate-health",
+      "name": "Climate & Health",
+      "letter": "C",
+      "summary": "Build climate-resilient health systems by connecting Yale’s strengths in planetary science, public health, data, policy, and social science with partners addressing climate-related health risks.",
+      "text": "The Institute will help build climate-resilient health systems by connecting Yale’s strengths in planetary science, public health, data, policy, and social science with partners addressing climate-related health risks around the world. The Institute will support interdisciplinary approaches that anticipate emerging threats, translate evidence into practical tools and policy, strengthen decision-making capacity, and co-design locally relevant approaches to resilience and adaptation."
+    },
+    {
+      "slug": "digital-health-ai",
+      "name": "Digital Health & AI",
+      "letter": "D",
+      "summary": "Harness AI, data science, and digital health to strengthen diagnostics, surveillance, care delivery, and health-system decision-making.",
+      "text": "The Institute will harness advances in artificial intelligence, data science, and digital health to strengthen diagnostics, surveillance, care delivery, and health-system decision-making. Working across Yale and with global partners, the Institute will help move promising technologies from innovation to responsible implementation, supporting evidence generation, governance and regulatory capacity, workforce readiness, and equitable adoption, particularly in resource-constrained settings."
+    },
+    {
+      "slug": "health-diplomacy-security",
+      "name": "Health Diplomacy & Security",
+      "letter": "H",
+      "summary": "Connect Yale’s academic expertise with global policy, preparedness, and multilateral action on health challenges that cross borders.",
+      "text": "The Institute will connect Yale’s academic expertise with global policy, preparedness, and multilateral action to address health challenges that cross borders and require collective solutions. Through partnerships with governments, regional and multilateral institutions, and other global actors, YIGH will help translate research into policy, strengthen preparedness and response capacity, and cultivate leaders equipped to navigate the increasingly complex intersection of health, diplomacy, and security."
+    },
+    {
+      "slug": "health-sovereignty",
+      "name": "Health Sovereignty",
+      "letter": "S",
+      "summary": "Advance a country-led approach to global health, supporting the institutions, capabilities, and partnerships countries need to define and deliver their own health priorities.",
+      "text": "The Institute will advance a more country-led approach to global health by supporting the institutions, capabilities, and partnerships countries need to define and deliver their own health priorities. This includes strengthening pathways from biomedical discovery to equitable access, building local research and implementation capacity, and supporting sustainable approaches to health financing, regulation, manufacturing, and health-system delivery, shifting the emphasis from dependency toward ownership, resilience, and lasting institutional capacity."
+    }
+  ],
+  "pillars_intro": "Four institutional pillars cut across the strategic priorities: the enduring ways YIGH builds and strengthens people, ideas and solutions, knowledge and evidence, and relationships and capacity.",
+  "pillars": [
+    {
+      "name": "Partners",
+      "text": "Trusted, reciprocal partnerships that strengthen institutions, communities, and health systems, connecting Yale’s expertise with locally defined priorities."
+    },
+    {
+      "name": "Leaders",
+      "text": "Opportunities for students, trainees, faculty, and practitioners to build the knowledge, experience, networks, and skills needed to lead in a changing global health landscape."
+    },
+    {
+      "name": "Innovators",
+      "text": "Bold ideas and transformative solutions, supported by catalytic funding and pathways that move ideas from concept to real-world application and impact."
+    },
+    {
+      "name": "Scholars",
+      "text": "Interdisciplinary team science, emerging investigators, global research collaborations, and bidirectional exchange that translate evidence into policy, practice, and improved health."
+    }
+  ],
+  "tools_link": "Explore the tools on our site to help you connect with resources at the institute and externally.",
+  "figures": [
+    {
+      "value": "240+",
+      "label": "YIGH faculty affiliates",
+      "detail": "Yale faculty across the schools engaged in global health research and projects"
+    },
+    {
+      "value": "15",
+      "label": "Faculty networks",
+      "detail": "Connecting faculty around shared thematic and geographic priorities"
+    },
+    {
+      "value": "75",
+      "label": "Leadership in Global Health Fellows",
+      "detail": "Trained through global health fellowship placements worldwide"
+    },
+    {
+      "value": "2019",
+      "label": "Launched",
+      "detail": "Approved by the Yale Corporation with a university-wide mandate"
+    }
+  ],
+  "figures_source": "https://medicine.yale.edu/yigh/ (figures) and the draft Strategic Plan (launch year)",
+  "newsletter_url": "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_9FAMDhiY32FUvwq",
+  "contact": {
+    "address": [
+      "Yale Institute for Global Health",
+      "PO Box 208034",
+      "New Haven, CT 06520-8034"
+    ],
+    "website": "https://medicine.yale.edu/yigh/",
+    "contact_url": "https://medicine.yale.edu/about/contact-us/"
+  }
+}
