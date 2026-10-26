@@ -49,7 +49,7 @@ Metasebiya Mamo · YIGH Student Fellow · MGT 409 AI Foundations for Managers, F
 <strong>GitHub repository:</strong> <a href="https://github.com/Mamometi/yigh-nexus">https://github.com/Mamometi/yigh-nexus</a><br>
 <strong>App:</strong> runs locally in about five minutes from a fresh clone (instructions in the README); not hosted online.
 </div>
-<p><strong>In one sentence:</strong> YIGH Nexus finds open global health funding calls, shows which Yale faculty and partner institutions
+<p>YIGH Nexus finds open global health funding calls, shows which Yale faculty and partner institutions
 could work on each one, and helps turn a researcher’s goals into a one-page concept, with an AI desk assistant that can search all of it.</p>
 
 <figure><img src="{{IMG:01-home}}" alt="YIGH Nexus home page"><figcaption>Figure 1. Home page. The four tabs are the Home page, the Opportunity Radar, the Faculty Directory and the Team Launchpad; Nexi, the chat assistant, sits in the corner of every page.</figcaption></figure>
@@ -68,12 +68,23 @@ websites (Wellcome, Gates, Rockefeller, IDRC and others) that each publish calls
 they already know, or browse Yale profile pages one at a time; nothing links a funding call to the faculty whose work fits it, or
 to the overseas institutions Yale already partners with. A first concept note is then written from scratch.</p>
 <h3>What it costs</h3>
-<p>Proposal work is expensive. A study of Australian health researchers found that each proposal took an average of 34 working days,
-and that across one national funding round this added up to about 550 working years of researcher time (Herbert et al., <em>BMJ Open</em>
-2013). A U.S. faculty workload survey found that federally funded researchers spent 42% of their research time on administration
-(Federal Demonstration Partnership, 2005). Meanwhile the money is scarcer: NIH reported fewer research project grant awards in fiscal
-2025 (55,394, down 6.2% from 59,063), and development assistance for health fell to an estimated $39.1 billion in 2025, a 15-year low
-and 51% below its 2021 peak (IHME, via DevPolicy). Missing a call, or entering it late with a thin team, has a real cost.</p>
+<p>Proposal work is expensive, and recent figures suggest it is getting worse. A widely cited survey found that a single proposal takes
+on average 116 hours of the principal investigator’s time and another 55 hours from co-investigators (von Hippel &amp; von Hippel,
+<em>PLOS ONE</em> 2015), and a 2023 analysis of research funding in Austria put the figure at about 50 working days per proposal, with
+90% of researchers saying they spend too much time on applications (as reported by Editage, 2025). At the same time, the odds are
+falling. NIH made 6.2% fewer research project grant awards in fiscal 2025 (55,394, down from 59,063; NIH Extramural Nexus, 2026), the
+overall success rate was reported at about 13% (down from 21% in 2023), and the success rate for early-stage investigators fell to 18.5%
+from 29.8% two years earlier (STAT, 2025). Global health money is shrinking too: development assistance for health fell to an estimated
+$39.1 billion in 2025, a 15-year low and 51% below its 2021 peak (IHME, via DevPolicy, 2025), with a further 5% drop reported for 2026
+(Think Global Health, 2026). Every hour spent searching by hand, or entering a call late with a thin team, now costs more.</p>
+<h3>Can AI cut that time?</h3>
+<p>Early evidence says yes, with caveats. In a 2023 <em>Nature</em> survey of about 1,600 researchers, more than 15% already used AI tools
+to help write grant proposals (cited in Parrilla, <em>Nature</em>, 2023). A 2025 case study reported that using ChatGPT cut proposal
+preparation from 30–50 days to 3–5 days across four applications, two of which were funded (Rybiński, Silesian University of
+Technology, 2025); the author notes that four proposals is a very small sample. Funders such as the Swiss National Science Foundation
+and the European Commission accept AI as a writing aid but hold applicants fully responsible for what they submit (University of
+Fribourg guidance, 2025). That is the gap YIGH Nexus is designed for: AI that saves time on searching and first drafts, while every name,
+deadline and claim stays traceable to a real source.</p>
 <h3>Why anyone should care</h3>
 <p>When funding is shrinking, the institutions that win are the ones that find calls early and assemble strong, interdisciplinary
 teams with credible local partners. YIGH exists to make that easier across Yale. A tool that shortens the path from “there is a call”
@@ -100,7 +111,10 @@ the specific Yale faculty and multi-department teams who fit it, with the reason
 clearly separating ones that already have a public Yale connection (for example YIGH research-training sites in Kenya and Senegal) from
 brand-new suggestions; and a first one-page draft that reuses all of the above. General assistants like ChatGPT can draft text but
 cannot see Yale’s faculty data or a verified list of open calls, so their deadlines and names have to be checked by hand; YIGH Nexus only answers from records it can link to.
-The honest trade-off: YIGH Nexus covers fewer funders (36 watched sources) than the big databases, so it complements them rather than replacing them.</p>
+The trade-off is that YIGH Nexus covers fewer funders (36 watched sources of established funding partners) than the big databases,
+so it currently complements them rather than replacing them. The watchlist can grow, and the platform could integrate the big databases
+to widen coverage. Another challenge is that the site uses agents to collect open calls, and some organizations do not allow automated
+or AI tools to view their sites; those funders are listed for manual checking instead.</p>
 
 <!-- ============================================================ 4 -->
 <h2>4. The agents</h2>
@@ -247,27 +261,27 @@ tests/launchpad/test_launchpad.py::test_api_requires_sign_in                    
 
 <!-- ============================================================ 7 -->
 <h2>7. Impact</h2>
+<p>I estimated the time to complete each task by hand from previous studies of the grant application process (Section 2) and from how
+the work is done at YIGH today, so the “before” column is an estimate, not a timed study. The app’s times come from its usage logs on
+one laptop. The quality of suggestions has been checked on a small sample: on 10 calls, the team-matching shortlist’s top-five precision
+was 0.64, against 0.47 for plain keyword search.</p>
 <table>
 <tr><th>What changes</th><th>Before</th><th>With YIGH Nexus</th><th>Source</th></tr>
 <tr><td>Finding open calls in YIGH’s priorities</td><td>Checking Grants.gov, the NIH Guide and ~20 foundation sites by hand</td><td>One list of 33 open or forecasted calls, tagged by priority and checked weekly; 36 sources watched</td><td>App data (radar.db)</td></tr>
 <tr><td>Knowing when a funder opens again</td><td>Remembering or re-checking each website</td><td>Funder timing panel: last opened, last close, forecasts</td><td>App feature</td></tr>
 <tr><td>Finding Yale collaborators for a topic and place</td><td>Asking around, browsing profiles one by one</td><td>12–19 seconds for a ranked list with reasons (measured, Section 4)</td><td>Usage log</td></tr>
 <tr><td>Assembling a team for a call</td><td>Days of emails, as a careful estimate</td><td>About 28 seconds for ranked faculty, 1–3 teams with roles, partners and gaps</td><td>Usage log</td></tr>
-<tr><td>First concept draft</td><td>Part of the ~34 working days per proposal reported by Herbert et al.</td><td>About 11 seconds for a one-page draft aligned to the call</td><td>Usage log; BMJ Open 2013</td></tr>
+<tr><td>First concept draft</td><td>Part of the 116+ hours (about 50 working days in recent estimates) spent per proposal</td><td>About 11 seconds for a one-page draft aligned to the call</td><td>Usage log; von Hippel 2015; Editage 2025</td></tr>
 <tr><td>Cost</td><td>Commercial databases: institutional licenses; AI writing tools $50–$150 per user per month</td><td>About $0.02 per active user per month in AI costs</td><td>Section 5</td></tr>
 </table>
 <h3>A real user trying it</h3>
 <p>I am the first real user: as a YIGH student fellow I tested every feature while building it, and my reactions changed the product. The
 clearest example is the assistant. When I first asked it “who can I collaborate with that works on climate and health in Kenya?”, the
-keyword version replied that it couldn’t find anyone called “that works on climate and health in kenya”; my reaction, recorded in the
-project’s prompt log, was <em>“bro this chatbot is so dumb, please make it smart.”</em> After connecting the AI agent, the same question
+keyword version replied that it couldn’t find anyone called “that works on climate and health in kenya”. After connecting the AI agent, the same question
 produced the useful, honest answer in Figure 3 in 18.6 seconds. Other real-use feedback that changed the app: replacing jargon such as
 “documented evidence” with plain words, hiding the funder watchlist in favour of per-funder timing, and requiring a sign-in for the Launchpad.</p>
-<p class="note fill"><strong>To add before submitting:</strong> a short quote and a before/after time from one other person at YIGH (for
-example, a staff member or faculty member asked to find collaborators and a call for one topic, first by hand and then with the app).</p>
-<p><strong>Honest limits on these numbers:</strong> the “before” times are estimates, not a timed study; the app’s times come from logs on one
-laptop; and the quality of suggestions has been checked on a small sample (for example, the team-matching evaluation on 10 calls, where
-the shortlist’s top-five precision was 0.64 against 0.47 for plain keyword search).</p>
+
+
 
 <!-- ============================================================ 8 -->
 <h2>8. Limits and next steps</h2>
@@ -284,12 +298,18 @@ the shortlist’s top-five precision was 0.64 against 0.47 for plain keyword sea
 <ul>
 <li>Host it for YIGH with Yale NetID single sign-on, and run the weekly radar on a schedule in the cloud.</li>
 <li>Run a two-week pilot with five YIGH faculty and staff, timing the before and after for real tasks.</li>
-<li>Blind-judge AI versus rules rankings on 30 calls and tune the shortlist.</li>
 <li>Weekly email digests per person (“3 new calls in your priorities; 2 colleagues who fit”).</li>
 <li>Let users mark a suggestion as contacted or not relevant, and use that to improve matching.</li>
-<li>Stream chat answers so people see progress instead of waiting.</li>
+<li>Link to bigger grant databases to improve coverage of funders, especially important funders that block automated access.</li>
+<li>Expand opportunities to job searches, fellowship programs, graduate schools and more.</li>
 </ul>
 
-<p class="sub" style="margin-top:.4in">Sources: Herbert DL et al., BMJ Open 2013;3:e002800 · Federal Demonstration Partnership Faculty Workload Survey (2005), via PMC2887040 · NIH Extramural Nexus, “Fiscal Year 2025 by the Numbers” (2026) · IHME estimate reported by DevPolicy (2025) · OpenAI API pricing page (gpt-6-luna) · vendor pages for Pivot-RP, Dimensions, Elsevier Funding Institutional, Instrumentl, Candid, Grantable.</p>
+<p class="sub" style="margin-top:.4in">Sources: von Hippel T &amp; von Hippel C, “To apply or not to apply,” PLOS ONE 2015;10(3):e0118494 ·
+Editage Insights, “Grant writing needs more than good science” (2025), citing a 2023 Austrian analysis · NIH Extramural Nexus, “Fiscal Year 2025
+by the Numbers” (2026) · STAT News, early-stage investigator success rates (Dec 2025) · IHME estimate reported by DevPolicy (2025) ·
+Think Global Health, “The state of global health funding” (Oct 2026) · Parrilla JM, “ChatGPT use shows that the grant-application system is broken,”
+Nature (2023) · Rybiński, case study on ChatGPT in grant preparation, Silesian University of Technology management papers (2025) · University of
+Fribourg research office guidance on AI in proposals (2025) · OpenAI API pricing (gpt-6-luna) · vendor pages for Pivot-RP, Dimensions, Elsevier
+Funding Institutional, Instrumentl, Candid and Grantable.</p>
 </body>
 </html>

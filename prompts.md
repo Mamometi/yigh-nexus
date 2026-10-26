@@ -385,3 +385,11 @@ does the git repo follow these instructions? https://zlisto.github.io/mgt_409_fa
 ## Prompt 74 — 2026-10-26
 
 ok now help me draft a report in html following these instructions and fulfilling every requirement (except for maybe the feedback part). It should be 10-15 pages double spaced and in normal size font when printed: https://zlisto.github.io/mgt_409_fa26/project_requirements.html#report
+
+## Prompt 75 — 2026-10-26
+
+Let me read the report first and send you edits.
+
+## Prompt 76 — 2026-10-26
+
+(report edit list: remove "In one sentence"; update "What it costs" with recent info and studies on AI cutting time; rewrite trade-off paragraph; trim the chatbot quote; remove the "To add before submitting" note; move the limits paragraph before the impact table as an estimates note; replace "With another month" list)
