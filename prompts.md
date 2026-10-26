@@ -393,3 +393,11 @@ Let me read the report first and send you edits.
 ## Prompt 76 — 2026-10-26
 
 (report edit list: remove "In one sentence"; update "What it costs" with recent info and studies on AI cutting time; rewrite trade-off paragraph; trim the chatbot quote; remove the "To add before submitting" note; move the limits paragraph before the impact table as an estimates note; replace "With another month" list)
+
+## Prompt 77 — 2026-10-26
+
+Yes, draft slides.html next following the course instructions.
+
+## Prompt 78 — 2026-10-26
+
+(reply to "If you would rather cite only primary sources, I can drop those two") drop these two as well

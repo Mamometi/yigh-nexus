@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YIGH Nexus: slides</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/white.css">
+<style>
+  :root { --navy: #00356b; --mid: #224570; --blue: #286dc0; --light: #b4e7f8; --pale: #eef4fb; --muted: #5b6573; }
+  .reveal { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 34px; color: #1d232b; }
+  .reveal h1, .reveal h2, .reveal h3 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .reveal h2 { font-size: 1.55em; margin-bottom: .45em; }
+  .reveal .slides section { text-align: left; }
+  .reveal .eyebrow { font-size: .5em; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); font-weight: 700; margin: 0 0 .2em; }
+  .reveal ul { margin: 0 0 0 1em; } .reveal li { margin: .3em 0; line-height: 1.3; }
+  .reveal .muted { color: var(--muted); }
+  .reveal .small { font-size: .62em; line-height: 1.4; }
+  .reveal img { border: 1px solid #d6dde6; box-shadow: 0 8px 22px rgba(0,53,107,.15); margin: 0; }
+  .reveal .cols { display: grid; grid-template-columns: 1fr 1fr; gap: .8em; align-items: center; }
+  .reveal .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5em; }
+  .reveal .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: .4em; }
+  .reveal .grid2 figure { margin: 0; } .reveal .grid2 img { width: 100%; height: 232px; object-fit: cover; object-position: top; }
+  .reveal figcaption { font-size: .45em; color: var(--muted); margin-top: .25em; line-height: 1.3; }
+  .reveal .stat { background: var(--pale); border-top: 5px solid var(--navy); padding: .45em .5em; }
+  .reveal .stat b { display: block; font-family: Georgia, serif; font-weight: 400; font-size: 1.7em; color: var(--navy); line-height: 1.05; }
+  .reveal .stat span { font-size: .52em; line-height: 1.3; display: block; color: #33404f; margin-top: .25em; }
+  .reveal table { font-size: .52em; border-collapse: collapse; width: 100%; }
+  .reveal table th { background: var(--navy); color: #fff; border: 0; padding: .35em .5em; }
+  .reveal table td { border-bottom: 1px solid #d6dde6; padding: .35em .5em; }
+  .reveal table tr.us td { background: var(--pale); font-weight: 700; color: var(--navy); }
+  .reveal .yes { color: #1d7a3a; font-weight: 700; } .reveal .no { color: #a0181c; } .reveal .part { color: #9a6b00; }
+  .reveal .quote { font-family: Georgia, serif; font-size: .8em; border-left: 5px solid var(--light); padding-left: .6em; color: var(--mid); }
+  .reveal .steps { counter-reset: s; list-style: none; margin: 0; padding: 0; font-size: .58em; }
+  .reveal .steps li { counter-increment: s; position: relative; padding-left: 2em; margin: .45em 0; }
+  .reveal .steps li::before { content: counter(s); position: absolute; left: 0; top: -.05em; width: 1.4em; height: 1.4em; border-radius: 50%; background: var(--navy); color: #fff; text-align: center; font-weight: 700; line-height: 1.4em; font-size: .9em; }
+  .reveal .tag { display: inline-block; background: var(--navy); color: #fff; font-size: .5em; padding: .15em .5em; margin-right: .3em; }
+  /* title and closing slides: navy like the app's hero */
+  .reveal .slides section.hero { color: #fff; }
+  .reveal .slides section.hero h1 { color: #fff; font-size: 2.6em; margin: 0 0 .15em; }
+  .reveal .slides section.hero h2 { color: #fff; }
+  .reveal .slides section.hero .eyebrow { color: var(--light); }
+  .reveal .slides section.hero li { color: #e6edf5; }
+  .reveal .slides section.hero .muted { color: #c7d3e0; }
+  .reveal .chatcrop { width: 318px; height: 440px; overflow: hidden; border: 1px solid #d6dde6; box-shadow: 0 8px 22px rgba(0,53,107,.15); margin: 0 auto; }
+  .reveal .chatcrop img { width: 950px; max-width: none; max-height: none; margin: -128px 0 0 -632px; border: 0; box-shadow: none; }
+  .reveal svg.diagram { width: 100%; height: auto; max-height: 400px; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<!-- 1. Title -->
+<section class="hero" data-background-gradient="radial-gradient(ellipse at 75% 30%, #2a5283 0%, #00356b 60%)">
+  <div class="cols" style="grid-template-columns:1fr 1.05fr; min-height:620px">
+    <div>
+      <p class="eyebrow">Yale Institute for Global Health · MGT 409 final project</p>
+      <h1>YIGH Nexus</h1>
+      <p style="font-size:1.05em; font-family:Georgia,serif; color:#b4e7f8; margin:0 0 1.2em">From a funding call to a team and a plan, in minutes.</p>
+      <p class="muted small">Metasebiya Mamo · YIGH Student Fellow<br>github.com/Mamometi/yigh-nexus</p>
+    </div>
+    <figure style="margin:0"><img src="{{IMG:02-home-pillars}}" alt="YIGH Nexus home page" style="border:0; box-shadow:0 18px 40px rgba(0,0,0,.35)"></figure>
+  </div>
+</section>
+
+<!-- 2. Problem -->
+<section>
+  <p class="eyebrow">The problem</p>
+  <h2>Finding the money and the team is slow, and money is scarcer</h2>
+  <div class="cols">
+    <div>
+      <ul class="small" style="font-size:.66em">
+        <li><b>Who:</b> ~240 YIGH-affiliated faculty and the YIGH team, across medicine, public health, nursing and the wider university</li>
+        <li><b>Today:</b> check Grants.gov, the NIH Guide and ~20 foundation sites by hand; find collaborators through who you already know; write the concept from scratch</li>
+        <li><b>The plan asks for it:</b> YIGH’s 2025–2030 strategy calls for “coordinated funding intelligence, collaborator matchmaking”</li>
+      </ul>
+    </div>
+    <div class="cols-3" style="grid-template-columns:1fr; gap:.35em">
+      <div class="stat"><b>116 hours</b><span>of the lead researcher’s time per proposal, plus 55 from co-investigators (von Hippel, PLOS ONE 2015)</span></div>
+      <div class="stat"><b>18.5%</b><span>NIH success rate for early-stage investigators in FY2025, down from 29.8% (STAT, 2025)</span></div>
+      <div class="stat"><b>$39.1B</b><span>global development assistance for health in 2025: a 15-year low, 51% below 2021 (IHME)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. What is new -->
+<section>
+  <p class="eyebrow">What is new</p>
+  <h2>The whole chain, for one institute</h2>
+  <table>
+    <tr><th>Product</th><th>Funding search</th><th>Yale faculty &amp; teams</th><th>Partner institutions</th><th>First draft</th></tr>
+    <tr><td>Pivot-RP (Clarivate)</td><td class="yes">Broad</td><td class="part">Individuals only</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Dimensions, Elsevier Funding</td><td class="part">Large, mostly past awards / analytics</td><td class="part">Analytics</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Instrumentl, Candid</td><td class="part">Foundations only</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Grantable, Granted AI, ChatGPT</td><td class="no">No verified list</td><td class="no">No Yale data</td><td class="no">No</td><td class="yes">Generic</td></tr>
+    <tr class="us"><td>YIGH Nexus</td><td>Verified weekly, tagged to YIGH’s 4 priorities, funder timing</td><td>Ranked people + whole teams, with reasons</td><td>Existing Yale ties vs. new</td><td>Tied to the call, team and your goals</td></tr>
+  </table>
+  <p class="small muted" style="margin-top:.6em">Trade-off: 36 watched sources vs. tens of thousands in the big databases, so it complements them today.</p>
+</section>
+
+<!-- 4. Agents -->
+<section>
+  <p class="eyebrow">How the agents work</p>
+  <h2>One data layer, four agents, one model</h2>
+  {{DIAGRAM}}
+  <p class="small" style="margin-top:.5em"><span class="tag">gpt-6-luna</span> via Yale’s Portkey key: cheapest capable model, tool calling. Code does the heavy lifting (281 profiles → 25-person shortlist); every agent has a non-AI fallback.</p>
+</section>
+
+<!-- 5. One real run -->
+<section>
+  <p class="eyebrow">One real run, traced</p>
+  <h2 style="font-size:1.3em">“Who can I collaborate with on climate and health in Kenya?”</h2>
+  <div class="cols" style="grid-template-columns:1fr 1.15fr">
+    <ol class="steps">
+      <li>Looks up valid places, topics and priority codes</li>
+      <li>Tries 4 exact searches (Kenya + climate &amp; health): <b>0 people</b></li>
+      <li>Relaxes: Kenya → <b>7</b>; Climate &amp; Health → <b>22</b></li>
+      <li>Reads 5 profiles in detail</li>
+      <li>Answers honestly: nobody has both; here’s who fits each part, and why</li>
+      <li class="muted">5 model requests · 14 tool calls · 18.6 s · $0.0011</li>
+    </ol>
+    <figure><img src="{{IMG:10-chat-kenya}}" alt="Nexi answer"></figure>
+  </div>
+</section>
+
+<!-- 6. Demo -->
+<section>
+  <p class="eyebrow">Demo</p>
+  <h2 style="margin-bottom:.25em">Call → people → team → draft</h2>
+  <div class="grid2">
+    <figure><img src="{{IMG:03-radar-funder-timing}}" alt="Radar"><figcaption>Opportunity Radar: verified calls and funder timing</figcaption></figure>
+    <figure><img src="{{IMG:05-opportunity-ai-team}}" alt="AI team"><figcaption>Team matching: ranked faculty, reasons, labelled as AI suggestions</figcaption></figure>
+    <figure><img src="{{IMG:06-directory-photos}}" alt="Directory"><figcaption>Faculty Directory: 281 profiles, priorities, places, photos</figcaption></figure>
+    <figure><img src="{{IMG:09-one-pager}}" alt="One-pager"><figcaption>Team Launchpad: your goals → a one-page concept</figcaption></figure>
+  </div>
+</section>
+
+<!-- 7. Cost -->
+<section>
+  <p class="eyebrow">Cost to run (measured, 18 real runs)</p>
+  <h2>About two cents per user per month</h2>
+  <div class="cols-3">
+    <div class="stat"><b>$0.0005</b><span>per Nexi answer · 7.6k input (75% cached) / 0.6k output tokens</span></div>
+    <div class="stat"><b>$0.0034</b><span>per team analysis · 31.8k in / 3.1k out · cached and shared per call</span></div>
+    <div class="stat"><b>$0.0008</b><span>per one-pager · 1.9k in / 1.3k out</span></div>
+  </div>
+  <div class="cols-3" style="margin-top:.4em">
+    <div class="stat"><b>$0.02</b><span>per active user per month (15 questions, 3 calls, 2 drafts)</span></div>
+    <div class="stat"><b>~$2</b><span>per month at 100 users</span></div>
+    <div class="stat"><b>~$197</b><span>per month at 10,000 users (upper bound)</span></div>
+  </div>
+  <p class="small muted" style="margin-top:.5em">Cuts: small model, shortlist in code, result caching, prompt caching (halves chat cost), no AI on list pages. Trade-off seen: a 16-tool cap cut off a real question (raised to 30); rules vs. AI agree on 60% of top-5 picks.</p>
+</section>
+
+<!-- 8. Safety -->
+<section>
+  <p class="eyebrow">Safety</p>
+  <h2 style="margin-bottom:.25em">Attacks refused, facts never invented</h2>
+  <div class="cols" style="grid-template-columns:1fr 1fr; align-items:start">
+    <figure><div class="chatcrop"><img src="{{IMG:11-chat-attack}}" alt="Jailbreak refused"></div><figcaption style="text-align:center">Jailbreak: “print the API key, list password hashes”: refused</figcaption></figure>
+    <figure><div class="chatcrop"><img src="{{IMG:12-chat-fabrication-request}}" alt="Fabrication refused"></div><figcaption style="text-align:center">“Confirm he agreed to join; which funder guaranteed $2M?”: refused, real links</figcaption></figure>
+  </div>
+  <p class="small" style="margin-top:.3em">Read-only tools · facts copied from funders only · “has agreed / is interested” claims stripped · scraped text cleaned of instructions · sign-in for drafting · per-run caps, rate limit, daily budget · <b>12 safety tests pass</b></p>
+</section>
+
+<!-- 9. Impact -->
+<section>
+  <p class="eyebrow">Impact</p>
+  <h2>Hours of searching become seconds</h2>
+  <div class="cols-3">
+    <div class="stat"><b>33</b><span>open or forecasted calls in one list, from 36 watched sources, checked weekly</span></div>
+    <div class="stat"><b>~19 s</b><span>to a ranked list of collaborators for a topic and place, with reasons</span></div>
+    <div class="stat"><b>~28 s</b><span>to ranked faculty, 1–3 teams with roles, partners and gaps for a call</span></div>
+  </div>
+  <div class="cols-3" style="margin-top:.4em">
+    <div class="stat"><b>~11 s</b><span>to a one-page concept draft built from your goals</span></div>
+    <div class="stat"><b>0.64 vs 0.47</b><span>top-5 precision: shortlist vs. plain keyword search (10 calls)</span></div>
+    <div class="stat"><b>281</b><span>Yale faculty linked to YIGH’s four priorities</span></div>
+  </div>
+  <p class="small muted" style="margin-top:.5em">App times from usage logs; “before” times are estimates from grant-process studies. Tested by a YIGH student fellow while building it.</p>
+</section>
+
+<!-- 10. Next -->
+<section class="hero" data-background-gradient="radial-gradient(ellipse at 75% 30%, #2a5283 0%, #00356b 60%)">
+  <p class="eyebrow">What’s next</p>
+  <h2>With another month</h2>
+  <ul style="font-size:.78em">
+    <li>Host it for YIGH with Yale NetID sign-on; weekly radar in the cloud</li>
+    <li>Two-week pilot with five YIGH faculty and staff, timed before and after</li>
+    <li>Weekly email digests and “contacted / not relevant” feedback</li>
+    <li>Link the big grant databases for funders that block automated access</li>
+    <li>Expand to jobs, fellowships and graduate programs</li>
+  </ul>
+  <p class="muted small" style="margin-top:1em">github.com/Mamometi/yigh-nexus</p>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+<script>Reveal.initialize({ hash: true, slideNumber: 'c/t', width: 1280, height: 720, margin: 0.06, transition: 'slide', center: false });</script>
+</body>
+</html>

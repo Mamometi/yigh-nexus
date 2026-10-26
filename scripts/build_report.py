@@ -16,7 +16,12 @@ def embed(src: Path, out: Path) -> None:
     def img(m):
         f = SRC / "img" / f"{m.group(1)}.jpg"
         return "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
-    out.write_text(re.sub(r"\{\{IMG:([\w-]+)\}\}", img, html))
+    html = re.sub(r"\{\{IMG:([\w-]+)\}\}", img, html)
+    if "{{DIAGRAM}}" in html:  # the agent diagram is kept once, in the report source
+        rep = (SRC / "report_source.html").read_text()
+        svg = rep[rep.index('<svg viewBox="0 0 720 300"'):rep.index("</svg>") + 6].replace("<svg ", '<svg class="diagram" ', 1)
+        html = html.replace("{{DIAGRAM}}", svg)
+    out.write_text(html)
     print(f"wrote {out.name} ({out.stat().st_size // 1024} KB)")
 
 
