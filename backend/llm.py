@@ -27,6 +27,7 @@ def load_env() -> None:
     global _loaded
     if _loaded:
         return
+    os.environ.setdefault("PYDANTIC_AI_NO_BANNER", "1")
     try:
         from dotenv import load_dotenv
     except ImportError:  # python-dotenv not installed: rely on real environment variables
