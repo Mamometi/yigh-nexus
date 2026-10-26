@@ -89,7 +89,7 @@ def _llm_name() -> str:
 
 def ai_available() -> bool:
     from backend import llm
-    return llm.ai_available()
+    return llm.ai_available() and (llm.provider() == "test" or llm.within_budget())
 
 
 class Matcher:
@@ -158,13 +158,17 @@ class Matcher:
                          started_at=started, latency_ms=0, status="ok")
         result = None
         try:
+            from backend import llm
             run = agent.run_sync(opportunity_prompt(opp, shortlist, rows, concerns),
-                                 deps=Deps(opp, shortlist, {r["faculty_id"]: r for r in rows}))
+                                 deps=Deps(opp, shortlist, {r["faculty_id"]: r for r in rows}), usage_limits=llm.limits("team_matching"))
             result, u = run.output, run.usage
+            llm.record("team_matching", u, latency_s=time.perf_counter() - t0)
             call.requests, call.input_tokens, call.output_tokens = u.requests, u.input_tokens, u.output_tokens
             call.cache_read_tokens = u.cache_read_tokens
         except Exception as e:  # noqa: BLE001 — logged; the rule-based result is used instead
             call.status, call.error = "error", f"{type(e).__name__}: {e}"[:2000]
+            from backend import llm
+            llm.record("team_matching", None, latency_s=time.perf_counter() - t0, status="error", error=call.error)
         call.latency_ms = int((time.perf_counter() - t0) * 1000)
         price = PRICES.get(call.model.split(":")[-1])
         if price:

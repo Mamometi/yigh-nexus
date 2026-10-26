@@ -1,0 +1,115 @@
+[
+ {
+  "id": 15,
+  "title": "Emerging Infections Network - Research for Preventing, Detec",
+  "ai_top5": [
+   "Nathan Grubaugh",
+   "Chantal Vogels",
+   "Daniel Weinberger",
+   "Onyema Ogbuagu",
+   "Nedghie Adrien"
+  ],
+  "rules_top5": [
+   "Chantal Vogels",
+   "Nathan Grubaugh",
+   "Colin J. Carlson",
+   "Marwan Osman",
+   "Durland Fish"
+  ],
+  "overlap": 2,
+  "ai_teams": [
+   "Clinic sentinel surveillance and genomic follow-up"
+  ],
+  "rules_teams": [
+   "Team option 1",
+   "Team option 2",
+   "Team option 3"
+  ],
+  "ai_cache": true
+ },
+ {
+  "id": 14,
+  "title": "Prevention and Treatment through a Comprehensive Care Contin",
+  "ai_top5": [
+   "Frederick (Rick) Lewis Altice",
+   "Luke Davis",
+   "Debbie Humphries",
+   "Sheela Shenoi",
+   "Raul U. Hernandez-Ramirez"
+  ],
+  "rules_top5": [
+   "Frederick (Rick) Lewis Altice",
+   "LaRon Nelson",
+   "Sheela Shenoi",
+   "Debbie Humphries",
+   "Luke Davis"
+  ],
+  "overlap": 4,
+  "ai_teams": [
+   "HIV care delivery and implementation team",
+   "Implementation outcomes and evaluation team"
+  ],
+  "rules_teams": [
+   "Team option 1",
+   "Team option 2",
+   "Team option 3"
+  ],
+  "ai_cache": true
+ },
+ {
+  "id": 5,
+  "title": "U.S. Mission to the United Nations-Geneva, Small Grants Prog",
+  "ai_top5": [
+   "Habib Alrahman Alnedari",
+   "Nathaniel Raymond",
+   "Colin J. Carlson",
+   "Zahirah McNatt",
+   "Kaveh Khoshnood"
+  ],
+  "rules_top5": [
+   "Habib Alrahman Alnedari",
+   "Colin J. Carlson",
+   "Nathaniel Raymond",
+   "Chantal Vogels",
+   "Durland Fish"
+  ],
+  "overlap": 3,
+  "ai_teams": [
+   "Climate, WASH, and health security in crises",
+   "Refugee health policy and humanitarian response"
+  ],
+  "rules_teams": [
+   "Team option 1",
+   "Team option 2",
+   "Team option 3"
+  ],
+  "ai_cache": true
+ },
+ {
+  "id": 40,
+  "title": "U.S. EMBASSY TO LIBYA PAS ANNUAL PROGRAM STATEMENT",
+  "ai_top5": [
+   "Habib Alrahman Alnedari",
+   "Jeannette Ickovics",
+   "Robert Dubrow",
+   "Jessica Lewis"
+  ],
+  "rules_top5": [
+   "Jeannette Ickovics",
+   "Robert Dubrow",
+   "Habib Alrahman Alnedari",
+   "Xi Chen",
+   "Laura Bothwell"
+  ],
+  "overlap": 3,
+  "ai_teams": [
+   "Climate-health learning with a Libyan NGO partner"
+  ],
+  "rules_teams": [
+   "Team option 1",
+   "Team option 2",
+   "Team option 3"
+  ],
+  "ai_cache": true
+ }
+]

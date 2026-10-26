@@ -69,6 +69,14 @@ def _client():
 
 
 def call_api(deps: Deps, path: str, params: dict | None = None, method: str = "GET"):
+    """Call the site's own API. Runs on a fresh thread (no inherited agent-run context), so endpoints that start
+    their own agent run, such as team matching, work when Nexi calls them as a tool."""
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=1) as ex:
+        return ex.submit(_call_api, deps, path, params, method).result()
+
+
+def _call_api(deps: Deps, path: str, params: dict | None = None, method: str = "GET"):
     deps.tools_used.append(path.split("?")[0])
     c = _client()
     if deps.cookie:
@@ -285,7 +293,8 @@ def _opp_lines(opps: list[dict]) -> str:
 def _match_funder(deps: Deps, text: str) -> dict | None:
     t = text.lower()
     best = None
-    for f in t_list_funders(deps):
+    funders = t_list_funders(deps)
+    for f in funders if isinstance(funders, list) else []:
         label = f["label"].lower()
         short = re.sub(r"\b(the|foundation|fund|institute|of|for|and|&)\b", " ", label).split()
         initials = "".join(w[0] for w in re.findall(r"[a-z]+", re.sub(r"\(.*?\)|-.*$", "", label)) if w not in ("of", "and", "for", "the"))
@@ -391,6 +400,11 @@ def _keywords(t: str) -> str:
     return " ".join(w for w in re.findall(r"[a-z][a-z-]+", t) if w not in STOP and w not in ("climate", "health", "digital", "ai", "sovereignty", "diplomacy", "security"))[:80]
 
 
+BLOCKED_REPLY = ("Sorry, I can't help with that one! I can't share system settings, keys or account details, and I can't say "
+                 "that anyone has agreed to collaborate. I'm happy to help you find funding, Yale faculty, collaborators or "
+                 "partner institutions, though. What are you working on?")
+
+
 def chat(messages: list[dict], cookie: str | None, signed_in: bool, model=None) -> dict:
     deps = Deps(cookie=cookie, signed_in=signed_in)
     last = next((m["content"] for m in reversed(messages) if m["role"] == "user"), "")
@@ -401,9 +415,18 @@ def chat(messages: list[dict], cookie: str | None, signed_in: bool, model=None) 
             history.append(ModelRequest(parts=[UserPromptPart(content=m["content"])]) if m["role"] == "user"
                            else ModelResponse(parts=[TextPart(content=m["content"])]))
         try:
-            r = build_agent(model).run_sync(last, deps=deps, message_history=history)
-            return {"reply": r.output, "mode": "ai", "tools_used": deps.tools_used}
+            from backend import llm
+            import time as _t
+            t0 = _t.perf_counter()
+            r = build_agent(model).run_sync(last, deps=deps, message_history=history, usage_limits=llm.limits("assistant"))
+            row = llm.record("assistant", r.usage, latency_s=_t.perf_counter() - t0)
+            return {"reply": r.output, "mode": "ai", "tools_used": deps.tools_used, "usage": row}
         except Exception as e:  # noqa: BLE001 — fall back rather than fail the chat
+            from backend import llm
+            llm.record("assistant", None, latency_s=0, status="error", error=f"{type(e).__name__}: {e}")
+            if re.search(r"filtered|content[_ ]?filter|jailbreak|content management policy", str(e), re.I):
+                return {"reply": BLOCKED_REPLY, "mode": "blocked", "tools_used": deps.tools_used,
+                        "note": "The model provider's safety filter blocked this request."}
             reply = fallback_reply(deps, last)
             return {"reply": reply, "mode": "basic", "tools_used": deps.tools_used, "note": f"AI unavailable ({type(e).__name__}); used basic search."}
     return {"reply": fallback_reply(deps, last), "mode": "basic", "tools_used": deps.tools_used}

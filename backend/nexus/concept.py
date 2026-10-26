@@ -23,7 +23,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from .agent import DEFAULT_MODEL, UNSUPPORTED
 from .service import ModelCall, NexusBase, PRICES, ai_available
 
-CONCEPT_VERSION = "concept-v6"
+CONCEPT_VERSION = "concept-v7"
 
 
 class Concept(NexusBase):
@@ -129,7 +129,8 @@ def build_concept(matcher, ws: dict, team_name: str | None = None, model=None, g
                                     "Do not state amounts, deadlines or eligibility beyond the opportunity text. Do not claim anyone is "
                                     "interested, available, eligible, or has agreed to anything; describe roles as proposed. "
                                     "Build the aims around the user's goals when given, and show how each goal meets the call. "
-                                    "Write in clear, plain language. List unresolved items in open_questions."))
+                                    "Write in clear, plain language for busy faculty; avoid jargon such as 'documented' or 'evidence' and say what people work on. "
+                                    "List unresolved items in open_questions."))
         prompt = json.dumps({"user_goals": goals, "opportunity": {k: o.get(k) for k in ("title", "description", "eligibility", "deadline_text", "award_text")},
                              "requirements_quoted": requirements_from_text(o.get("description") or ""),
                              "team": [{"name": m["name"], "proposed_role": m["proposed_role"]["text"],
@@ -140,11 +141,13 @@ def build_concept(matcher, ws: dict, team_name: str | None = None, model=None, g
         t0, call = time.perf_counter(), ModelCall(opportunity_uid=o["uid"], model=model_id, started_at=datetime.now(timezone.utc).replace(tzinfo=None),
                                                   latency_ms=0, status="ok")
         try:
-            r = agent.run_sync(prompt)
+            r = agent.run_sync(prompt, usage_limits=llm.limits("one_pager"))
             note = r.output.model_dump()
+            llm.record("one_pager", r.usage, latency_s=time.perf_counter() - t0)
             call.requests, call.input_tokens, call.output_tokens = r.usage.requests, r.usage.input_tokens, r.usage.output_tokens
         except Exception as e:  # noqa: BLE001
             note, err, gen = None, f"{type(e).__name__}: {e}", "outline (AI error)"
+            llm.record("one_pager", None, latency_s=time.perf_counter() - t0, status="error", error=err)
             call.status, call.error = "error", err[:2000]
         call.latency_ms = int((time.perf_counter() - t0) * 1000)
         p = PRICES.get(model_id.split(":")[-1])

@@ -81,3 +81,64 @@ def model():
             return OpenAIResponsesModel(os.environ.get("LLM_MODEL", PORTKEY_MODEL), provider=OpenAIProvider(openai_client=client))
         return OpenAIChatModel(os.environ.get("LLM_MODEL", COURSE_MODEL), provider=OpenAIProvider(api_key=os.environ["OPENAI_API_KEY"]))
     return model_name() if p else "test"
+
+
+# ------------------------------------------------------------------ spending guards and usage log
+import json as _json
+import threading as _threading
+import time as _time
+from datetime import date as _date
+
+USAGE_LOG = REPO / "data" / "usage_log.jsonl"
+DAILY_TOKEN_BUDGET = int(os.environ.get("DAILY_TOKEN_BUDGET", "3000000"))  # whole app, all agents, per day
+_lock = _threading.Lock()
+
+# Hard caps for ONE run of each agent: a looping or manipulated agent stops here.
+RUN_LIMITS = {
+    "assistant": dict(request_limit=10, tool_calls_limit=30, total_tokens_limit=150_000),  # 16 tool calls cut off real multi-search questions
+    "team_matching": dict(request_limit=6, tool_calls_limit=20, total_tokens_limit=150_000),
+    "one_pager": dict(request_limit=3, total_tokens_limit=60_000),
+}
+
+
+def limits(kind: str):
+    from pydantic_ai.usage import UsageLimits
+    return UsageLimits(**RUN_LIMITS[kind])
+
+
+def tokens_used_today() -> int:
+    if not USAGE_LOG.exists():
+        return 0
+    today = _date.today().isoformat()
+    total = 0
+    for line in USAGE_LOG.read_text().splitlines():
+        try:
+            r = _json.loads(line)
+        except ValueError:
+            continue
+        if r.get("date") == today:
+            total += r.get("input_tokens", 0) + r.get("output_tokens", 0)
+    return total
+
+
+def within_budget() -> bool:
+    """False once today's tokens reach DAILY_TOKEN_BUDGET: agents then use their basic, non-AI mode."""
+    return tokens_used_today() < DAILY_TOKEN_BUDGET
+
+
+def record(kind: str, usage=None, *, latency_s: float, status: str = "ok", error: str | None = None) -> dict:
+    """Append one AI run to data/usage_log.jsonl (measured token counts, used for budgets and tokenomics)."""
+    row = {"date": _date.today().isoformat(), "ts": round(_time.time(), 1), "kind": kind, "model": model_name(), "status": status,
+           "requests": getattr(usage, "requests", 0), "tool_calls": getattr(usage, "tool_calls", 0),
+           "input_tokens": getattr(usage, "input_tokens", 0), "cached_input_tokens": getattr(usage, "cache_read_tokens", 0),
+           "output_tokens": getattr(usage, "output_tokens", 0),
+           "reasoning_tokens": getattr(usage, "output_reasoning_tokens", 0) if hasattr(usage, "output_reasoning_tokens") else
+           (getattr(usage, "details", {}) or {}).get("reasoning_tokens", 0),
+           "latency_s": round(latency_s, 2)}
+    if error:
+        row["error"] = error[:300]
+    with _lock:
+        USAGE_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with USAGE_LOG.open("a") as f:
+            f.write(_json.dumps(row) + "\n")
+    return row

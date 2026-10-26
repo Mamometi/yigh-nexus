@@ -1,6 +1,6 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { launchpad, radar, type ConceptDoc } from '../api'
+import { launchpad, radar, type ConceptDoc, type Workspace } from '../api'
 import { useAuth } from '../auth'
 import { Deadline } from '../components/OppCardView'
 import { ErrorState, Loading } from '../components/StateViews'
@@ -93,11 +93,11 @@ function Picker({ selected, onPick }: { selected: number | null; onPick: (id: nu
 }
 
 function Workspace({ id }: { id: number }) {
+  const [det, retryDet] = useAsync(() => radar.detail(id), [id])
   const [ws, retry] = useAsync(() => radar.workspace(id), [id])
-  if (ws.status === 'loading') return <Loading label="Finding faculty and partners…" />
-  if (ws.status === 'error') return <ErrorState message={ws.error} onRetry={retry} />
-  const w = ws.data, o = w.opportunity
-  const partners = w.external_partners.teams[0]?.partners ?? []
+  if (det.status === 'loading') return <Loading label="Loading opportunity…" />
+  if (det.status === 'error') return <ErrorState message={det.error} onRetry={retryDet} />
+  const o = det.data
   return (
     <>
       <section className="launch__chosen">
@@ -107,6 +107,18 @@ function Workspace({ id }: { id: number }) {
         {o.verification_status !== 'verified' && <p className="small launch__warn">These details come from the page you shared or the funder’s listing. Check them on the funder’s site before applying.</p>}
       </section>
 
+      {ws.status === 'loading' && <section className="launch__sec"><h2><span className="launch__n">2</span>People to reach out to</h2>
+        <Loading label="Matching Yale faculty and partner organizations to this call… (the first time can take up to a minute)" /></section>}
+      {ws.status === 'error' && <section className="launch__sec"><ErrorState message={ws.error} onRetry={retry} /></section>}
+      {ws.status === 'success' && <People w={ws.data} id={id} />}
+    </>
+  )
+}
+
+function People({ w, id }: { w: Workspace; id: number }) {
+  const partners = w.external_partners.teams[0]?.partners ?? []
+  return (
+    <>
       <section className="launch__sec">
         <h2><span className="launch__n">2</span>People to reach out to</h2>
         <p className="muted small">Suggestions based on public Yale profiles. Nobody has been contacted, and nothing here means they’re available or interested.</p>

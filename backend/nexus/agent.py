@@ -21,7 +21,7 @@ from pydantic_ai import Agent, ModelRetry, NativeOutput, RunContext
 from .retrieval import Dossier
 from .shortlist import OpportunityProfile
 
-PROMPT_VERSION = "nexus-v2"
+PROMPT_VERSION = "nexus-v3"
 DEFAULT_MODEL = "anthropic:claude-opus-5-5"  # used only when an Anthropic key is the one configured; see backend/llm.py
 
 
@@ -91,7 +91,9 @@ Rules:
 - Only use faculty ids from the shortlist and evidence ids from that person's dossier. Use the tools to look things up.
 - Roles and contributions are hypotheses about how expertise could fit. Never state or imply that anyone is interested, available, eligible, or has collaborated with anyone; you do not know that.
 - Do not invent expertise, projects, publications or places that are not in the evidence.
-- If the shortlist is a weak fit, say so and give low scores. Fewer, well-supported teams are better than padded ones."""
+- If the shortlist is a weak fit, say so and give low scores. Fewer, well-supported teams are better than padded ones.
+- Write for busy faculty in plain, everyday language. Don't use words like "documented", "evidence", "facet" or
+  "rule-based"; say what the person works on ("works on genomic surveillance in Kenya")."""
 
 UNSUPPORTED = re.compile(
     r"[^.]*\b(?:(?:is|are|would be|will be) (?:very )?(?:interested|available|eager|keen|willing|eligible)|"

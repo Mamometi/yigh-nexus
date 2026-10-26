@@ -377,3 +377,11 @@ use the .env in the homework files if is not working for you
 ## Prompt 72 — 2026-10-26
 
 update the github repo with the new upgrades
+
+## Prompt 73 — 2026-10-26
+
+does the git repo follow these instructions? https://zlisto.github.io/mgt_409_fa26/project_requirements.html#repo
+
+## Prompt 74 — 2026-10-26
+
+ok now help me draft a report in html following these instructions and fulfilling every requirement (except for maybe the feedback part). It should be 10-15 pages double spaced and in normal size font when printed: https://zlisto.github.io/mgt_409_fa26/project_requirements.html#report
