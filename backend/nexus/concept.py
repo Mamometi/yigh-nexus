@@ -23,7 +23,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from .agent import DEFAULT_MODEL, UNSUPPORTED
 from .service import ModelCall, NexusBase, PRICES, ai_available
 
-CONCEPT_VERSION = "concept-v7"
+CONCEPT_VERSION = "concept-v8"
 
 
 class Concept(NexusBase):
@@ -135,7 +135,9 @@ def build_concept(matcher, ws: dict, team_name: str | None = None, model=None, g
                              "requirements_quoted": requirements_from_text(o.get("description") or ""),
                              "team": [{"name": m["name"], "proposed_role": m["proposed_role"]["text"],
                                        "documented_evidence": [e["quote"][:200] for e in m["documented_evidence"][:3]]} for m in team["members"]],
-                             "partners": [{"name": p["name"], "country": p["country"], "relationship": p["relationship"]["status"]}
+                             "partners": [{"name": p["name"], "country": p["country"],
+                                          "yale_connection": "already connected to Yale (public source)" if p["relationship"]["status"] == "documented"
+                                          else "new suggestion, no known Yale connection"}
                                           for t in ws["external_partners"]["teams"] if t["team"] == team["name"] for p in t["partners"]],
                              "gaps": ws["eligibility_and_collaboration_gaps"]}, default=str)
         t0, call = time.perf_counter(), ModelCall(opportunity_uid=o["uid"], model=model_id, started_at=datetime.now(timezone.utc).replace(tzinfo=None),
