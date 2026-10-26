@@ -21,3 +21,20 @@ frontend/playwright-report/
 .DS_Store
 *.log
 .github/
+
+# not part of the submission (kept locally only)
+prompts.md
+report.html
+slides.html
+docs/
+tests/
+scripts/
+frontend/e2e/
+frontend/playwright.config.ts
+data/usage_log.jsonl
+data/nexus_eval/
+data/radar/
+data/classifications_review.json
+data/ysph_inclusion_review.json
+data/faculty.json
+data/faculty_ysph.json

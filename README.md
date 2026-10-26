@@ -67,7 +67,6 @@ The real data is included, so nothing has to be downloaded or scraped to run the
 | `data/nexus.db` | cached team suggestions and one-pagers |
 | `data/faculty_photos.json` | headshot links from public Yale profiles |
 
-The test suite uses its own small fixture data (in `tests/`) and never touches these files or calls a real AI model.
 
 ---
 
@@ -82,13 +81,6 @@ cd frontend && npm install && npm run dev                     # terminal 2 → h
 
 After changing the frontend, `npm run build` updates `frontend/dist`, which the backend serves.
 
-### Tests
-
-```bash
-python -m pytest -q                                   # 61 backend tests (no network, no AI calls)
-cd frontend && BASE_URL=http://localhost:8000 npx playwright test   # 26 click-through tests (app must be running)
-```
-
 ### Refreshing the data
 
 ```bash
@@ -97,8 +89,6 @@ python -m backend.radar.run --mode deadlines   # close passed deadlines, flag on
 python -m backend.app.scrape_photos            # re-collect faculty photos
 ```
 
-The same jobs run on a schedule on GitHub (`.github/workflows/`): opportunities every Monday, deadlines daily,
-partners monthly.
 
 ---
 
@@ -116,9 +106,6 @@ backend/
   auth/       sign-in (PBKDF2-hashed passwords, HttpOnly session cookie)
   llm.py      picks the AI model (Portkey/gpt-6-luna by default) and loads .env
 config/       funder watchlist, YIGH home-page content, matching weights
-docs/         design notes, classification audit, agent evaluation
-tests/        backend tests; frontend/e2e/ has the Playwright click-through
-prompts.md    every prompt used to build the project
 ```
 
 ### The agents
@@ -140,4 +127,3 @@ prompts.md    every prompt used to build the project
 - Text from web pages is cleaned of instruction-like content before any AI sees it.
 - Pages pasted into the Launchpad are kept apart from the shared Opportunities list and marked as not checked with the funder.
 
-More detail is in [`docs/`](docs/).
