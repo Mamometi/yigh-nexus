@@ -2,6 +2,8 @@
 
 **A funding and collaboration hub for the Yale Institute for Global Health (YIGH).**
 
+**Live app:** https://mamometi.github.io (opens https://yigh-nexus.onrender.com)
+
 YIGH Nexus helps Yale researchers go from a funding call to a team and a draft:
 
 - **Opportunity Radar**: global health funding opportunities collected every week from official sources
