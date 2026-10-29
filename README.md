@@ -68,6 +68,12 @@ The real data is included, so nothing has to be downloaded or scraped to run the
 | `data/faculty_photos.json` | headshot links from public Yale profiles |
 
 
+### Put it online (optional)
+
+`render.yaml` deploys the app to [Render](https://render.com) for free: sign in with GitHub, choose
+**New → Blueprint**, pick this repo, and paste your `PORTKEY_API_KEY` when asked. On the free plan the app sleeps after
+about 15 idle minutes (the next visit takes ~40 seconds), and sign-in accounts reset when it restarts.
+
 ---
 
 ## Development mode (optional)

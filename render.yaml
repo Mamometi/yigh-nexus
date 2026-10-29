@@ -1,0 +1,15 @@
+# Render deployment (https://render.com): New -> Blueprint -> pick this repo.
+# The built website (frontend/dist) and the data in data/ are in the repo, so no build step beyond pip is needed.
+services:
+  - type: web
+    name: yigh-nexus
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/home
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: PORTKEY_API_KEY
+        sync: false   # Render asks for the value when the Blueprint is created; it never goes in the repo
