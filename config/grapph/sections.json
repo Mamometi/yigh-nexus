@@ -1,0 +1,12 @@
+[
+  {"slug": "partner", "title": "Build the Partnership", "icon": "partner", "color": "#7b4fb3",
+   "summary": "Agreements, appointments, visitors and checking in with partners before you start."},
+  {"slug": "fund", "title": "Find and Win Funding", "icon": "fund", "color": "#1271e3",
+   "summary": "Find calls, put together a proposal, budget for work abroad and get letters of support."},
+  {"slug": "comply", "title": "Ethics and Compliance", "icon": "comply", "color": "#9f2f23",
+   "summary": "Ethics review, export controls, research security and protecting data."},
+  {"slug": "operate", "title": "Get the Work Done", "icon": "operate", "color": "#2e8540",
+   "summary": "Pay people and partners, buy and ship supplies, travel safely and run work in-country."},
+  {"slug": "share", "title": "Share and Sustain", "icon": "share", "color": "#c47a00",
+   "summary": "Publish openly, share data, tell people about your work and keep partnerships going."}
+]

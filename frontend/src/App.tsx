@@ -10,24 +10,32 @@ const Radar = lazy(() => import('./pages/Radar').then(m => ({ default: m.Radar }
 const OpportunityPage = lazy(() => import('./pages/OpportunityPage').then(m => ({ default: m.OpportunityPage })))
 const Launchpad = lazy(() => import('./pages/Launchpad').then(m => ({ default: m.Launchpad })))
 const SignIn = lazy(() => import('./pages/SignIn').then(m => ({ default: m.SignIn })))
+const HubPages = () => import('./pages/Hub')
+const HubHome = lazy(() => HubPages().then(m => ({ default: m.HubHome })))
+const SectionPage = lazy(() => HubPages().then(m => ({ default: m.SectionPage })))
+const TopicPage = lazy(() => HubPages().then(m => ({ default: m.TopicPage })))
+const FacilitiesBuilder = lazy(() => import('./pages/HubTools').then(m => ({ default: m.FacilitiesBuilder })))
+const Letters = lazy(() => import('./pages/HubTools').then(m => ({ default: m.Letters })))
 const FacultyDirectory = lazy(() => import('./pages/FacultyDirectory').then(m => ({ default: m.FacultyDirectory })))
 
 export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <Link to="/" className="brand" aria-label="YIGH Nexus home">
+        <Link to="/" className="brand" aria-label="GRAPPH home">
           <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden>
             <g stroke="#b4e7f8" strokeOpacity=".8"><line x1="6" y1="22" x2="14" y2="9" /><line x1="14" y1="9" x2="25" y2="13" /><line x1="14" y1="9" x2="19" y2="25" /></g>
             <g fill="#ffffff"><circle cx="6" cy="22" r="2.2" /><circle cx="14" cy="9" r="3" /><circle cx="25" cy="13" r="2.2" /><circle cx="19" cy="25" r="2.2" /></g>
           </svg>
-          <span><strong>YIGH Nexus</strong><small>Yale Institute for Global Health</small></span>
+          <span><strong>GRAPPH</strong><small>Global Health Research and Projects Hub</small></span>
         </Link>
         <nav aria-label="Main">
           <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/radar">Opportunity Radar</NavLink>
-          <NavLink to="/directory">Faculty Directory</NavLink>
-          <NavLink to="/launchpad">Team Launchpad</NavLink>
+          <NavLink to="/hub">Guides</NavLink>
+          <NavLink to="/radar">Opportunities</NavLink>
+          <NavLink to="/directory">Faculty</NavLink>
+          <NavLink to="/launchpad">Launchpad</NavLink>
+          <NavLink to="/hub/tools/facilities">Tools</NavLink>
           <AccountMenu />
         </nav>
       </header>
@@ -36,6 +44,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Navigate to="/" replace />} />
+            <Route path="/hub" element={<HubHome />} />
+            <Route path="/hub/tools/facilities" element={<FacilitiesBuilder />} />
+            <Route path="/hub/tools/letters" element={<Letters />} />
+            <Route path="/hub/:section" element={<SectionPage />} />
+            <Route path="/hub/:section/:slug" element={<TopicPage />} />
             <Route path="/radar" element={<Radar />} />
             <Route path="/radar/:id" element={<OpportunityPage />} />
             <Route path="/directory" element={<FacultyDirectory />} />
@@ -53,7 +66,7 @@ export default function App() {
         <div className="site-footer__inner">
           <div><strong className="site-footer__brand">Yale Institute for Global Health</strong>
             <p>PO Box 208034<br />New Haven, CT 06520-8034</p></div>
-          <div><h4>Explore</h4><ul><li><Link to="/radar">Opportunity Radar</Link></li><li><Link to="/directory">Faculty Directory</Link></li><li><Link to="/launchpad">Team Launchpad</Link></li></ul></div>
+          <div><h4>Explore</h4><ul><li><Link to="/hub">Guides</Link></li><li><Link to="/radar">Opportunities</Link></li><li><Link to="/directory">Faculty Directory</Link></li><li><Link to="/launchpad">Team Launchpad</Link></li><li><Link to="/hub/tools/facilities">Facilities builder</Link></li><li><Link to="/hub/tools/letters">Letters of support</Link></li></ul></div>
           <div><h4>YIGH</h4><ul><li><a href="https://medicine.yale.edu/yigh/" target="_blank" rel="noreferrer">YIGH website ↗</a></li>
             <li><a href="https://medicine.yale.edu/yigh/news" target="_blank" rel="noreferrer">News ↗</a></li>
             <li><a href="https://medicine.yale.edu/about/contact-us/" target="_blank" rel="noreferrer">Contact ↗</a></li></ul></div>

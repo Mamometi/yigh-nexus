@@ -21,7 +21,7 @@ export function SignIn() {
     <div className="page signin osf">
       <header className="osf-head">
         <div className="osf-head__inner">
-          <p className="eyebrow eyebrow--light">YIGH Nexus</p>
+          <p className="eyebrow eyebrow--light">GRAPPH</p>
           <h1>{mode === 'in' ? 'Sign in' : 'Create an account'}</h1>
           <p className="lede">Sign in with your Yale email to use the Launchpad and draft research concepts for proposed teams.</p>
         </div>

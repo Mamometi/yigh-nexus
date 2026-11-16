@@ -1,4 +1,4 @@
-"""YIGH Nexus assistant: a chat agent that can look up anything on the website.
+"""GRAPPH assistant: a chat agent that can look up anything on the website.
 
 Its tools call the site's own API (in-process), so it sees exactly what a visitor sees: funding opportunities,
 funder timing, the faculty directory and profiles, collaborator suggestions, suggested teams and partners,
@@ -23,8 +23,10 @@ from backend.nexus.service import ai_available
 
 SITE_PAGES = {"home": "/", "opportunities": "/radar", "directory": "/directory", "sign_in": "/signin"}
 
-INSTRUCTIONS = f"""You are Nexi, the cheerful front-desk assistant on the Yale Institute for Global Health website. Today is {date.today():%B %-d, %Y}.
-Help people find funding opportunities, Yale faculty, possible collaborators and teams, partner institutions, and information about YIGH.
+INSTRUCTIONS = f"""You are Nexi, the cheerful front-desk assistant on GRAPPH, the Global Health Research and Projects Hub of the Yale Institute for Global Health. Today is {date.today():%B %-d, %Y}.
+Help people find step-by-step guides for Yale processes (partnerships, funding, compliance, procurement, travel, visitors,
+shipping, publishing), tools (Facilities & Resources builder at /hub/tools/facilities, letters of support and templates at /hub/tools/letters),
+funding opportunities, Yale faculty, possible collaborators and teams, partner institutions, and information about YIGH.
 
 Personality: warm, upbeat and helpful, like a friendly desk assistant who loves pointing people to the right place.
 Open with a short, friendly line ("Happy to help!", "Ooh, good question!"), keep the energy light, and end with a helpful nudge
@@ -37,6 +39,8 @@ How to answer:
 - Never say a faculty member or organization is interested, available, eligible or has agreed to anything. Suggestions are suggestions.
 - Keep answers short and friendly, in plain language. Avoid jargon such as "documented", "rule-based" or "evidence facets".
 - Link to pages on the site with markdown links using paths like /radar/12, /faculty/34, /directory?priority=climate-health, /radar?funder=gates.
+- For "how do I..." questions about Yale processes, use search_guides and get_guide, link the guide (/hub/section/slug), name
+  the responsible office, and give the key steps from the guide only. If no guide covers it, say so and suggest the closest office you found.
 - Remind people to confirm details on the funder's own page before applying.
 - If someone wants a concept draft (Launchpad) and isn't signed in, tell them to sign in at /signin.
 
@@ -203,8 +207,21 @@ def t_draft_concept(deps: Deps, opportunity_id: int, team_name: str = "") -> dic
     return d if "error" in d else {"label": d["label"], "concept": d["concept"], "page": f"/radar/{opportunity_id}#launchpad"}
 
 
+def t_search_guides(deps: Deps, query: str) -> dict:
+    hits = call_api(deps, "/api/hub/search", {"q": query})
+    return hits if isinstance(hits, dict) else {"count": len(hits), "results": hits}
+
+
+def t_get_guide(deps: Deps, section: str, slug: str) -> dict:
+    d = call_api(deps, f"/api/hub/topics/{section}/{slug}")
+    if "error" in d:
+        return d
+    return {k: d.get(k) for k in ("title", "summary", "office", "key_considerations", "steps", "resources", "good_to_know", "important")} | {
+        "page": f"/hub/{section}/{slug}", "related": [f"/hub/{r['section']}/{r['slug']}" for r in d.get("related", [])]}
+
+
 TOOLS = [t_directory_options, t_search_opportunities, t_get_opportunity, t_list_funders, t_funder_timing, t_search_faculty, t_get_faculty,
-         t_find_collaborators, t_team_for_opportunity, t_search_partners, t_about_yigh, t_draft_concept]
+         t_find_collaborators, t_team_for_opportunity, t_search_partners, t_about_yigh, t_draft_concept, t_search_guides, t_get_guide]
 
 PRIORITY_SLUGS = {"climate": "climate-health", "digital": "digital-health-ai", " ai ": "digital-health-ai",
                   "diplomacy": "health-diplomacy-security", "security": "health-diplomacy-security",
@@ -278,6 +295,16 @@ def build_agent(model=None) -> Agent:
         """Launchpad: a one-page concept outline for a suggested team. Only works for signed-in users."""
         return t_draft_concept(ctx.deps, opportunity_id, team_name)
 
+    @agent.tool
+    def search_guides(ctx: RunContext[Deps], query: str) -> dict:
+        """Search GRAPPH's step-by-step guides and tools (e.g. 'hosting visitors', 'subaward', 'ship samples', 'letter of support')."""
+        return t_search_guides(ctx.deps, query)
+
+    @agent.tool
+    def get_guide(ctx: RunContext[Deps], section: str, slug: str) -> dict:
+        """Full guide: steps, responsible office, key considerations and links. section/slug come from search_guides paths."""
+        return t_get_guide(ctx.deps, section, slug)
+
     return agent
 
 
@@ -331,6 +358,16 @@ def fallback_reply(deps: Deps, message: str) -> str:
             parts.append("Forecasted next:\n" + _opp_lines([_trim_opp(o) | {"page": f"/radar/{o['id']}"} for o in d["forecasted"]]))
         parts.append(f"You can see everything from them [right here](/radar?funder={funder['value']}). Want me to find Yale faculty for one of these?")
         return "\n\n".join(parts)
+
+    if re.search(r"\b(how (do|can|should) i|how to|steps?|process|guide|policy|host|visitor|visa|mou|agreement|subaward|ship|export|irb|ethics|travel|"
+                 r"procure|purchas|supplier|pay(ing)? |hire|hiring|letter of support|facilities|compliance|open access|closeout|limited submission)", t):
+        hits = t_search_guides(deps, _keywords(t) or message).get("results", [])
+        if hits:
+            top = hits[0]
+            lines = [f"- [{h['title']}]({h['path']})" for h in hits[1:4]]
+            return (f"Happy to help! The best place to start is **[{top['title']}]({top['path']})**: it walks you through the steps "
+                    f"and tells you which Yale office to contact." + ("\n\nThese guides may help too:\n" + "\n".join(lines) if lines else "") +
+                    "\n\nAlways check the office's own page for the latest rules.")
 
     m = re.search(r"collaborat\w* (?:with|for) ([a-z .'-]+)", t)
     if m:

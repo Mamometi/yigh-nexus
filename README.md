@@ -1,11 +1,16 @@
-# YIGH Nexus
+# GRAPPH: Global Health Research and Projects Hub
 
-**A funding and collaboration hub for the Yale Institute for Global Health (YIGH).**
+**A one-stop hub for global health research and projects at Yale, built for the Yale Institute for Global Health (YIGH).** (Formerly YIGH Nexus.)
 
 **Live app:** https://mamometi.github.io (opens https://yigh-nexus.onrender.com)
 
-YIGH Nexus helps Yale researchers go from a funding call to a team and a draft:
+GRAPPH connects Yale's existing offices and resources so researchers can go from idea to impact:
 
+- **Guides**: 25 step-by-step guides across five stages (Build the Partnership, Find and Win Funding, Ethics and Compliance,
+  Get the Work Done, Share and Sustain). Each names the responsible Yale office and links to where the work is done.
+  Content is summarized from public Yale pages, every link is checked, and each guide lists its sources.
+- **Facilities & Resources builder**: pick from 29 Yale resources and get a draft grant section (optional AI smoothing that adds no new facts).
+- **Letters of support**: request a letter (saved for YIGH staff), plus letter templates and checklists.
 - **Opportunity Radar**: global health funding opportunities collected every week from official sources
   (Grants.gov, the NIH Guide, IDRC, MacArthur/Lever for Change and about 20 funder pages), checked against the funder's own record,
   and tagged with YIGH's four strategic priorities. Pick a funder to see when it last opened a call and whether a next round is announced.
@@ -68,6 +73,7 @@ The real data is included, so nothing has to be downloaded or scraped to run the
 | `data/partners.db` | partner organizations and their documented Yale connections |
 | `data/nexus.db` | cached team suggestions and one-pagers |
 | `data/faculty_photos.json` | headshot links from public Yale profiles |
+| `config/grapph/` | guides, Facilities resources, templates and checklists |
 
 
 ### Put it online (optional)
@@ -110,6 +116,7 @@ backend/
   nexus/      team-matching agent (shortlist + AI ranking) and the one-pager agent
   partners/   partner-organization matching (documented Yale links vs. new suggestions)
   launchpad/  Team Launchpad: link import and one-pager API
+  hub/        GRAPPH guides, Facilities & Resources builder, letter-of-support requests
   assistant/  Nexi, the chat agent (tools = the site's own API)
   auth/       sign-in (PBKDF2-hashed passwords, HttpOnly session cookie)
   llm.py      picks the AI model (Portkey/gpt-6-luna by default) and loads .env

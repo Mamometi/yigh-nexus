@@ -1,0 +1,234 @@
+[
+  {
+    "id": "yigh",
+    "category": "institutes",
+    "name": "Yale Institute for Global Health",
+    "url": "https://medicine.yale.edu/yigh",
+    "text": "The Yale Institute for Global Health (YIGH) is a university-wide effort to address global health issues, led by the Yale schools of public health, medicine and nursing. It serves as the focal point for research, education and engagement with global partners, with the aim of improving the health of individuals and populations worldwide.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ysph",
+    "category": "institutes",
+    "name": "Yale School of Public Health",
+    "url": "https://ysph.yale.edu/",
+    "text": "The Yale School of Public Health (YSPH) conducts collaborative public health research supported by extramural grants. According to the school, around $77 million in total research grants were received in 2024, and over 200 active grants are currently funded.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "jackson-school",
+    "category": "institutes",
+    "name": "Yale Jackson School of Global Affairs",
+    "url": "https://jackson.yale.edu/about/",
+    "text": "The Yale Jackson School of Global Affairs is Yale's professional school for global affairs, whose mission is to educate leaders in the fields of global affairs.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycci",
+    "category": "institutes",
+    "name": "Yale Center for Clinical Investigation",
+    "url": "https://medicine.yale.edu/ycci",
+    "text": "The Yale Center for Clinical Investigation (YCCI) trains clinical and translational scientists and supports investigators across each phase of a clinical research protocol, including study development, study activation, study conduct and closure. Researchers can request services and access tools and training support through YCCI.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "cira",
+    "category": "institutes",
+    "name": "Center for Interdisciplinary Research on AIDS (CIRA)",
+    "url": "https://cira.yale.edu/",
+    "text": "The Center for Interdisciplinary Research on AIDS (CIRA) fosters collaboration through an interdisciplinary HIV research environment. CIRA offers mentorship and training in community-based equity research and implementation science, pilot supplements that fund near-complete or recently completed HIV studies to move findings into practice, and an International Visiting Scholar Program.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "yale-planetary-solutions",
+    "category": "institutes",
+    "name": "Yale Planetary Solutions",
+    "url": "https://planetarysolutions.yale.edu/",
+    "text": "Yale Planetary Solutions (YPS) runs core programming and works in service of university-wide sustainability and climate progress. YPS programs include grants, fellowships and awards that draw on expertise from across the university.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ghli",
+    "category": "institutes",
+    "name": "Global Health Leadership Initiative",
+    "url": "https://ysph.yale.edu/ghli/",
+    "text": "The Global Health Leadership Initiative (GHLI), based at the Yale School of Public Health, was founded in 2009 and serves as an academic partner to organizations globally. GHLI serves as a nexus for conversation and collaboration on global health leadership.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "climate-health",
+    "category": "institutes",
+    "name": "Yale Center on Climate Change and Health",
+    "url": "https://climateandhealth.yale.edu/",
+    "text": "The Yale Center on Climate Change and Health draws on Yale's multidisciplinary expertise to address climate change as a public health challenge. Its stated aims are to train future leaders, provide a comprehensive educational program, and catalyze innovative research.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "cidma",
+    "category": "institutes",
+    "name": "Center for Infectious Disease Modeling and Analysis",
+    "url": "https://ysph.yale.edu/cidma/",
+    "text": "The Center for Infectious Disease Modeling and Analysis (CIDMA) at the Yale School of Public Health applies interdisciplinary mathematical modeling approaches to public health challenges nationally and globally. Its research aims to optimize the effectiveness and cost-effectiveness of vaccination strategies and other interventions for diseases including HIV, TB, influenza, rabies and dengue.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ct-eip",
+    "category": "institutes",
+    "name": "Connecticut Emerging Infections Program",
+    "url": "https://ysph.yale.edu/eip/",
+    "text": "The Yale component of the Connecticut Emerging Infections Program (EIP), established in 1995, is located at the Yale School of Public Health. The program is a collaboration among the Connecticut Department of Public Health, the Yale School of Public Health and the CDC, with the goal of assessing the public health impact of emerging and re-emerging infections.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ghjp",
+    "category": "institutes",
+    "name": "Global Health Justice Partnership",
+    "url": "https://law.yale.edu/ghjp",
+    "text": "The Global Health Justice Partnership (GHJP) is an initiative of Yale Law School and the Yale School of Public Health. It was established in 2012 to promote interdisciplinary, innovative and effective responses to key problems in health justice.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycrc",
+    "category": "computing",
+    "name": "Yale Center for Research Computing",
+    "url": "https://research.computing.yale.edu/",
+    "text": "The Yale Center for Research Computing (YCRC) is a core facility under the Office of the Provost that provides high performance computing infrastructure and computational research support. YCRC services include consulting on the computing needs of research projects, assistance assessing data storage requirements, and training on high-performance computing and other research computing topics.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycrc-clusters",
+    "category": "computing",
+    "name": "YCRC High Performance Computing Clusters",
+    "url": "https://docs.ycrc.yale.edu/clusters/",
+    "text": "YCRC operates multiple high performance computing clusters. Bouchet supports research with low-risk data, including tightly coupled (InfiniBand) workloads; Hopper supports NIST 800-171, HIPAA and other sensitive data; Milgram supports unregulated sensitive data; and McCleary serves the Yale Center for Genome Analysis.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycrc-hopper",
+    "category": "computing",
+    "name": "Hopper Secure Computing Cluster",
+    "url": "https://docs.ycrc.yale.edu/clusters/hopper/",
+    "text": "Hopper is a shared-use high performance computing resource for Yale researchers, jointly supported by YCRC and Health Sciences Information Technology, designated for NIST 800-171, HIPAA and other sensitive data. It consists of standard compute and GPU-enabled nodes and mounts an encrypted shared filesystem. Access is granted per PI-approved project, and transfers of data other than low-risk data onto or out of the cluster require approval.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycrc-milgram",
+    "category": "computing",
+    "name": "Milgram Cluster for Sensitive Data",
+    "url": "https://docs.ycrc.yale.edu/clusters/milgram/",
+    "text": "Milgram is a YCRC cluster intended for projects that may involve sensitive data, for both storage and computation. All Milgram users must be current with Yale's HIPAA training requirement, and project, home and scratch directories reside on its primary GPFS filesystem.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "marx-library",
+    "category": "data",
+    "name": "Marx Science & Social Science Library",
+    "url": "https://library.yale.edu/marx",
+    "text": "Marx Library supports teaching, learning and research in the sciences, social sciences and interdisciplinary fields at Yale. It provides workstations with software for statistical and geospatial analysis, including SAS, Stata and ArcGIS, along with research data management support and research consultations with subject librarians.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "statlab",
+    "category": "data",
+    "name": "Yale Library StatLab",
+    "url": "https://library.yale.edu/statlab",
+    "text": "The Yale Library StatLab supports data, computational and statistical inquiries through one-on-one consultations, workshops and instruction, and research guides. Its workshops for researchers cover tools for quantitative research including R and Python.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "bids",
+    "category": "data",
+    "name": "Yale Biomedical Informatics & Data Science",
+    "url": "https://medicine.yale.edu/biomedical-informatics-data-science/",
+    "text": "Yale Biomedical Informatics & Data Science applies informatics and data science to improve health. Its research connects researchers across disciplines and translates into practical settings, and it partners with colleagues at Yale and beyond.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "dsde",
+    "category": "data",
+    "name": "Public Health Data Science and Data Equity (DSDE)",
+    "url": "https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-data-science-and-data-equity/",
+    "text": "The Public Health Data Science and Data Equity (DSDE) center supports data science at the Yale School of Public Health. Its mission is to reduce barriers to the use of data science and AI in public health and to make data science knowledge, tools and resources available to communities.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "phmu",
+    "category": "data",
+    "name": "YSPH Public Health Modeling Unit",
+    "url": "https://ysph.yale.edu/research/research-centers-and-initiatives/public-health-modeling-unit/",
+    "text": "The YSPH Public Health Modeling Unit is a center for systems analysis and research in public health whose members use mathematical representations of disease spread. It conducts public health systems analysis and policy evaluation and offers a workforce development and training program for public health modeling professionals.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycas",
+    "category": "data",
+    "name": "Yale Center for Analytical Sciences (YCAS)",
+    "url": "https://ysph.yale.edu/ycas/",
+    "text": "The Yale Center for Analytical Sciences (YCAS) provides collaborative expertise in the design, conduct and analysis of health and health care studies. YCAS teams assist researchers from pre-design advice through manuscript preparation and revision, with services requested via an intake form.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ycga",
+    "category": "labs",
+    "name": "Yale Center for Genome Analysis",
+    "url": "https://medicine.yale.edu/keck/ycga/",
+    "text": "The Yale Center for Genome Analysis (YCGA) is a full-service facility providing high-throughput sequencing of DNA and RNA. YCGA is a CLIA/CAP certified facility for sequencing clinical samples and is open to Yale, other non-profit and for-profit organizations.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "keck",
+    "category": "labs",
+    "name": "W.M. Keck Biotechnology Resource Laboratory",
+    "url": "https://medicine.yale.edu/keck/",
+    "text": "The W.M. Keck Biotechnology Resource Laboratory provides genomic, proteomic, biostatistical and bioinformatics services through eight resources. These include Keck DNA Sequencing, which provides Sanger sequencing, and the Mass Spectrometry & Proteomics Resource, which provides proteomics and small-molecule mass spectrometry-based services.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "cores-directory",
+    "category": "labs",
+    "name": "Yale Research Cores Directory",
+    "url": "https://research.yale.edu/cores",
+    "text": "The Yale Research Cores Directory is a searchable listing of Yale core facilities and research resources.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "ysm-biobank",
+    "category": "labs",
+    "name": "YSM Biobank",
+    "url": "https://medicine.yale.edu/biobank/about-the-biobank/",
+    "text": "The YSM Biobank is a coordinated biorepository that aligns collected tissue, plasma, serum and genetic samples with clinical data using common processes and information systems. Specimen and clinical data requests are submitted via REDCap.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "cmips",
+    "category": "support",
+    "name": "Center for Methods in Implementation and Prevention Science (CMIPS)",
+    "url": "https://ysph.yale.edu/cmips/",
+    "text": "The Center for Methods in Implementation and Prevention Science (CMIPS) at the Yale School of Public Health develops and disseminates methodologic approaches for implementing evidence-based interventions in clinical and community settings. CMIPS provides free statistical software tools for measurement error correction, study design and power calculation, disease heterogeneity and meta-analysis, and has research programs in global mental health, maternal and child health, qualitative methods and HIV implementation science.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "osp",
+    "category": "support",
+    "name": "Office of Sponsored Projects",
+    "url": "https://research-support.yale.edu/sponsored-projects/office-of-sponsored-projects",
+    "text": "The Yale Office of Sponsored Projects (OSP) supports faculty and staff throughout the entire lifecycle of an award. OSP reviews and approves proposals to government agencies and other sponsors, and proposals for extramural funding are submitted through OSP.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "oia",
+    "category": "support",
+    "name": "Yale Office of International Affairs",
+    "url": "https://world.yale.edu/",
+    "text": "The Yale Office of International Affairs supports the university's global engagement, including a Global Engagement Map of current international activities of Yale faculty. It maintains Yale's Policy for International Research, Programs & Activities governing research conducted abroad.",
+    "source_read": "2026-11-16"
+  },
+  {
+    "id": "cushing-evidence-synthesis",
+    "category": "support",
+    "name": "Cushing/Whitney Medical Library Evidence Synthesis Service",
+    "url": "https://library.medicine.yale.edu/research-support/evidence-synthesis-literature-reviews-cc/",
+    "text": "Librarians at the Harvey Cushing/John Hay Whitney Medical Library assist researchers at different stages of the evidence synthesis process, including systematic reviews. The library's librarians have co-authored hundreds of evidence synthesis articles; participation depends on librarian capacity and is arranged through a request form.",
+    "source_read": "2026-11-16"
+  }
+]

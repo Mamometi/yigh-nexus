@@ -92,9 +92,13 @@ export function Home() {
       <section className="home-approach home-tools">
         <div className="home-approach__inner">
           <p className="eyebrow eyebrow--light">Tools on this site</p>
-          <h2>Funding intelligence and collaborator matchmaking</h2>
+          <h2>Everything for global health work at Yale, in one place</h2>
           <p className="home-approach__intro">{p.tools_link}</p>
           <div className="tool-grid">
+            <Link to="/hub" className="tool-card"><h3>Guides</h3>
+              <p>Step-by-step help with Yale processes: partner agreements, visitors, ethics, subawards, shipping, travel and publishing.</p><span className="tool-card__go">Open the guides →</span></Link>
+            <Link to="/hub/tools/facilities" className="tool-card"><h3>Grant-writing tools</h3>
+              <p>Build the Facilities & Resources section of a grant, request letters of support, and use templates and checklists.</p><span className="tool-card__go">Open the tools →</span></Link>
             <Link to="/radar" className="tool-card"><h3>Opportunity Radar</h3>
               <p>Find grants that fit your work. We check funders every week, so you can see what’s open now and what’s coming up.</p><span className="tool-card__go">Browse opportunities →</span></Link>
             <Link to="/directory" className="tool-card"><h3>Faculty Directory</h3>

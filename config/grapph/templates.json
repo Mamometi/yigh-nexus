@@ -1,0 +1,74 @@
+{
+  "letters": [
+    {
+      "id": "institutional-support",
+      "title": "Institutional letter of support",
+      "use": "From a Yale leader (for example a center or institute director) backing the project and the team.",
+      "body": "[Date]\n\n[Funder name]\n[Program or call name]\n\nDear Review Committee,\n\nI am writing to express [my / the institute's] strong support for the proposal \"[Project title]\", led by [PI name, title, department] at Yale University.\n\n[One or two sentences on why the project matters and how it fits the institute's priorities.]\n\n[PI name] and the team bring [key strengths: expertise, prior work, partnerships]. The project builds on [existing collaboration or work, if any] with [partner institution(s), country].\n\n[If true and approved: describe the specific support being offered, such as staff time, space, access to resources, or other commitments. Leave this out unless it has been agreed.]\n\nI am pleased to support this proposal and look forward to its success.\n\nSincerely,\n\n[Name]\n[Title]\n[Unit], Yale University"
+    },
+    {
+      "id": "partner-collaboration",
+      "title": "Letter from a partner institution",
+      "use": "A collaborating organization confirms its role. Send it to the partner to adapt and put on their letterhead.",
+      "body": "[Partner letterhead]\n\n[Date]\n\nDear [PI name],\n\nOn behalf of [partner organization], I am pleased to confirm our commitment to collaborate on \"[Project title]\", submitted to [funder / program].\n\nAs part of this project, [partner organization] will [describe the agreed role: e.g. lead recruitment at the study site, provide laboratory access, co-supervise trainees].\n\n[Optional: a sentence on the history of the collaboration.]\n\n[Optional and only if agreed: resources the partner will contribute.]\n\nWe look forward to working with you and the Yale team.\n\nSincerely,\n\n[Name]\n[Title]\n[Organization], [Country]"
+    },
+    {
+      "id": "collaborator-commitment",
+      "title": "Letter from a collaborating Yale faculty member",
+      "use": "A co-investigator or consultant confirms what they will contribute.",
+      "body": "[Date]\n\nDear [PI name],\n\nI am happy to take part in \"[Project title]\" as [role: co-investigator / consultant / mentor].\n\nI will contribute [specific expertise or tasks] and expect to commit [effort, if agreed] to the project.\n\n[One sentence on relevant experience.]\n\nI look forward to working with you.\n\nSincerely,\n\n[Name]\n[Title, Department]\nYale University"
+    }
+  ],
+  "checklists": [
+    {
+      "id": "before-proposal",
+      "title": "Before you start a proposal with an international partner",
+      "items": [
+        "Read the full call and note the sponsor deadline and any internal Yale deadlines.",
+        "Tell your department grants administrator early.",
+        "Confirm each partner can receive funds and has the registrations the funder asks for.",
+        "Check whether the partner country raises export control or research security questions.",
+        "Plan the ethics review: Yale IRB and any local ethics committee.",
+        "Ask for letters of support early; leaders and partners need time.",
+        "Draft the budget with costs at the international site, including subawards."
+      ],
+      "related": ["fund", "comply", "partner"]
+    },
+    {
+      "id": "letter-request",
+      "title": "When asking for a letter of support",
+      "items": [
+        "Give at least two to three weeks' notice.",
+        "Send the call, the deadline and a short summary of the project.",
+        "Say exactly what the letter should confirm, and only ask for commitments that have been agreed.",
+        "Offer a draft the signer can edit.",
+        "Say how it should be sent back (signed PDF, letterhead) and to whom."
+      ],
+      "related": ["fund"]
+    },
+    {
+      "id": "before-travel",
+      "title": "Before traveling for research",
+      "items": [
+        "Register your trip with Yale's travel resources.",
+        "Check travel advisories for the country.",
+        "Check whether laptops, equipment or samples need export review.",
+        "Confirm ethics approvals cover the work you will do there.",
+        "Carry contact details for your in-country partner and Yale's emergency support."
+      ],
+      "related": ["operate", "comply"]
+    },
+    {
+      "id": "hosting-visitor",
+      "title": "Before hosting an international visitor",
+      "items": [
+        "Agree on the purpose, length and activities of the visit.",
+        "Start the visa and appointment process with the right office well ahead of time.",
+        "Check research security guidance, especially for countries of concern.",
+        "Arrange access to space, systems and any required training.",
+        "Plan how the visit will be funded and what costs are covered."
+      ],
+      "related": ["partner", "comply"]
+    }
+  ]
+}

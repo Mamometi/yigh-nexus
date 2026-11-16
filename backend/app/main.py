@@ -17,6 +17,7 @@ from sqlalchemy.orm import Session, selectinload
 from backend.auth.api import router as auth_router
 from backend.assistant.api import router as assistant_router
 from backend.launchpad.api import router as launchpad_router
+from backend.hub.api import router as hub_router
 from backend.nexus.api import router as nexus_router
 from backend.partners.api import router as partners_router
 from backend.radar.api import router as radar_router
@@ -39,6 +40,7 @@ app.include_router(home_router)
 app.include_router(auth_router)
 app.include_router(assistant_router)
 app.include_router(launchpad_router)
+app.include_router(hub_router)
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173", "http://localhost:5180"], allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
 
 
