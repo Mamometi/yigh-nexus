@@ -29,7 +29,7 @@ interface HomeData {
   news_source: string
 }
 
-const getHome = async (): Promise<HomeData> => {
+export const getHome = async (): Promise<HomeData> => {
   const r = await fetch('/api/home')
   if (!r.ok) throw new Error(`Request failed (${r.status})`)
   return r.json()
@@ -45,7 +45,7 @@ export function Home() {
   useHomeMotion(state.status === 'success', brief.status)
   if (state.status === 'loading') return <Loading label="Loading…" />
   if (state.status === 'error') return <ErrorState message={state.error} onRetry={retry} />
-  const { profile: p, live, news } = state.data
+  const { profile: p, live } = state.data
 
   return (
     <div className="home">
@@ -89,26 +89,6 @@ export function Home() {
 
       </div>
 
-      <section className="home-approach home-tools">
-        <div className="home-approach__inner">
-          <p className="eyebrow eyebrow--light">Tools on this site</p>
-          <h2>Everything for global health work at Yale, in one place</h2>
-          <p className="home-approach__intro">{p.tools_link}</p>
-          <div className="tool-grid">
-            <Link to="/hub" className="tool-card"><h3>Guides</h3>
-              <p>Step-by-step help with Yale processes: partner agreements, visitors, ethics, subawards, shipping, travel and publishing.</p><span className="tool-card__go">Open the guides →</span></Link>
-            <Link to="/hub/tools/facilities" className="tool-card"><h3>Grant-writing tools</h3>
-              <p>Build the Facilities & Resources section of a grant, request letters of support, and use templates and checklists.</p><span className="tool-card__go">Open the tools →</span></Link>
-            <Link to="/radar" className="tool-card"><h3>Opportunity Radar</h3>
-              <p>Find grants that fit your work. We check funders every week, so you can see what’s open now and what’s coming up.</p><span className="tool-card__go">Browse opportunities →</span></Link>
-            <Link to="/directory" className="tool-card"><h3>Faculty Directory</h3>
-              <p>Meet Yale faculty working in global health. See what they study, where they work, and who might make a good collaborator.</p><span className="tool-card__go">Find faculty →</span></Link>
-            <Link to="/launchpad" className="tool-card"><h3>Team Launchpad</h3>
-              <p>Found a grant you like? Get ideas for who to team up with at Yale and beyond, plus a one-page outline to get started.</p><span className="tool-card__go">Open the Launchpad →</span></Link>
-          </div>
-        </div>
-      </section>
-
       <div className="home__body">
 
         <section className="home-sec">
@@ -122,20 +102,6 @@ export function Home() {
           )}
         </section>
 
-        <section className="home-sec">
-          <div className="home-sec__head"><h2>Latest from YIGH</h2><a href={state.data.news_source} target="_blank" rel="noreferrer">See all news →</a></div>
-          <div className="news-grid">
-            {news.map(n => (
-              <a key={n.url} className="news-card" href={n.url} target="_blank" rel="noreferrer">
-                {n.image ? <img src={n.image} alt={n.image_alt ?? ''} loading="lazy" /> : <div className="news-card__ph" />}
-                <div className="news-card__body">
-                  {newsDate(n.date) && <span className="news-card__date">{newsDate(n.date)}</span>}
-                  <h3>{n.title}</h3><p>{n.summary}</p><span className="news-card__more">Read more</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
 
         <p className="muted small home__source">Figures: <a href="https://medicine.yale.edu/yigh/" target="_blank" rel="noreferrer">YIGH website</a>.</p>
       </div>
@@ -201,8 +167,9 @@ function Temple({ pillars }: { pillars: Named[] }) {
     if (!el) return
     if (!('IntersectionObserver' in window)) { setShown(true); return }
     const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setShown(true); io.disconnect() } }, { threshold: 0.25 })
+    const failsafe = window.setTimeout(() => setShown(true), 2500)   // never leave the pillars hidden
     io.observe(el)
-    return () => io.disconnect()
+    return () => { io.disconnect(); clearTimeout(failsafe) }
   }, [])
   return (
     <div ref={ref} className={`temple ${shown ? 'is-in' : ''}`} role="list" aria-label="Institutional pillars">
@@ -268,6 +235,9 @@ function useHomeMotion(ready: boolean, extra: string) {
     }), { threshold: 0.15, rootMargin: '0px 0px -40px 0px' })
     els.forEach(e => io.observe(e))
     nums.forEach(n => io.observe(n))
+    // Never leave content hidden: if the browser doesn't report scrolling (a background tab, a print, a saved copy),
+    // show everything after a moment anyway.
+    const failsafe = window.setTimeout(() => document.querySelectorAll<HTMLElement>('.home .reveal:not(.is-in)').forEach(el => el.classList.add('is-in')), 2500)
     // Jumping down the page (End key, a big scroll, a link) skips the observer: reveal everything already above the fold's bottom.
     let raf = 0
     const sweep = () => {
@@ -282,6 +252,29 @@ function useHomeMotion(ready: boolean, extra: string) {
     }
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(sweep) }
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => { io.disconnect(); window.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf) }
+    return () => { io.disconnect(); window.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf); clearTimeout(failsafe) }
   }, [ready, extra])
+}
+
+/** "Latest from YIGH": news cards from the YIGH website (shown on News & Updates). */
+export function YighNews() {
+  const [state, retry] = useAsync(getHome, [])
+  if (state.status === 'loading') return <Loading label="Loading news…" />
+  if (state.status === 'error') return <ErrorState message={state.error} onRetry={retry} />
+  return (
+    <section className="home-sec">
+      <div className="home-sec__head"><h2>Latest from YIGH</h2><a href={state.data.news_source} target="_blank" rel="noreferrer">See all news →</a></div>
+      <div className="news-grid">
+        {state.data.news.map(n => (
+          <a key={n.url} className="news-card" href={n.url} target="_blank" rel="noreferrer">
+            {n.image ? <img src={n.image} alt={n.image_alt ?? ''} loading="lazy" /> : <div className="news-card__ph" />}
+            <div className="news-card__body">
+              {newsDate(n.date) && <span className="news-card__date">{newsDate(n.date)}</span>}
+              <h3>{n.title}</h3><p>{n.summary}</p><span className="news-card__more">Read more</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
 }

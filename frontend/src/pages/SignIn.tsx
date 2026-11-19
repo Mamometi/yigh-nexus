@@ -23,7 +23,7 @@ export function SignIn() {
         <div className="osf-head__inner">
           <p className="eyebrow eyebrow--light">GRAPPH</p>
           <h1>{mode === 'in' ? 'Sign in' : 'Create an account'}</h1>
-          <p className="lede">Sign in with your Yale email to use the Launchpad and draft research concepts for proposed teams.</p>
+          <p className="lede">Sign in with your Yale email to use the Toolkit: draft one-pagers, request letters of support and save your project.</p>
         </div>
         <svg className="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden><path d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z" /></svg>
       </header>

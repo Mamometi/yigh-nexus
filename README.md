@@ -4,7 +4,7 @@
 
 **Live app:** https://mamometi.github.io (opens https://yigh-nexus.onrender.com)
 
-GRAPPH connects Yale's existing offices and resources so researchers can go from idea to impact:
+GRAPPH connects Yale's existing offices and resources so researchers can take a project from first idea to finished work:
 
 - **Guides**: 25 step-by-step guides across five stages (Build the Partnership, Find and Win Funding, Ethics and Compliance,
   Get the Work Done, Share and Sustain). Each names the responsible Yale office and links to where the work is done.

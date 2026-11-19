@@ -1,11 +1,29 @@
-import { useMemo, useState, type FormEvent } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useEffect, useMemo, useState, type FormEvent } from 'react'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
+import { radar, type OppDetail } from '../api'
 import { useAuth } from '../auth'
 import { ErrorState, Loading } from '../components/StateViews'
 import { hub, type LetterRequest } from '../hub'
 import { useAsync } from '../hooks'
 
 const WAVE = <svg className="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden><path d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z" /></svg>
+/** The Launchpad opportunity these tools are working on (?opp=ID), if any */
+function useLaunchOpp(): OppDetail | null {
+  const [params] = useSearchParams()
+  const id = Number(params.get('opp')) || null
+  const [o, setO] = useState<OppDetail | null>(null)
+  useEffect(() => { if (id) radar.detail(id).then(setO).catch(() => setO(null)) }, [id])
+  return id ? o : null
+}
+
+function LaunchContext({ o }: { o: OppDetail | null }) {
+  if (!o) return <p className="small muted">Tip: start from the <Link to="/launchpad?stage=applying&step=2">Toolkit</Link> and pick a funding call, and this page fills it in for you.</p>
+  return (
+    <div className="lp-ctx"><span><span className="eyebrow">Working on</span><br /><strong>{o.title}</strong>{o.funder && <span className="muted"> · {o.funder}</span>}</span>
+      <Link className="btn btn--ghost btn--sm" to={`/launchpad?stage=applying&opp=${o.id}&step=5`}>← Back to your plan</Link></div>
+  )
+}
+
 const CATS: [string, string][] = [['institutes', 'Institutes and schools'], ['computing', 'Computing'], ['data', 'Data and library'],
                                   ['labs', 'Labs and core facilities'], ['support', 'Research support']]
 
@@ -22,8 +40,9 @@ function Copy({ text }: { text: string }) {
   return <button className="btn btn--ghost btn--sm" onClick={() => navigator.clipboard.writeText(text).then(() => { setDone(true); setTimeout(() => setDone(false), 1500) })}>{done ? 'Copied ✓' : 'Copy'}</button>
 }
 
-/** /hub/tools/facilities — Facilities & Other Resources builder */
-export function FacilitiesBuilder() {
+/** /launchpad/facilities (Launchpad step 5) — Facilities & Other Resources builder */
+/** `embedded`: shown inside a Launchpad step, so the page header and banner are left out. */
+export function FacilitiesBuilder({ embedded = false }: { embedded?: boolean }) {
   const [list, retry] = useAsync(hub.facilities, [])
   const [picked, setPicked] = useState<string[]>([])
   const [project, setProject] = useState('')
@@ -31,6 +50,8 @@ export function FacilitiesBuilder() {
   const [polish, setPolish] = useState(false)
   const [q, setQ] = useState('')
   const [out, setOut] = useState<{ s: 'idle' } | { s: 'busy' } | { s: 'err'; m: string } | { s: 'done'; text: string; mode: string; note?: string; sources: { name: string; url: string }[] }>({ s: 'idle' })
+  const opp = useLaunchOpp()
+  useEffect(() => { if (opp && !project) setProject(opp.title) }, [opp]) // eslint-disable-line react-hooks/exhaustive-deps
   const toggle = (id: string) => setPicked(p => p.includes(id) ? p.filter(x => x !== id) : [...p, id])
   const items = list.status === 'success' ? list.data.filter(f => !q || (f.name + f.text).toLowerCase().includes(q.toLowerCase())) : []
 
@@ -41,14 +62,15 @@ export function FacilitiesBuilder() {
   }
 
   return (
-    <div className="page osf hub">
-      <header className="osf-head"><div className="osf-head__inner">
-        <p className="eyebrow eyebrow--light"><Link to="/hub">Tools</Link></p>
+    <div className={embedded ? 'hub hub--embedded' : 'page osf hub'}>
+      {!embedded && <><header className="osf-head"><div className="osf-head__inner">
+        <p className="eyebrow eyebrow--light"><Link to="/launchpad">Toolkit</Link></p>
         <h1>Facilities & Resources builder</h1>
         <p className="lede">Most grants ask what facilities and resources you can use. Pick the Yale resources that matter for your project,
           add a few lines about your partner site, and get a draft section to paste into your application.</p>
       </div>{WAVE}</header>
 
+      <LaunchContext o={opp} /></>}
       <div className="fr">
         <section className="card fr__pick">
           <div className="fr__bar"><h2>1. Pick resources <span className="count">({picked.length} picked)</span></h2>
@@ -100,19 +122,21 @@ export function FacilitiesBuilder() {
   )
 }
 
-/** /hub/tools/letters — request a letter of support, plus templates and checklists */
-export function Letters() {
+/** /launchpad/letters (Launchpad step 4) — request a letter of support, plus templates and checklists */
+export function Letters({ embedded = false }: { embedded?: boolean }) {
   const [tpl, retry] = useAsync(hub.templates, [])
   const [open, setOpen] = useState<string | null>(null)
+  const opp = useLaunchOpp()
   return (
-    <div className="page osf hub">
-      <header className="osf-head"><div className="osf-head__inner">
-        <p className="eyebrow eyebrow--light"><Link to="/hub">Tools</Link></p>
+    <div className={embedded ? 'hub hub--embedded' : 'page osf hub'}>
+      {!embedded && <><header className="osf-head"><div className="osf-head__inner">
+        <p className="eyebrow eyebrow--light"><Link to="/launchpad">Toolkit</Link></p>
         <h1>Letters of support, templates and checklists</h1>
         <p className="lede">Ask for a letter of support, start from a template, and use a checklist so nothing is missed.</p>
       </div>{WAVE}</header>
 
-      <LetterForm />
+      <LaunchContext o={opp} /></>}
+      <LetterForm key={opp?.id ?? 0} opp={opp} />
 
       <section id="templates" className="lt">
         <h2 className="home-sec__title">Letter templates</h2>
@@ -151,11 +175,12 @@ function Checklist({ c }: { c: { id: string; title: string; items: string[]; rel
   )
 }
 
-function LetterForm() {
+function LetterForm({ opp }: { opp: OppDetail | null }) {
   const { user, ready } = useAuth()
   const loc = useLocation()
   const [mine, reload] = useAsync<LetterRequest[]>(() => user ? hub.letters() : Promise.resolve([]), [user?.id])
-  const [f, setF] = useState({ signer: 'YIGH Director', project_title: '', funder: '', deadline: '', summary: '', confirm: '' })
+  const [f, setF] = useState({ signer: 'YIGH Director', project_title: opp?.title ?? '', funder: opp?.funder ?? '',
+    deadline: '', summary: '', confirm: '' })
   const [st, setSt] = useState<{ s: 'idle' | 'busy' } | { s: 'err'; m: string } | { s: 'ok'; r: LetterRequest }>({ s: 'idle' })
   const minDate = useMemo(() => new Date().toISOString().slice(0, 10), [])
   const set = (k: keyof typeof f) => (e: { target: { value: string } }) => setF({ ...f, [k]: e.target.value })
@@ -163,16 +188,17 @@ function LetterForm() {
   if (!ready) return null
   if (!user) return (
     <section className="card lt__form"><h2>Request a letter of support</h2>
-      <p>Sign in with your Yale account to send a request and track it.</p>
-      <Link className="btn" to={`/signin?next=${encodeURIComponent(loc.pathname)}`}>Sign in</Link></section>
+      <p>Sign in with your Yale email to send a request. Signing in lets YIGH staff know who is asking and lets you see the status of your requests here. The templates and checklists below work without an account.</p>
+      <Link className="btn" to={`/signin?next=${encodeURIComponent(loc.pathname + loc.search)}`}>Sign in</Link></section>
   )
   const submit = async (e: FormEvent) => {
     e.preventDefault(); setSt({ s: 'busy' })
-    try { const r = await hub.requestLetter(f); setSt({ s: 'ok', r }); reload() } catch (err) { setSt({ s: 'err', m: (err as Error).message }) }
+    try { const r = await hub.requestLetter({ ...f, opportunity_id: opp?.id ?? null }); setSt({ s: 'ok', r }); reload() } catch (err) { setSt({ s: 'err', m: (err as Error).message }) }
   }
   return (
     <section className="card lt__form">
       <h2>Request a letter of support</h2>
+      {opp?.deadline && <p className="small">The funder’s deadline is <strong>{opp.deadline}</strong>. Ask for the letter well before then.</p>}
       <p className="small muted">Your request is saved for YIGH staff to review. Nothing is sent by email yet, so contact the signer as well if the deadline is close.</p>
       <form onSubmit={submit} className="lt__fields">
         <div className="field"><label htmlFor="l-s">Who should sign it?</label><input id="l-s" className="input" required value={f.signer} onChange={set('signer')} /></div>

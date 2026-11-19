@@ -2,18 +2,13 @@ import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { HubIcon } from '../components/HubIcon'
 import { EmptyState, ErrorState, Loading } from '../components/StateViews'
-import { hub, type Section, type Topic } from '../hub'
+import { hub, type Topic } from '../hub'
 import { useAsync, useDebounced } from '../hooks'
+import { SaveButton } from '../components/SaveButton'
+import { Stages } from './Start'
 
 const WAVE = <svg className="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden><path d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z" /></svg>
 
-const TOOLS = [
-  { to: '/radar', title: 'Opportunities', text: 'Open funding calls, checked against each funder’s own page.' },
-  { to: '/directory', title: 'Faculty Directory', text: 'Find Yale faculty by topic, place or priority.' },
-  { to: '/launchpad', title: 'Team Launchpad', text: 'Go from a funding call to a team and a one-page concept.' },
-  { to: '/hub/tools/facilities', title: 'Facilities & Resources builder', text: 'Put together the Facilities section of a grant from Yale resources.' },
-  { to: '/hub/tools/letters', title: 'Letters of support', text: 'Request a letter, and get templates and checklists.' },
-]
 
 /** /hub — the five lifecycle sections, search and tools */
 export function HubHome() {
@@ -22,8 +17,8 @@ export function HubHome() {
     <div className="page osf hub">
       <header className="osf-head">
         <div className="osf-head__inner">
-          <p className="eyebrow eyebrow--light">Guides</p>
-          <h1>From idea to impact, the Yale way</h1>
+          <p className="eyebrow eyebrow--light">Pathways</p>
+          <h1>Global health pathways at Yale</h1>
           <p className="lede">Step-by-step guides for global health research and projects at Yale: who to talk to, what to do first,
             and where to do it. Every guide links to the Yale office that owns the process.</p>
           <HubSearch />
@@ -34,37 +29,14 @@ export function HubHome() {
       <section className="hub-life" aria-label="Project lifecycle">
         {state.status === 'loading' && <Loading />}
         {state.status === 'error' && <ErrorState message={state.error} onRetry={retry} />}
-        {state.status === 'success' && <ol className="hub-life__grid">
-          {state.data.map((s, i) => <SectionCard key={s.slug} s={s} n={i + 1} />)}
-        </ol>}
+        {state.status === 'success' && <Stages sections={state.data} />}
       </section>
 
-      <section className="hub-tools">
-        <h2 className="home-sec__title">Tools to get it done</h2>
-        <div className="hub-tools__grid">
-          {TOOLS.map(t => <Link key={t.to} to={t.to} className="hub-tool"><HubIcon name="tools" size={22} /><strong>{t.title}</strong><span>{t.text}</span></Link>)}
-        </div>
-      </section>
     </div>
   )
 }
 
-function SectionCard({ s, n }: { s: Section; n: number }) {
-  return (
-    <li className="hub-sec" style={{ '--c': s.color } as React.CSSProperties}>
-      <Link to={`/hub/${s.slug}`} className="hub-sec__head">
-        <span className="hub-sec__icon"><HubIcon name={s.icon} /></span>
-        <span className="hub-sec__n">{n}</span>
-        <h2>{s.title}</h2>
-      </Link>
-      <p>{s.summary}</p>
-      <ul>{s.topics.slice(0, 6).map(t => <li key={t.slug}><Link to={`/hub/${s.slug}/${t.slug}`}>{t.title}</Link></li>)}</ul>
-      {s.topics.length === 0 && <p className="muted small">Guides coming soon.</p>}
-    </li>
-  )
-}
-
-function HubSearch() {
+export function HubSearch() {
   const [q, setQ] = useState('')
   const dq = useDebounced(q.trim(), 250)
   const [hits] = useAsync(() => dq.length > 2 ? hub.search(dq) : Promise.resolve([]), [dq])
@@ -84,7 +56,6 @@ function HubSearch() {
   )
 }
 
-/** /hub/:section — one lifecycle section */
 export function SectionPage() {
   const { section = '' } = useParams()
   const [state, retry] = useAsync(hub.sections, [])
@@ -96,7 +67,7 @@ export function SectionPage() {
     <div className="page osf hub">
       <header className="osf-head">
         <div className="osf-head__inner">
-          <p className="eyebrow eyebrow--light"><Link to="/hub">Guides</Link></p>
+          <p className="eyebrow eyebrow--light"><Link to="/">Home</Link> › <Link to="/hub">Pathways</Link></p>
           <h1>{s.title}</h1>
           <p className="lede">{s.summary}</p>
         </div>
@@ -106,6 +77,11 @@ export function SectionPage() {
         {s.topics.map(t => (
           <Link key={t.slug} to={`/hub/${s.slug}/${t.slug}`} className="hub-topic-card" style={{ '--c': s.color } as React.CSSProperties}>
             <h3>{t.title}</h3><p>{t.summary}</p><span className="hub-topic-card__go">Open the guide →</span>
+          </Link>
+        ))}
+        {(s.links ?? []).map(l => (
+          <Link key={l.path} to={l.path} className="hub-topic-card hub-topic-card--tool" style={{ '--c': s.color } as React.CSSProperties}>
+            <h3>{l.title}</h3><p>A GRAPPH tool for this stage.</p><span className="hub-topic-card__go">Open the tool →</span>
           </Link>
         ))}
         {s.topics.length === 0 && <p className="muted">Guides for this section are coming soon.</p>}
@@ -129,7 +105,7 @@ function TopicView({ t }: { t: Topic }) {
   const s = t.section_info
   return (
     <div className="page topic" style={{ '--c': s.color } as React.CSSProperties}>
-      <nav className="crumbs small" aria-label="Breadcrumb"><Link to="/hub">Guides</Link> › <Link to={`/hub/${s.slug}`}>{s.title}</Link> › <span>{t.title}</span></nav>
+      <nav className="crumbs small" aria-label="Breadcrumb"><Link to="/">Home</Link> › <Link to="/hub">Pathways</Link> › <Link to={`/hub/${s.slug}`}>{s.title}</Link> › <span>{t.title}</span></nav>
       <div className="topic__layout">
         <aside className="topic__side">
           <Link to={`/hub/${s.slug}`} className="topic__sec"><span className="hub-sec__icon"><HubIcon name={s.icon} /></span><strong>{s.title}</strong></Link>
@@ -148,10 +124,16 @@ function TopicView({ t }: { t: Topic }) {
 
         <article className="topic__main">
           <header className="topic__head">
+            <div className="topic__meta">
+              {t.last_reviewed && <span className="muted small">Last reviewed: {new Date(t.last_reviewed + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>}
+              <span className="topic__acts">
+                <button className="link-btn small" onClick={() => window.print()}>🖶 Print</button>
+                <ShareButton title={t.title} />
+                <SaveButton small item={{ kind: 'guide', id: t.slug, title: t.title, sub: s.title, url: `/hub/${s.slug}/${t.slug}` }} />
+              </span>
+            </div>
             <h1>{t.title}</h1>
             <p className="lede">{t.summary}</p>
-            <p className="muted small">{t.last_reviewed && <>Last reviewed {new Date(t.last_reviewed + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} · </>}
-              <button className="link-btn small" onClick={() => window.print()}>Print</button></p>
           </header>
 
           {!!t.key_considerations?.length && (
@@ -197,4 +179,16 @@ function TopicView({ t }: { t: Topic }) {
       </div>
     </div>
   )
+}
+
+function ShareButton({ title }: { title: string }) {
+  const [done, setDone] = useState(false)
+  const share = async () => {
+    const url = window.location.href
+    try {
+      if (navigator.share) await navigator.share({ title, url })
+      else { await navigator.clipboard.writeText(url); setDone(true); setTimeout(() => setDone(false), 2000) }
+    } catch { /* the person closed the share sheet */ }
+  }
+  return <button className="link-btn small" onClick={share}>{done ? '✓ Link copied' : '⤴ Share'}</button>
 }

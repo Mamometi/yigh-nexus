@@ -42,6 +42,12 @@ export function ChatWidget() {
   const input = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => { sessionStorage.setItem(KEY, JSON.stringify(msgs.slice(-40))) }, [msgs])
+  // other pages can open the chat, optionally with a question typed in: window.dispatchEvent(new CustomEvent('open-nexi', { detail: 'text' }))
+  useEffect(() => {
+    const h = (e: Event) => { setOpen(true); const t = (e as CustomEvent<string>).detail; if (t) setText(t) }
+    window.addEventListener('open-nexi', h)
+    return () => window.removeEventListener('open-nexi', h)
+  }, [])
   useEffect(() => { end.current?.scrollIntoView({ block: 'end' }) }, [msgs, busy, open])
   useEffect(() => { if (open) input.current?.focus() }, [open])
 

@@ -1,3 +1,4 @@
+import { SaveButton } from '../components/SaveButton'
 import { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { radar, type ConceptDoc, type PartnerCard, type Team, type Workspace } from '../api'
@@ -18,15 +19,19 @@ export function OpportunityPage() {
     if (hash && (det.status === 'success' || ws.status === 'success')) document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' })
   }, [det.status, ws.status, hash])
   if (det.status === 'loading') return <Loading label="Loading opportunity…" />
-  if (det.status === 'error') return <div className="page"><Link to="/radar" className="back">← Opportunity Radar</Link><ErrorState message={det.error} onRetry={retryDet} /></div>
+  if (det.status === 'error') return <div className="page"><Link to="/radar" className="back">← Funding</Link><ErrorState message={det.error} onRetry={retryDet} /></div>
   const o = det.data
   return (
     <div className="page opp">
-      <Link to="/radar" className="back">← Opportunity Radar</Link>
+      <Link to="/radar" className="back">← Funding</Link>
       <header className="opp__head card">
         <div>
           <p className="eyebrow">{o.funder}{o.opportunity_number ? ` · ${o.opportunity_number}` : ''}</p>
           <h1>{o.title}</h1>
+          <div className="opp__ctas">
+            <Link className="btn" to={`/launchpad?stage=applying&opp=${o.id}&step=3`}>Plan an application in the Toolkit →</Link>
+            <SaveButton item={{ kind: 'funding', id: o.id, title: o.title, sub: o.funder }} />
+          </div>
           <div className="chips">{o.priorities.map(p => <PriorityChip key={p.slug} name={p.name} slug={p.slug} confidence={p.confidence} />)}</div>
         </div>
         <dl className="facts">
@@ -37,7 +42,7 @@ export function OpportunityPage() {
             {o.verification.last_verified_at && <span className="muted small"> · {fmtDate(o.verification.last_verified_at.slice(0, 10))}</span>}</dd></div>
         </dl>
         <nav className="opp__nav small" aria-label="Sections">
-          <a href="#details">Details</a><a href="#team">Faculty & teams</a><a href="#partners">Partners</a><a href="#gaps">Gaps</a><a href="#launchpad">Launchpad</a><a href="#sources">Sources</a>
+          <a href="#details">Details</a><a href="#team">Faculty & teams</a><a href="#partners">Partners</a><a href="#gaps">Gaps</a><a href="#launchpad">One-pager</a><a href="#sources">Sources</a>
         </nav>
       </header>
 
@@ -183,13 +188,12 @@ function Launchpad({ id, teams }: { id: number; teams: Team[] }) {
   const run = () => { if (!user) return; setState({ s: 'loading' }); radar.concept(id, team).then(d => setState({ s: 'done', d })).catch((e: Error) => setState({ s: 'error', e: e.message })) }
   return (
     <section id="launchpad" className="card launchpad">
-      <p className="eyebrow">Launchpad</p>
       <h2>Draft a one-page research concept</h2>
       <p className="muted small">Pick a team. You’ll get a one-page outline built around what the call asks for and what each person works on,
         ready for the team to fill in. Nothing is made up about anyone.</p>
       {!ready ? null : !user ? (
         <div className="launchpad__locked">
-          <p><strong>Sign in to use the Launchpad.</strong> Drafting research concepts is available to signed-in Yale users.</p>
+          <p><strong>Sign in to draft a one-pager.</strong> Drafting research concepts is available to signed-in Yale users.</p>
           <Link className="btn" to={`/signin?next=${encodeURIComponent(`/radar/${id}#launchpad`)}`}>Sign in</Link>
         </div>
       ) : teams.length === 0 ? <p className="muted">No team to draft for.</p> : (

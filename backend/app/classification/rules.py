@@ -12,7 +12,7 @@ from .plain import plain_explanation
 import re
 from dataclasses import dataclass, field
 
-RULE_VERSION = "rules-v3"  # v3: fixes from the full manual audit (see docs/classification-audit.md)
+RULE_VERSION = "rules-v4"  # v4: cities map to their country (e.g. Nairobi -> Kenya)
 
 # Fields in order of how directly they describe research focus.
 # Weight multiplies a match's contribution to the score.
@@ -144,6 +144,55 @@ GEO_NOT_PLACES = re.compile(r"Middle Niger|Niger (?:River|Delta)|Geneva,?\s+Swit
 HIGH_INCOME = {"Australia", "Canada", "Greece", "Italy", "Japan", "Korea", "South Korea", "Spain", "United Kingdom",
                "Germany", "France", "Switzerland"}
 
+# Cities and provinces that point to one country without ambiguity. Names shared with other places
+# (Cambridge, Kingston, Santiago, Hyderabad, Salvador, Alexandria, Georgia...) are left out on purpose.
+CITY_COUNTRY = {
+    # East Africa
+    "Nairobi": "Kenya", "Kisumu": "Kenya", "Mombasa": "Kenya", "Eldoret": "Kenya", "Kilifi": "Kenya", "Kakamega": "Kenya",
+    "Kampala": "Uganda", "Mbarara": "Uganda", "Gulu": "Uganda", "Entebbe": "Uganda", "Rakai": "Uganda", "Jinja": "Uganda",
+    "Dar es Salaam": "Tanzania", "Moshi": "Tanzania", "Arusha": "Tanzania", "Mwanza": "Tanzania", "Dodoma": "Tanzania", "Zanzibar": "Tanzania", "Ifakara": "Tanzania",
+    "Kigali": "Rwanda", "Butare": "Rwanda", "Huye": "Rwanda", "Bujumbura": "Burundi",
+    "Addis Ababa": "Ethiopia", "Gondar": "Ethiopia", "Jimma": "Ethiopia", "Mekelle": "Ethiopia", "Bahir Dar": "Ethiopia",
+    "Mogadishu": "Somalia", "Juba": "South Sudan", "Khartoum": "Sudan",
+    # Southern Africa
+    "Johannesburg": "South Africa", "Soweto": "South Africa", "Cape Town": "South Africa", "Durban": "South Africa", "Pretoria": "South Africa",
+    "Khayelitsha": "South Africa", "KwaZulu-Natal": "South Africa", "Mpumalanga": "South Africa", "Limpopo": "South Africa", "Gauteng": "South Africa",
+    "Lusaka": "Zambia", "Ndola": "Zambia", "Harare": "Zimbabwe", "Bulawayo": "Zimbabwe",
+    "Lilongwe": "Malawi", "Blantyre": "Malawi", "Zomba": "Malawi", "Maputo": "Mozambique", "Beira": "Mozambique",
+    "Gaborone": "Botswana", "Windhoek": "Namibia", "Maseru": "Lesotho", "Mbabane": "Eswatini", "Antananarivo": "Madagascar",
+    # West and Central Africa
+    "Accra": "Ghana", "Kumasi": "Ghana", "Tamale": "Ghana", "Lagos": "Nigeria", "Ibadan": "Nigeria", "Abuja": "Nigeria", "Kano": "Nigeria", "Enugu": "Nigeria",
+    "Dakar": "Senegal", "Bamako": "Mali", "Ouagadougou": "Burkina Faso", "Niamey": "Niger", "Freetown": "Sierra Leone", "Monrovia": "Liberia",
+    "Conakry": "Guinea", "Lomé": "Togo", "Cotonou": "Benin", "Banjul": "Gambia", "Kinshasa": "Democratic Republic of the Congo",
+    "Lubumbashi": "Democratic Republic of the Congo", "Goma": "Democratic Republic of the Congo", "Bukavu": "Democratic Republic of the Congo",
+    "Yaoundé": "Cameroon", "Yaounde": "Cameroon", "Douala": "Cameroon",
+    # North Africa and Middle East
+    "Cairo": "Egypt", "Rabat": "Morocco", "Marrakech": "Morocco", "Tunis": "Tunisia", "Beirut": "Lebanon", "Amman": "Jordan",
+    "Baghdad": "Iraq", "Erbil": "Iraq", "Tehran": "Iran", "Damascus": "Syria", "Aleppo": "Syria", "Sanaa": "Yemen", "Ramallah": "Palestine", "Istanbul": "Turkey",
+    # South Asia
+    "Dhaka": "Bangladesh", "Chittagong": "Bangladesh", "Matlab": "Bangladesh", "Kathmandu": "Nepal", "New Delhi": "India", "Delhi": "India",
+    "Mumbai": "India", "Chennai": "India", "Kolkata": "India", "Bangalore": "India", "Bengaluru": "India", "Pune": "India", "Vellore": "India",
+    "Lucknow": "India", "Kerala": "India", "Tamil Nadu": "India", "Uttar Pradesh": "India", "Bihar": "India", "Odisha": "India",
+    "Karachi": "Pakistan", "Lahore": "Pakistan", "Islamabad": "Pakistan", "Kabul": "Afghanistan", "Colombo": "Sri Lanka", "Thimphu": "Bhutan",
+    # East and Southeast Asia
+    "Yangon": "Myanmar", "Hanoi": "Vietnam", "Ho Chi Minh City": "Vietnam", "Phnom Penh": "Cambodia", "Vientiane": "Laos",
+    "Bangkok": "Thailand", "Chiang Mai": "Thailand", "Jakarta": "Indonesia", "Bandung": "Indonesia", "Manila": "Philippines", "Kuala Lumpur": "Malaysia",
+    "Beijing": "China", "Shanghai": "China", "Wuhan": "China", "Guangzhou": "China", "Shenzhen": "China", "Chengdu": "China", "Ulaanbaatar": "Mongolia",
+    # Central Asia and Eastern Europe
+    "Tashkent": "Uzbekistan", "Bishkek": "Kyrgyzstan", "Dushanbe": "Tajikistan", "Kyiv": "Ukraine", "Kiev": "Ukraine",
+    # Latin America and the Caribbean
+    "Lima": "Peru", "Cusco": "Peru", "Iquitos": "Peru", "Quito": "Ecuador", "Guayaquil": "Ecuador", "Bogotá": "Colombia", "Bogota": "Colombia",
+    "Medellín": "Colombia", "Medellin": "Colombia", "Caracas": "Venezuela", "La Paz": "Bolivia", "Cochabamba": "Bolivia",
+    "São Paulo": "Brazil", "Sao Paulo": "Brazil", "Rio de Janeiro": "Brazil", "Recife": "Brazil", "Fortaleza": "Brazil", "Manaus": "Brazil", "Brasília": "Brazil",
+    "Buenos Aires": "Argentina", "Montevideo": "Uruguay", "Asunción": "Paraguay", "Mexico City": "Mexico", "Guadalajara": "Mexico", "Chiapas": "Mexico",
+    "Oaxaca": "Mexico", "Tijuana": "Mexico", "Yucatán": "Mexico", "Guatemala City": "Guatemala", "Tegucigalpa": "Honduras", "San Pedro Sula": "Honduras",
+    "Managua": "Nicaragua", "Port-au-Prince": "Haiti", "Santo Domingo": "Dominican Republic", "Havana": "Cuba", "San Juan": "Puerto Rico",
+}
+
+# A city that is part of an institution's name ("University of Beirut", "Tsinghua University in Beijing",
+# "Yale Center Beijing") says where an institution is, not where someone does research.
+CITY_IN_INSTITUTION = re.compile(r"(?:University|College|Center|Centre|Institute|Hospital|School|Academy|Campus)(?: (?:of|in|at))?\s*$")
+
 GEO_ALIASES = {"DRC": "Democratic Republic of the Congo", "low- and middle-income countries": "LMICs", "Gaza": "Palestine"}
 
 # A sentence only supports a geographic *research* interest if it contains a research cue...
@@ -270,7 +319,7 @@ def _compile(terms):
 
 _PRIORITY_RX = {slug: {k: _compile(v) for k, v in r.items()} for slug, r in PRIORITY_RULES.items()}
 _KEYWORD_RX = {k: _compile(v) for k, v in STANDARD_KEYWORDS.items()}
-_GEO_RX = [(n, re.compile(rf"(?<![\w-]){re.escape(n)}(?![\w-])")) for n in sorted(REGIONS + COUNTRIES, key=len, reverse=True)]
+_GEO_RX = [(n, re.compile(rf"(?<![\w-]){re.escape(n)}(?![\w-])")) for n in sorted(REGIONS + COUNTRIES + list(CITY_COUNTRY), key=len, reverse=True)]
 
 
 _ABBREV = re.compile(r"\b(Dr|Prof|Drs|St|Mr|Mrs|Ms|Jr|Sr|vs|al|e\.g|i\.e|U\.S|Ph\.D|M\.D|No)\.")
@@ -418,7 +467,10 @@ def extract_geography(texts: dict[str, str]) -> dict[str, Result]:
                     if any(a <= m.start() < b for a, b in matched_spans):
                         continue  # e.g. "Africa" inside "South Africa"
                     matched_spans.append((m.start(), m.end()))
-                    canonical = GEO_ALIASES.get(name, name)
+                    city = name if name in CITY_COUNTRY else None
+                    if city and CITY_IN_INSTITUTION.search(sent[:m.start()].rstrip(" ,") if fld == "activity_locations" else sent[max(0, m.start() - 40):m.start()].rstrip(" ,")):
+                        continue
+                    canonical = CITY_COUNTRY.get(name) or GEO_ALIASES.get(name, name)
                     n_places = sum(1 for _n, _rx in _GEO_RX if _rx.search(scan))
                     if canonical in HIGH_INCOME and (fld == "activity_locations" or n_places >= 3):
                         continue
@@ -437,6 +489,8 @@ def extract_geography(texts: dict[str, str]) -> dict[str, Result]:
                             strength, why = 0.4, f"named with research activity ('{cue}') but the sentence also describes training/background"
                     else:
                         continue  # place mentioned without research context: not explicit support
+                    if city:   # say how a city became a country, so the tag can be checked
+                        why += f" ({city} is in {canonical})"
                     ev = Evidence(fld, m.group(0), _snippet(sent, m.span()))
                     prev = out.get(canonical)
                     if prev:

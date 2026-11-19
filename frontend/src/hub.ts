@@ -1,6 +1,13 @@
 // GRAPPH hub API: pathways, Facilities & Resources builder, letters of support
 export interface TopicCard { section: string; slug: string; title: string; summary: string }
-export interface Section { slug: string; title: string; icon: string; color: string; summary: string; topics: TopicCard[] }
+export interface Section { slug: string; title: string; short?: string; icon: string; color: string; summary: string; topics: TopicCard[]; links?: { title: string; path: string }[] }
+export interface PlanPerson { id: number; name: string; title: string | null; school: string | null; why: string[] }
+export interface PlanOrg { id: number; name: string; country: string | null; type: string; website: string | null; works_with_yale: boolean; why: string[] }
+export interface PlanResource { id: string; name: string; url: string; category: string; text: string }
+export interface PlanStep extends TopicCard { section_title: string; why: string; office: string | null; path: string }
+export interface Plan { stage: string; stage_label: string; opportunity: { id: number; title: string; funder: string | null } | null;
+  faculty: PlanPerson[]; partners: PlanOrg[]; resources: PlanResource[]; steps: PlanStep[] }
+export interface Office { name: string; url?: string | null; email?: string | null; topics: TopicCard[] }
 export interface Link_ { title: string; url: string; note?: string }
 export interface Topic extends TopicCard {
   office?: { name: string; url?: string; email?: string }
@@ -37,6 +44,9 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 export const hub = {
   sections: () => call<Section[]>('/api/hub/sections'),
+  plan: (b: { stage: string; text: string; opportunity_id: number | null }) => call<Plan>('/api/hub/plan', { method: 'POST', body: JSON.stringify(b) }),
+  offices: () => call<Office[]>('/api/hub/offices'),
+  feedback: (b: { page: string; page_title: string; kind: string; message: string; email: string }) => call<{ ok: boolean }>('/api/hub/feedback', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) }),
   topic: (section: string, slug: string) => call<Topic>(`/api/hub/topics/${section}/${slug}`),
   search: (q: string) => call<SearchHit[]>(`/api/hub/search?q=${encodeURIComponent(q)}`),
   facilities: () => call<Facility[]>('/api/hub/facilities'),

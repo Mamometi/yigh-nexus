@@ -1,12 +1,83 @@
 [
-  {"slug": "partner", "title": "Build the Partnership", "icon": "partner", "color": "#7b4fb3",
-   "summary": "Agreements, appointments, visitors and checking in with partners before you start."},
-  {"slug": "fund", "title": "Find and Win Funding", "icon": "fund", "color": "#1271e3",
-   "summary": "Find calls, put together a proposal, budget for work abroad and get letters of support."},
-  {"slug": "comply", "title": "Ethics and Compliance", "icon": "comply", "color": "#9f2f23",
-   "summary": "Ethics review, export controls, research security and protecting data."},
-  {"slug": "operate", "title": "Get the Work Done", "icon": "operate", "color": "#2e8540",
-   "summary": "Pay people and partners, buy and ship supplies, travel safely and run work in-country."},
-  {"slug": "share", "title": "Share and Sustain", "icon": "share", "color": "#c47a00",
-   "summary": "Publish openly, share data, tell people about your work and keep partnerships going."}
+ {
+  "slug": "partner",
+  "title": "Build the Partnership",
+  "short": "People and partnerships for long-term impact",
+  "icon": "partner",
+  "color": "#7b4fb3",
+  "summary": "Agreements, appointments, visitors and checking in with partners before you start.",
+  "links": [
+   {
+    "title": "Find partner organizations",
+    "path": "/partners"
+   }
+  ]
+ },
+ {
+  "slug": "fund",
+  "title": "Find & Develop Funding",
+  "short": "Turn ideas into viable projects",
+  "icon": "fund",
+  "color": "#1271e3",
+  "summary": "Find calls, plan a budget for work abroad, write the Facilities section and get letters of support.",
+  "links": [
+   {
+    "title": "Funding opportunities",
+    "path": "/radar"
+   },
+   {
+    "title": "Finding collaborators",
+    "path": "/launchpad?step=1"
+   },
+   {
+    "title": "Request a letter of support",
+    "path": "/launchpad/letters"
+   },
+   {
+    "title": "Facilities & Resources builder",
+    "path": "/launchpad/facilities"
+   }
+  ]
+ },
+ {
+  "slug": "submit",
+  "title": "Submit the Grant",
+  "short": "Navigate Yale processes to submission",
+  "icon": "submit",
+  "color": "#0f8fa8",
+  "summary": "Prepare and route your proposal through Yale and complete the disclosures it needs.",
+  "links": [
+   {
+    "title": "Draft a one-pager for a call",
+    "path": "/launchpad?stage=applying&step=2"
+   }
+  ]
+ },
+ {
+  "slug": "setup",
+  "title": "Set Up the Project",
+  "short": "From award to implementation",
+  "icon": "setup",
+  "color": "#2e8540",
+  "summary": "Subawards, ethics approval, export controls, research security and data protection once you are funded.",
+  "links": []
+ },
+ {
+  "slug": "operate",
+  "title": "Get the Work Done",
+  "short": "Operational support across borders",
+  "icon": "operate",
+  "color": "#e09a00",
+  "summary": "Pay people, buy and ship supplies, travel safely and run work in-country.",
+  "links": []
+ },
+ {
+  "slug": "share",
+  "title": "Share & Sustain",
+  "short": "Generate, share and extend impact",
+  "icon": "share",
+  "color": "#e2582b",
+  "summary": "Publish openly, share data, tell people about your work and close out the award.",
+  "links": []
+ }
 ]

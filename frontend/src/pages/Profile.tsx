@@ -1,3 +1,4 @@
+import { SaveButton } from '../components/SaveButton'
 import { useEffect, useRef, useState } from 'react'
 import { Photo } from '../components/Photo'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
@@ -34,6 +35,7 @@ export function Profile() {
         <Photo src={f.photo_url} name={f.name} className="photo--profile" />
         <div className="profile__id">
           <h1>{f.name}</h1>
+          <SaveButton item={{ kind: 'faculty', id: f.id, title: f.name, sub: f.title }} />
           {f.title && <p className="profile__title">{f.title}</p>}
           <p className="muted">{[f.school && `School of ${f.school === 'University' ? 'University (other Yale schools)' : f.school}`, f.department].filter(Boolean).join(' · ')}</p>
           <div className="profile__links small">
